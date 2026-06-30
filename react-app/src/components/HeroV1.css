@@ -1,0 +1,190 @@
+/* ============================================================
+   Hero V1 — teal gradient bg, two-column layout
+   Desktop padding: top 190px, bottom 120px
+   Mobile:         top 140px, bottom 90px
+   ============================================================ */
+
+.hero-v1-section {
+  background: linear-gradient(135deg, #00C6B2 0%, #00A8C6 50%, #0083FF 100%);
+  padding: 190px 0 120px;
+  overflow: hidden;
+}
+
+/* Two-column layout */
+.hero-v1__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* ── Left column ── */
+.hero-v1__left {
+  color: #fff;
+}
+
+.hero-v1__eyebrow {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+}
+
+.hero-v1__heading {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: #fff;
+  margin: 0 0 24px;
+}
+
+.hero-v1__heading em {
+  font-style: italic;
+  font-weight: 800;
+}
+
+.hero-v1__description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 480px;
+  margin: 0 0 32px;
+}
+
+.hero-v1__description strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* CTA row */
+.hero-v1__cta-row {
+  margin-bottom: 40px;
+}
+
+/* Floating checklist card */
+.hero-v1__checklist-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  max-width: 340px;
+  position: relative;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+
+.hero-v1__checklist-card-arrow {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #00C6B2;
+  width: 18px;
+  height: 18px;
+}
+
+.hero-v1__checklist-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-v1__checklist-card ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.hero-v1__check-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: #00C6B2;
+  width: 16px;
+  height: 16px;
+}
+
+/* ── Right column — code art ── */
+.hero-v1__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-v1__code-art {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  user-select: none;
+}
+
+.code-brace-left,
+.code-brace-right {
+  font-size: clamp(120px, 18vw, 220px);
+  line-height: 0.85;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.code-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 4px;
+}
+
+.code-prompt {
+  font-size: clamp(32px, 5vw, 60px);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: nowrap;
+}
+
+.code-dash {
+  font-size: clamp(20px, 3vw, 36px);
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 4px;
+}
+
+/* two-col variant when showCodeArt=true */
+.hero-v1__layout--two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .hero-v1__layout--two-col {
+    grid-template-columns: 1fr;
+  }
+}
+  .hero-v1-section {
+    padding: 140px 0 90px;
+  }
+
+  .hero-v1__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-v1__right {
+    display: none;
+  }
+
+  .hero-v1__heading {
+    font-size: 2.5rem;
+    line-height: 1.15;
+  }
+
+  .hero-v1__checklist-card {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+/* Multi-Row Content — F8: white bg, text left + image right */
+
+.multi-row-section {
+  background: none; /* white — no bg color set */
+}
+
+.multi-row-section .row-fluid {
+  align-items: center;
+}

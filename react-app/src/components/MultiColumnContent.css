@@ -1,0 +1,5 @@
+/* Multi-Column Content — F10: 3×span4; #f8fafc bg; stacks on mobile */
+
+.multi-col-section .row-fluid {
+  align-items: center;
+}

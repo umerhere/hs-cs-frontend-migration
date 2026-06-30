@@ -1,0 +1,11 @@
+.faq-section { background: #fff; padding: 80px 0; }
+.faq-header { text-align: center; margin-bottom: 48px; }
+.faq-header h2 { font-size: clamp(1.75rem,3.5vw,2.25rem); font-weight:700; color:#111827; margin:0 0 12px; }
+.faq-header p { color:#6b7280; font-size:1rem; margin:0; }
+.faq-list { max-width: 720px; margin: 0 auto; display:flex; flex-direction:column; gap:0; }
+.faq-item { border-bottom: 1px solid #e5e7eb; }
+.faq-question { width:100%; background:none; border:none; padding:20px 0; display:flex; justify-content:space-between; align-items:center; gap:16px; cursor:pointer; text-align:left; font-size:1rem; font-weight:600; color:#111827; }
+.faq-question svg { width:20px; height:20px; flex-shrink:0; color:#6b7280; }
+.faq-answer { padding:0 0 20px; font-size:0.9375rem; line-height:1.7; color:#6b7280; }
+.faq-answer p { margin:0 0 8px; }
+.faq-answer p:last-child { margin:0; }

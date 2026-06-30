@@ -1,0 +1,211 @@
+/* ============================================================
+   Header — dark background, matches screenshot
+   ============================================================ */
+
+header.header {
+  background: none !important;
+}
+
+.header-main {
+  background: #1C1C28;
+  padding: 18px 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.header-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Logo */
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+/* ---- Nav ---- */
+.menu-area ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.menu-area ul .nav-item > a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.menu-area ul .nav-item > a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.dropdown-chevron {
+  width: 10px;
+  height: 6px;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+
+/* Dropdown */
+.nav-item.has-dropdown {
+  position: relative;
+}
+
+.nav-item .dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  background: #252535;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  min-width: 180px;
+  padding: 6px;
+  list-style: none;
+  margin: 0;
+  z-index: 200;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+.nav-item .dropdown li a {
+  display: block;
+  padding: 8px 12px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background 0.1s, color 0.1s;
+}
+
+.nav-item .dropdown li a:hover {
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+}
+
+/* ---- Desktop CTAs ---- */
+.cta-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.cta-join-beta {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.cta-join-beta:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.cta-lets-chat {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 18px;
+  border-radius: 6px;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* ---- Hamburger ---- */
+.mobile-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.mobile-toggle span {
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* ---- Mobile menu ---- */
+.mobile-menu {
+  position: fixed;
+  top: 65px;
+  left: 0;
+  right: 0;
+  background: #1C1C28;
+  z-index: 999;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.mobile-menu-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.mobile-menu .menu-clone ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.mobile-menu .menu-clone ul li a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.mobile-menu .cta-clone {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ---- Responsive ---- */
+@media screen and (max-width: 991px) {
+  .menu-area,
+  .header-main .cta-area {
+    display: none;
+  }
+  .mobile-toggle {
+    display: flex;
+  }
+}

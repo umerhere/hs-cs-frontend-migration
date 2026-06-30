@@ -1,0 +1,12 @@
+.contact-form-section { background:#fff; padding:70px 0; }
+.contact-form-wrapper { max-width:640px; margin:0 auto; }
+.contact-form { display:flex; flex-direction:column; gap:20px; }
+.contact-form__row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.contact-form__field { display:flex; flex-direction:column; gap:6px; }
+.contact-form__field label { font-size:14px; font-weight:600; color:#374151; }
+.contact-form__field input,.contact-form__field textarea { border:1px solid #d1d5db; border-radius:6px; padding:10px 14px; font-size:1rem; font-family:inherit; transition:border 0.15s; }
+.contact-form__field input:focus,.contact-form__field textarea:focus { outline:none; border-color:#00C6B2; box-shadow:0 0 0 3px rgba(0,198,178,0.15); }
+.contact-form__field textarea { resize:vertical; }
+.contact-form__submit { align-self:flex-start; }
+.contact-form__success-note { margin-top:16px; font-size:13px; color:#9ca3af; }
+@media(max-width:575px){ .contact-form__row { grid-template-columns:1fr; } }
