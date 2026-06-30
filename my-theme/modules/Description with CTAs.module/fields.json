@@ -1,0 +1,230 @@
+[ {
+  "id" : "0c0bf6e7-c4d1-f5ef-2c30-83223ad32fcd",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "993e84fd-035b-1455-95d0-99914adc9686",
+    "name" : "section_bg",
+    "label" : "Section BG",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "white", "White" ], [ "light", "Light" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "white"
+  }, {
+    "id" : "5817a5d0-d541-b140-0d7d-3eaf2e734bb3",
+    "name" : "desktop_spacings",
+    "label" : "Desktop Spacings",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "display_width" : null,
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 70,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 70,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : 0,
+          "units" : "px"
+        },
+        "right" : {
+          "value" : 0,
+          "units" : "px"
+        }
+      }
+    }
+  }, {
+    "id" : "f9297074-c788-45f1-a33c-b2815606082b",
+    "name" : "mobile_spacings",
+    "label" : "Mobile Spacings",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "display_width" : null,
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 50,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 50,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : 0,
+          "units" : "px"
+        },
+        "right" : {
+          "value" : 0,
+          "units" : "px"
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "section_bg" : "white",
+    "desktop_spacings" : {
+      "padding" : {
+        "top" : {
+          "value" : 70,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 70,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : 0,
+          "units" : "px"
+        },
+        "right" : {
+          "value" : 0,
+          "units" : "px"
+        }
+      }
+    },
+    "mobile_spacings" : {
+      "padding" : {
+        "top" : {
+          "value" : 50,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 50,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : 0,
+          "units" : "px"
+        },
+        "right" : {
+          "value" : 0,
+          "units" : "px"
+        }
+      }
+    }
+  }
+}, {
+  "id" : "c281cfa6-c647-5cda-0b70-fb6ed37ec98e",
+  "name" : "heading",
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Ready to Protect Your HubSpot Content?"
+}, {
+  "id" : "b9a74d10-5e43-661a-a14d-b0aa1ca3be79",
+  "name" : "description",
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>Join hundreds of teams who trust Smuves to keep their HubSpot content safe and recoverable.</p>"
+}, {
+  "id" : "2a684414-2e33-b6c4-0117-c130698fddee",
+  "name" : "cta_item_group",
+  "label" : "CTA Item Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 2,
+    "sorting_label_field" : "2e74bba5-63ea-ffea-7627-af63f548ec1d",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "594833d2-2665-ff43-8615-08c5d6126a2b",
+    "name" : "cta_style",
+    "label" : "CTA Style",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "cta-white-primary", "White Primary" ], [ "cta-white-secondary", "White Secondary" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "cta-white-primary"
+  }, {
+    "id" : "4384f043-d19b-3fe2-8665-867b3f6ed57d",
+    "name" : "has_icon_",
+    "label" : "Has Icon?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : false
+  }, {
+    "id" : "dbdb2f59-98a2-1d09-c8d9-7792d15c6b47",
+    "name" : "cta_link",
+    "label" : "CTA Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "display_width" : null,
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "2e74bba5-63ea-ffea-7627-af63f548ec1d",
+    "name" : "cta_text",
+    "label" : "CTA Text",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Start Free Trial"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "cta_style" : "cta-white-primary",
+    "has_icon_" : false,
+    "cta_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "cta_text" : "Start Free Trial"
+  } ]
+} ]

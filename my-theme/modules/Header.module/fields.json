@@ -1,0 +1,56 @@
+[ {
+  "id" : "b898baed-35c1-ae2b-420c-632bc1ce5df3",
+  "name" : "logo",
+  "label" : "Logo",
+  "required" : false,
+  "locked" : true,
+  "show_loading" : false,
+  "type" : "logo",
+  "display_width" : null,
+  "default" : {
+    "override_inherited_src" : true,
+    "src" : "https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/Smuves/logo.png",
+    "alt" : "logo",
+    "suppress_company_name" : true,
+    "width" : 150,
+    "height" : 25
+  }
+}, {
+  "id" : "5be99e7d-850f-0b11-7871-75019a5f4ed4",
+  "name" : "menu",
+  "label" : "Menu",
+  "required" : false,
+  "locked" : true,
+  "type" : "menu",
+  "display_width" : null,
+  "default" : 193111680407
+}, {
+  "id" : "88dca173-9d5d-a1ec-b41b-6580992d2e49",
+  "name" : "cta_link",
+  "label" : "CTA Link",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "display_width" : null,
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "662083de-36b4-27b3-63a9-31160d7434d4",
+  "name" : "cta_text",
+  "label" : "CTA Text",
+  "required" : false,
+  "locked" : true,
+  "allow_new_line" : false,
+  "type" : "text",
+  "display_width" : null,
+  "default" : "Login To Our Website"
+} ]

@@ -1,0 +1,28 @@
+<div class="footer-main">
+  <div class="page-center">
+    <div class="footer-top">
+      <div class="footer-col info-area">
+        {% set loadingAttr = module.footer_top.info_area.logo.loading != 'disabled' ? '{{ module.footer_top.info_area.logo.loading }}' : '' %}
+        {% logo
+          override_inherited_src="{{ module.footer_top.info_area.logo.override_inherited_src }}"
+          src="{{ module.footer_top.info_area.logo.src }}"
+          alt="{{ module.footer_top.info_area.logo.alt }}"
+          width="{{ module.footer_top.info_area.logo.width }}"
+          height="{{ module.footer_top.info_area.logo.height }}"
+          loading="{{ loadingAttr }}"
+          suppress_company_name="{{ module.footer_top.info_area.logo.suppress_company_name }}"
+        %}
+        {{ module.footer_top.info_area.description }}
+      </div>
+      {% for item in module.footer_top.footer_links_column %}
+      <div class="footer-col">
+        {% if item.heading %}<h4>{{ item.heading }}</h4>{% endif %}
+        {% menu id="{{ item.footer_menu }}" %}
+      </div>
+      {% endfor %}      
+    </div>
+    <div class="footer-bottom">
+      {{ module.copyright }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+[ {
+  "id" : "a52343db-9d5a-e206-b544-23a3958f0731",
+  "name" : "hubdbtable_field",
+  "label" : "HubDB table",
+  "required" : false,
+  "locked" : false,
+  "placeholder" : "Reservations",
+  "type" : "hubdbtable",
+  "display_width" : null,
+  "default" : 2534568674
+} ]

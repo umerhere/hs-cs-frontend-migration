@@ -1,0 +1,141 @@
+[ {
+  "id" : "cef0731b-62e1-0447-3cec-cf306f281d65",
+  "name" : "footer_top",
+  "label" : "Footer Top",
+  "required" : false,
+  "locked" : true,
+  "children" : [ {
+    "id" : "30ef81bc-e697-7288-a39e-7577c8ad6b59",
+    "name" : "info_area",
+    "label" : "Info Area",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "6ed811ae-0fce-93d7-22af-548ec4ccf43b",
+      "name" : "logo",
+      "label" : "Logo",
+      "required" : false,
+      "locked" : false,
+      "show_loading" : false,
+      "type" : "logo",
+      "display_width" : null,
+      "default" : {
+        "override_inherited_src" : true,
+        "src" : "https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/Smuves/logo.png",
+        "alt" : "logo",
+        "suppress_company_name" : true,
+        "width" : 150,
+        "height" : 25
+      }
+    }, {
+      "id" : "43d163ce-9b96-aca4-c361-07e9a73df3d9",
+      "name" : "description",
+      "label" : "Description",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "display_width" : null,
+      "default" : "<p>The safest way to backup and manage your HubSpot content.</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "logo" : {
+        "override_inherited_src" : true,
+        "src" : "https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/Smuves/logo.png",
+        "alt" : "logo",
+        "suppress_company_name" : true,
+        "width" : 150,
+        "height" : 25
+      },
+      "description" : "<p>The safest way to backup and manage your HubSpot content.</p>"
+    }
+  }, {
+    "id" : "ffb6985e-45c9-2a02-c087-aa4b175b72ce",
+    "name" : "footer_links_column",
+    "label" : "Footer Links Column",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : 3,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "17c0aa01-4766-0980-6abe-46899067b03d",
+      "name" : "heading",
+      "label" : "Heading",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Product"
+    }, {
+      "id" : "4971ae87-28c3-c704-bc5c-c5b88ef06516",
+      "name" : "footer_menu",
+      "label" : "Footer Menu",
+      "required" : false,
+      "locked" : false,
+      "type" : "menu",
+      "display_width" : null,
+      "default" : 193127183697
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "heading" : "Product",
+      "footer_menu" : 193127183697
+    }, {
+      "heading" : "Product",
+      "footer_menu" : 193127183697
+    }, {
+      "heading" : "Product",
+      "footer_menu" : 193127183697
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "info_area" : {
+      "logo" : {
+        "override_inherited_src" : true,
+        "src" : "https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/Smuves/logo.png",
+        "alt" : "logo",
+        "suppress_company_name" : true,
+        "width" : 150,
+        "height" : 25
+      },
+      "description" : "<p>The safest way to backup and manage your HubSpot content.</p>"
+    },
+    "footer_links_column" : [ {
+      "heading" : "Product",
+      "footer_menu" : 193127183697
+    }, {
+      "heading" : "Product",
+      "footer_menu" : 193127183697
+    }, {
+      "heading" : "Product",
+      "footer_menu" : 193127183697
+    } ]
+  }
+}, {
+  "id" : "0269eef6-0170-2410-3916-6e3610906cfc",
+  "name" : "copyright",
+  "label" : "Copyright",
+  "required" : false,
+  "locked" : true,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<p>© {{ year }} Smuves. All rights reserved.</p>"
+} ]

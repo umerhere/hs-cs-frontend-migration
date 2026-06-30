@@ -1,0 +1,51 @@
+<section class="desc-cta-section">
+  <div class="page-center">
+    <div class="desc-cta-main primary-gradient">
+      {% if module.heading %}<h2>{{ module.heading }}</h2>{% endif %}
+      {% if module.description %}{{ module.description }}{% endif %}
+      <div class="cta-area">
+        {% for item in module.cta_item_group %}
+        {% set href = item.cta_link.url.href %}
+        {% if item.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% elif item.cta_link.url.type is equalto "PHONE_NUMBER" %}
+        {% set href = "tel:" + href %}
+        {% endif %}
+        <a
+           {% if item.cta_link.url.type is equalto "CALL_TO_ACTION"  %}
+           href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+           {% else %}
+           href="{{ href|escape_url }}"
+           {% endif %}
+           {% if item.cta_link.open_in_new_tab %}
+           target="_blank"
+           {% endif %}
+           {% if item.cta_link.rel %}
+           rel="{{ item.cta_link.rel|escape_attr }}"
+           {% endif %}
+           class="{{ item.cta_style }}"
+           >
+          {% if item.has_icon_ %}
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          {% endif %}
+          {{ item.cta_text }}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  {% scope_css %}
+  .desc-cta-section{
+    {{ module.style.desktop_spacings.css }};
+     background: {{ module.style.section_bg == "white" ? '#FAFAFA' : '#F5F7FA' }};
+  }
+  @media (max-width: 767px){
+    .desc-cta-section{
+      {{ module.style.mobile_spacings.css }}
+    }
+  }
+  {% end_scope_css %}
+</style>

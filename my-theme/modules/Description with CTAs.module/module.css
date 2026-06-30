@@ -1,0 +1,38 @@
+.desc-cta-main{
+  padding: 48px 48px;
+  border-radius:  16px;
+  text-align: center;
+}
+.desc-cta-main h2{
+  color: #fff;
+  margin-bottom: 16px;
+}
+.desc-cta-main p{
+  color: #fff;
+  line-height: 28px;
+  max-width: 672px;
+  width: 100%;
+  margin: 0 auto 32px;
+}
+.desc-cta-main .cta-area{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.desc-cta-main .cta-area a{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.desc-cta-main .cta-area svg{
+  width: 16px;
+  height: 16px;
+}
+@media (max-width: 767px){
+  .desc-cta-main .cta-area {
+    flex-wrap: wrap;
+  }
+  .desc-cta-main {
+    padding: 48px 30px;
+  }
+}

@@ -1,0 +1,68 @@
+.primary-gradient{
+  background: linear-gradient(90deg,rgba(0, 198, 178, 1) 0%, rgba(0, 131, 255, 1) 100%);
+}
+.primary-gradient-cta{
+  background: linear-gradient(90deg,rgba(0, 198, 178, 1) 0%, rgba(0, 131, 255, 1) 100%);
+  transition: 0.3s ease-in-out;
+}
+.primary-gradient-cta:hover{
+  background: linear-gradient(90deg,rgba(0, 131, 255, 1) 0%, rgba(0, 198, 178, 1) 100%);
+}
+.secondary-midnight-blue{
+  background: #1C1C28;
+}
+.secondary-teal{
+  background: #00C6B2;
+}
+.snow-white{
+  background: #FAFAFA;
+}
+.mint{
+  background: #E0FBFC;
+}
+.neutral-gray{
+  background: #F5F7FA;
+}
+.cta-white-primary{
+  background: #fff;
+  padding: 12px 32px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2563eb;
+  border: #fff solid 1px;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+.cta-white-primary:hover,
+.cta-white-primary:focus,
+.cta-white-primary:active{
+  background: #f3f4f6;
+  text-decoration: none;
+}
+.cta-white-secondary{
+  background: transparent;
+  padding: 12px 32px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  border: #fff solid 1px;
+  text-decoration: none;
+}
+.cta-white-secondary:hover,
+.cta-white-secondary:focus,
+.cta-white-secondary:active{
+  background: #fff;
+  color: #2563eb;
+  text-decoration: none;
+}
+h1{
+  line-height: 60px
+}
+@media (max-width: 767px){
+  h1{
+    font-size: 48px;
+  }
+}

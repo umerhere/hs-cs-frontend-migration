@@ -1,0 +1,40 @@
+<section class="hero-section">
+  <div class="page-center">
+    {% if module.eyebrow_area.eyebrow %}
+    <div class="eyebrow-area">
+      <div class="pill">
+        <span>{{ module.eyebrow_area.svg }}</span>
+        <span>{{ module.eyebrow_area.eyebrow }}</span>
+      </div>
+    </div>
+    {% endif %}
+    <div class="heading-area">
+      {% if module.heading %}<h1>{{ module.heading }}</h1>{% endif %}
+      {% if module.description %}{{ module.description }}{% endif %}
+    </div>
+    <div class="checklist-area">
+      {% for item in module.checklist_area %}
+      <div class="checklist">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"></path><path d="m9 11 3 3L22 4"></path></svg>
+        <span>{{ item.checklist_text }}</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<style>
+  {% scope_css %}
+  .hero-section{
+    background: {{ module.style.background_color.color }};
+    {{ module.style.desktop_spacings.css }}
+  }
+  .pill{
+    background: {{ module.eyebrow_area.pill_color.color }};
+  }
+  @media (max-width: 767px){
+    .hero-section{
+      {{ module.style.mobile_spacings.css }}
+    }
+  }
+  {% end_scope_css %}    
+</style>

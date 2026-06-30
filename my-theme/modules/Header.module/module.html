@@ -1,0 +1,89 @@
+<div class="header-main">
+  <div class="page-center">
+    <div class="header-holder">
+      <div class="logo">
+        {% set loadingAttr = module.logo.loading != 'disabled' ? '{{ module.logo.loading }}' : '' %}
+        {% logo
+          override_inherited_src="{{ module.logo.override_inherited_src }}"
+          src="{{ module.logo.src }}"
+          alt="{{ module.logo.alt }}"
+          width="{{ module.logo.width }}"
+          height="{{ module.logo.height }}"
+          loading="{{ loadingAttr }}"
+          suppress_company_name="{{ module.logo.suppress_company_name }}"
+        %}
+      </div>
+      <div class="menu-area">
+        {% menu id="{{ module.menu }}" %}
+      </div>
+      {% if module.cta_text %}
+      <div class="cta-area">
+        {% set href = module.cta_link.url.href %}
+        {% if module.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% elif module.cta_link.url.type is equalto "PHONE_NUMBER" %}
+        {% set href = "tel:" + href %}
+        {% endif %}
+        <a
+           {% if module.cta_link.url.type is equalto "CALL_TO_ACTION"  %}
+           href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+           {% else %}
+           href="{{ href|escape_url }}"
+           {% endif %}
+           {% if module.cta_link.open_in_new_tab %}
+           target="_blank"
+           {% endif %}
+           {% if module.cta_link.rel %}
+           rel="{{ module.cta_link.rel|escape_attr }}"
+           {% endif %}
+           class="primary-gradient-cta"
+           >
+          {{ module.cta_text }}
+        </a>
+      </div>
+      {% endif %}
+
+
+
+
+      <!-- Hamburger icon for mobile -->
+      <div class="mobile-toggle" id="mobileToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Mobile menu container -->
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+          <div class="menu-clone">
+            {% menu id="{{ module.menu }}" %}
+          </div>
+          {% if module.cta_text %}
+          <div class="cta-clone">
+            <a
+               {% if module.cta_link.url.type is equalto "CALL_TO_ACTION"  %}
+               href="{{ href }}"
+               {% else %}
+               href="{{ href|escape_url }}"
+               {% endif %}
+               {% if module.cta_link.open_in_new_tab %}
+               target="_blank"
+               {% endif %}
+               {% if module.cta_link.rel %}
+               rel="{{ module.cta_link.rel|escape_attr }}"
+               {% endif %}
+               class="primary-gradient-cta"
+               >
+              {{ module.cta_text }}
+            </a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>

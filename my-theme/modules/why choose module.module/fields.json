@@ -1,0 +1,429 @@
+[ {
+  "id" : "108c32a0-c782-87fb-20bf-95a005e1eb94",
+  "name" : "heading_group",
+  "label" : "Heading Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a7d360f0-f16d-83c1-c217-602d4e7519b9",
+    "name" : "heading",
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Why Choose Smuves?"
+  }, {
+    "id" : "bde01cd5-118b-b1c4-07a6-da06f32e4ba1",
+    "name" : "description",
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p>Built specifically for HubSpot users who need reliable backup and safe content management.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "heading" : "Why Choose Smuves?",
+    "description" : "<p>Built specifically for HubSpot users who need reliable backup and safe content management.</p>"
+  }
+}, {
+  "id" : "a47f0fe7-03ba-059b-6c20-83036dc85775",
+  "name" : "enable_list",
+  "label" : "Enable List",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "3889f700-8748-fbb3-8b11-86eb0ec5ad1f",
+  "name" : "list_item",
+  "label" : "List Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_list",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "73da4bf9-2e38-1d38-53a9-6064faeef008",
+    "name" : "heading",
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Automatic Daily Backups"
+  }, {
+    "id" : "2b4f3967-f4d4-3662-5c9f-c6a0a82b80f4",
+    "name" : "description",
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "display_width" : null,
+    "default" : "<p>Schedule automatic backups to Google Sheets with change detection. Only backup what's changed to save space and time.</p>"
+  }, {
+    "id" : "ba3fb7bf-ffaf-84e5-5cb2-68495ef0a0bb",
+    "name" : "svg_code",
+    "label" : "SVG Code",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-database w-6 h-6 text-blue-600\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M3 5V19A9 3 0 0 0 21 19V5\"></path><path d=\"M3 12A9 3 0 0 0 21 12\"></path></svg>"
+  }, {
+    "id" : "35144f0c-a1be-bba3-f1e7-c2286c04beea",
+    "name" : "box_bg_color",
+    "label" : "Box BG Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "blue", "Blue" ], [ "green", "Green" ], [ "purple", "Purple" ], [ "orange", "Orange" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "blue"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : [ {
+    "heading" : "Automatic Daily Backups",
+    "description" : "<p>Schedule automatic backups to Google Sheets with change detection. Only backup what's changed to save space and time.</p>",
+    "svg_code" : "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-database w-6 h-6 text-blue-600\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M3 5V19A9 3 0 0 0 21 19V5\"></path><path d=\"M3 12A9 3 0 0 0 21 12\"></path></svg>",
+    "box_bg_color" : "blue"
+  } ]
+}, {
+  "id" : "95ef2ddb-3dd6-ebea-4221-28f44f5661e9",
+  "name" : "enable_testimonial",
+  "label" : "Enable Testimonial",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "display_width" : null,
+  "default" : true
+}, {
+  "id" : "e090aecd-1621-1298-e4e5-1ef88ed3bc86",
+  "name" : "testimonial_content",
+  "label" : "Testimonial Content",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "enable_testimonial",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "b56f15a4-44fd-d6cd-8f1c-e2bd39c0383f",
+    "name" : "testimonial_text",
+    "label" : "Testimonial Text",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "\"Smuves saved us when we accidentally deleted our entire homepage. One-click restore and we were back online in minutes!\""
+  }, {
+    "id" : "c7de734f-0ed4-4b4a-001c-d8735134bd69",
+    "name" : "author_name_designation",
+    "label" : "Author Name & designation",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "— Sarah Chen, Marketing Director"
+  }, {
+    "id" : "02063e17-3ae9-a1fb-65dc-77cb00e5ae4f",
+    "name" : "ratings_text",
+    "label" : "Ratings Text",
+    "required" : false,
+    "locked" : false,
+    "allow_new_line" : false,
+    "type" : "text",
+    "display_width" : null,
+    "default" : "Trusted by 500+ HubSpot users"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "testimonial_text" : "\"Smuves saved us when we accidentally deleted our entire homepage. One-click restore and we were back online in minutes!\"",
+    "author_name_designation" : "— Sarah Chen, Marketing Director",
+    "ratings_text" : "Trusted by 500+ HubSpot users"
+  }
+}, {
+  "id" : "21f611a3-c541-3a28-0085-27439d458879",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6a43cba2-7d3e-2a64-dd82-ca825edb3b87",
+    "name" : "section_bg",
+    "label" : "Section BG",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "white", "white" ], [ "light", "light" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "white"
+  }, {
+    "id" : "c538afe6-ea1f-2928-e23f-e6884f1c584d",
+    "name" : "desktop_spacing",
+    "label" : "Desktop Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "display_width" : null,
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 80,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 80,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  }, {
+    "id" : "dcffd48a-1ede-f1e8-2521-d3422f794fc1",
+    "name" : "mobile_spacing",
+    "label" : "Mobile Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "display_width" : null,
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 48,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 48,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "section_bg" : "white",
+    "desktop_spacing" : {
+      "padding" : {
+        "top" : {
+          "value" : 80,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 80,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    },
+    "mobile_spacing" : {
+      "padding" : {
+        "top" : {
+          "value" : 48,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 48,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  }
+}, {
+  "id" : "07cddde4-2d05-ce63-e99c-0d630e4f2b4d",
+  "name" : "right_column_content",
+  "label" : "Right Column Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c86d67be-765b-1581-7bfe-5b8077d5da8c",
+    "name" : "image_field",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "display_width" : null,
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/mian.jpeg",
+      "alt" : "mian",
+      "loading" : "lazy",
+      "width" : 1600,
+      "height" : 1190,
+      "max_width" : 1600,
+      "max_height" : 1190
+    }
+  }, {
+    "id" : "b6196431-3e42-45f6-2c20-f5588769d832",
+    "name" : "enable_bottom_content",
+    "label" : "Enable Bottom Content",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
+  }, {
+    "id" : "f2363ad9-d945-4bcf-7086-45f0002d6cd4",
+    "name" : "bottom_content",
+    "label" : "Bottom Content",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : 3,
+      "sorting_label_field" : null,
+      "default" : 1
+    },
+    "children" : [ {
+      "id" : "64bef341-6b68-8ca1-94bd-03bdece9255a",
+      "name" : "heading_text",
+      "label" : "Heading Text",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "2min"
+    }, {
+      "id" : "97428e54-e70f-d7f6-8dec-d692a816cfc7",
+      "name" : "description_text",
+      "label" : "Description Text",
+      "required" : false,
+      "locked" : false,
+      "allow_new_line" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "Setup Time"
+    }, {
+      "id" : "15669dce-10e0-64ae-c31e-4e02b546dafc",
+      "name" : "box_bg_color",
+      "label" : "Box BG Color",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "blue", "Blue" ], [ "green", "Green" ], [ "purple", "Purple" ], [ "orange", "Orange" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "blue"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : [ {
+      "heading_text" : "2min",
+      "description_text" : "Setup Time",
+      "box_bg_color_copy" : "blue"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "display_width" : null,
+  "default" : {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/mian.jpeg",
+      "alt" : "mian",
+      "loading" : "lazy",
+      "width" : 1600,
+      "height" : 1190,
+      "max_width" : 1600,
+      "max_height" : 1190
+    },
+    "enable_bottom_content" : true,
+    "bottom_content" : [ {
+      "heading_text" : "2min",
+      "description_text" : "Setup Time",
+      "box_bg_color_copy" : "blue"
+    } ]
+  }
+} ]

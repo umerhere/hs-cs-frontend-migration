@@ -1,0 +1,17 @@
+<h1>
+  Showing List of all reservations
+</h1>
+<small>
+Total: 4</small>
+{% set rows = hubdb_table_rows(module.hubdb_table, "") %}
+
+<table>
+  <tbody>
+    {% for row in rows %}
+      <tr>
+        <td>{{ row.name }}</td>
+        <td>{{ row.start_date }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

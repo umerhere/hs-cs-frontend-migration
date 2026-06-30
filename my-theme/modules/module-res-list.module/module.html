@@ -1,0 +1,21 @@
+{% set rows = hubdb_table_rows(module.reservation_table_section, "") %}
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+    <tr>
+      <td>{{ row.name }}</td>
+      <td>{{ row.start_date }}</td>
+      <td>{{ row.end_date }}</td>
+      
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
