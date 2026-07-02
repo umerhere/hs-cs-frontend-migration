@@ -1,0 +1,223 @@
+{
+  "_comment": "homepage.assets.json — complete asset manifest for my-theme/templates/home.html. All URLs and local paths are exactly as referenced in the source templates. Missing any of these will cause visual drift.",
+
+  "images": [
+    {
+      "id": "logo",
+      "usage": ["header", "footer"],
+      "description": "Primary Smuves brand logo — used in both Header.module and Footer.module",
+      "source": "hubspot_cdn",
+      "url": "https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/Smuves/logo.png",
+      "local_path": null,
+      "width_px": 150,
+      "height_px": 25,
+      "alt": "logo",
+      "loading": "eager",
+      "format": "png",
+      "notes": "override_inherited_src=true, suppress_company_name=true. Same file used in both header and footer."
+    },
+    {
+      "id": "grayscale_mountain_placeholder",
+      "usage": [
+        "section_1_hero_left_column",
+        "section_2_multi_row_right_column",
+        "section_3_two_col_image_left_column",
+        "section_5_multi_col_col1_row1",
+        "section_5_multi_col_col2_row1",
+        "section_5_multi_col_col3_row1"
+      ],
+      "description": "Grayscale geometric mountain placeholder — default image used in all @hubspot/linked_image modules across the homepage",
+      "source": "local_theme",
+      "url": null,
+      "local_path": "my-theme/images/grayscale-mountain.png",
+      "hubspot_asset_url": "{{ get_asset_url('../images/grayscale-mountain.png') }}",
+      "max_width_px": 605,
+      "max_height_px": 451,
+      "size_type": "auto_custom_max",
+      "alt": "Stock placeholder image with grayscale geometrical mountain landscape",
+      "loading_section_1": "eager",
+      "loading_sections_3_5": "lazy",
+      "format": "png",
+      "notes": "Replace with real content images in React. Preserve max-width:605px max-height:451px constraints."
+    },
+    {
+      "id": "cta_background_image",
+      "usage": ["section_4_call_to_action_background"],
+      "description": "Full-bleed background image for the Call to Action section",
+      "source": "local_theme",
+      "url": null,
+      "local_path": "my-theme/images/large-placeholder-image.png",
+      "hubspot_asset_url": "{{ get_asset_url('../images/large-placeholder-image.png') }}",
+      "css_rule": "background-image: url(...); background-position: center center; background-size: cover",
+      "alt": null,
+      "loading": "css_background",
+      "format": "png",
+      "notes": "Used as CSS background-image on the dnd-section wrapper, not an <img> tag. Cover + center position must be preserved."
+    },
+    {
+      "id": "hero_banner_preview",
+      "usage": ["template_preview_only"],
+      "description": "Template preview screenshot — not rendered on the live page",
+      "source": "local_theme",
+      "url": null,
+      "local_path": "my-theme/images/template-previews/home.png",
+      "format": "png",
+      "notes": "HubSpot Design Manager preview only — not used in React."
+    },
+    {
+      "id": "hero_banner_section_preview",
+      "usage": ["section_preview_only"],
+      "source": "local_theme",
+      "local_path": "my-theme/images/section-previews/hero-banner.png",
+      "format": "png",
+      "notes": "Design Manager section preview only."
+    },
+    {
+      "id": "multi_row_section_preview",
+      "usage": ["section_preview_only"],
+      "source": "local_theme",
+      "local_path": "my-theme/images/section-previews/multi-row-content.png",
+      "format": "png",
+      "notes": "Design Manager section preview only."
+    },
+    {
+      "id": "cta_section_preview",
+      "usage": ["section_preview_only"],
+      "source": "local_theme",
+      "local_path": "my-theme/images/section-previews/call-to-action.png",
+      "format": "png",
+      "notes": "Design Manager section preview only."
+    },
+    {
+      "id": "multi_col_section_preview",
+      "usage": ["section_preview_only"],
+      "source": "local_theme",
+      "local_path": "my-theme/images/section-previews/multi-column-content.png",
+      "format": "png",
+      "notes": "Design Manager section preview only."
+    }
+  ],
+
+  "fonts": [
+    {
+      "id": "body_font",
+      "usage": ["all_sections"],
+      "description": "Primary body typeface — driven by HubSpot theme settings (theme.body_font). Actual font family is stored in the HubSpot portal, not in this repo.",
+      "source": "hubspot_theme_variable",
+      "variable": "theme.body_font.font",
+      "notes": "Export the font-family value from the HubSpot portal theme settings. Apply to: body, p, all default text."
+    },
+    {
+      "id": "heading_fonts_h1_h6",
+      "usage": ["all_sections"],
+      "description": "Heading typefaces h1–h6 — each individually driven by theme variables",
+      "source": "hubspot_theme_variable",
+      "variables": {
+        "h1": "theme.h1_font.font",
+        "h2": "theme.h2_font.font",
+        "h3": "theme.h3_font.font",
+        "h4": "theme.h4_font.font",
+        "h5": "theme.h5_font.font",
+        "h6": "theme.h6_font.font"
+      },
+      "notes": "Check portal theme settings to get exact font families and sizes."
+    },
+    {
+      "id": "button_font",
+      "usage": ["section_4_cta_button", "header_cta"],
+      "source": "hubspot_theme_variable",
+      "variable": "theme.button_font",
+      "notes": "Header CTA button: 16px, weight 700, color #fff (hardcoded in Header.module/module.css). CTA section button: theme-driven."
+    }
+  ],
+
+  "icons": [
+    {
+      "id": "hamburger_icon",
+      "usage": ["header_mobile_toggle"],
+      "description": "Mobile hamburger — three horizontal <span> bars, no SVG",
+      "type": "css_spans",
+      "dom": "<div class='mobile-toggle'><span></span><span></span><span></span></div>",
+      "span_styles": {
+        "height": "3px",
+        "background": "#000",
+        "border_radius": "3px",
+        "container_width": "24px",
+        "container_height": "18px"
+      },
+      "notes": "Pure CSS — no image file."
+    },
+    {
+      "id": "eyebrow_svg_icon",
+      "usage": ["hero_module_eyebrow_badge"],
+      "description": "16×16px SVG check/badge icon inside the Hero module eyebrow pill",
+      "type": "inline_svg",
+      "width_px": 16,
+      "height_px": 16,
+      "source": "modules/Hero.module/module.html",
+      "notes": "Rendered inline by Hero.module — not currently on the default homepage (Hero.module is not used by hero-banner.html). Extract from module.html if Hero module is deployed."
+    },
+    {
+      "id": "checklist_check_svg",
+      "usage": ["hero_module_checklist_items"],
+      "description": "16×16px SVG checkmark icon for each checklist item in the Hero module",
+      "type": "inline_svg",
+      "width_px": 16,
+      "height_px": 16,
+      "stroke_color": "#22c55e",
+      "source": "modules/Hero.module/module.html",
+      "notes": "Rendered inline by Hero.module — not on default homepage unless Hero.module is active."
+    }
+  ],
+
+  "background_images": [
+    {
+      "id": "cta_section_bg",
+      "usage": ["section_4_call_to_action"],
+      "local_path": "my-theme/images/large-placeholder-image.png",
+      "css_property": "background-image",
+      "applied_to": "div.dnd-section (Section 4)",
+      "background_position": "center center",
+      "background_size": "cover",
+      "notes": "Applied via inline style on the dnd-section element. Not an <img> tag."
+    }
+  ],
+
+  "videos": [],
+
+  "external_data_dependencies": [
+    {
+      "id": "hubspot_menu_header",
+      "usage": ["header_navigation"],
+      "type": "hubspot_portal_menu",
+      "menu_id": "193111680407",
+      "in_repo": false,
+      "notes": "Navigation links (text + URLs) — stored in HubSpot portal menu. Must be re-created in Contentstack or hardcoded for React."
+    },
+    {
+      "id": "hubspot_menu_footer",
+      "usage": ["footer_link_columns"],
+      "type": "hubspot_portal_menu",
+      "menu_id": "193127183697",
+      "in_repo": false,
+      "notes": "Footer link columns — all three columns use this same menu ID by default. Must be re-created in Contentstack."
+    }
+  ],
+
+  "javascript": [
+    {
+      "id": "main_js",
+      "usage": ["header_mobile_toggle"],
+      "local_path": "my-theme/js/main.js",
+      "description": "Vanilla JS IIFE — mobile nav/lang/search toggles for original commented-out header. Not needed in React (replace with React state).",
+      "needed_in_react": false
+    },
+    {
+      "id": "jquery",
+      "usage": ["header_module_slideToggle"],
+      "source": "hubspot_standard_footer_includes",
+      "description": "jQuery injected by HubSpot platform — used by Header.module/module.js for slideToggle. Replace with React state in migration.",
+      "needed_in_react": false
+    }
+  ]
+}

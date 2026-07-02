@@ -1,0 +1,112 @@
+/* ============================================================
+   HeroV1 — reusable hero component
+   Source: module_Hero_v1.min.css + scoped inline styles
+   Uses CSS custom properties injected via style prop
+   ============================================================ */
+
+section.herov1-section {
+  position: relative;
+  text-align: center;
+  padding-top: var(--pt, 190px);
+  padding-right: 0;
+  padding-bottom: var(--pb, 120px);
+  padding-left: 0;
+  background: url(https://www.smuves.com/hubfs/Website/background%20home.png) no-repeat;
+  background-size: cover;
+}
+
+.herov1-main {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.herov1-main.left  { margin-left: 0; text-align: left; }
+.herov1-main.right { margin-right: 0; text-align: right; }
+.herov1-main.center { text-align: center; }
+
+section.herov1-section p.top-label {
+  border-radius: 5px;
+  color: #e0fbfc;
+  display: inline;
+  font-size: 12px;
+  margin: 0;
+  padding: 2px 5px;
+}
+section.herov1-section h1 {
+  color: #e0fbfc;
+  position: relative;
+  z-index: 10;
+  margin-top: 10px;
+}
+section.herov1-section h1 span { color: #1c1c28; }
+.herov1-header p {
+  color: #e0fbfc;
+  position: relative;
+  z-index: 10;
+}
+.herov1-main .cta-area { margin: 30px 0; }
+
+/* Image placement */
+section.herov1-section .page-center.none .herov1-img { display: none; }
+section.herov1-section .page-center.left,
+section.herov1-section .page-center.right {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+section.herov1-section .page-center.left .herov1-img,
+section.herov1-section .page-center.left .herov1-main,
+section.herov1-section .page-center.right .herov1-img,
+section.herov1-section .page-center.right .herov1-main { width: 50%; }
+section.herov1-section .page-center.left { flex-direction: row-reverse; gap: 40px; }
+
+/* Floating listing card */
+.hero-listing {
+  background: url(https://www.smuves.com/hubfs/Website/Arrow.svg) #fff no-repeat 100% 0;
+  background-position: 98% 6%;
+  border-radius: 18px;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 100%;
+  transform: translate(-50%, -60%);
+  width: 500px;
+  z-index: 10;
+}
+.hero-listing ul { list-style: none; margin: 0; padding: 0; text-align: left; }
+.hero-listing li {
+  padding: 10px 0 10px 30px;
+  position: relative;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  color: #1c1c28;
+}
+.hero-listing li::before {
+  background: url(https://www.smuves.com/hubfs/Website/list.svg) no-repeat;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+}
+
+@media (max-width: 1180px) { .herov1-main { max-width: 600px !important; } }
+@media (max-width: 1040px) {
+  section.herov1-section .page-center.left,
+  section.herov1-section .page-center.right { flex-direction: column; gap: 40px; }
+  section.herov1-section .page-center.left .herov1-img,
+  section.herov1-section .page-center.left .herov1-main,
+  section.herov1-section .page-center.right .herov1-img,
+  section.herov1-section .page-center.right .herov1-main { width: 100%; }
+}
+@media (max-width: 991px) { .herov1-main { max-width: 400px !important; } }
+@media (max-width: 767px) {
+  section.herov1-section {
+    position: relative;
+    z-index: 15;
+    padding-top: var(--mpt, 140px);
+    padding-bottom: var(--mpb, 90px);
+  }
+  .herov1-main { max-width: 500px !important; }
+  .hero-listing { transform: translate(-50%, -20%); width: calc(100% - 40px); min-width: 280px; }
+}

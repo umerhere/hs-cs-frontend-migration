@@ -1,0 +1,65 @@
+/* Features page — Panel module styles */
+
+.panel-section { padding: 80px 0; }
+.panel-main .panel-inner { position: relative; z-index: 10; }
+.panel-inner-content { display: flex; align-items: center; margin-bottom: 20px; }
+.panel-inner-content img { border-radius: 14px; background: #e0fbfc; padding: 10px; }
+.panel-inner-heading { margin-left: 20px; }
+.panel-inner-heading h2 { color: #00c6b2; margin: 0; }
+.panel-main .panel-inner {
+  align-items: center;
+  display: grid;
+  gap: 50px;
+  grid-template-areas: "content image";
+  grid-template-columns: 1fr 1fr;
+}
+.panel-content { grid-area: content; }
+.panel-image { grid-area: image; }
+.panel-inner.left { grid-template-areas: "image content"; }
+.panel-inner.right { grid-template-areas: "content image"; }
+.panel-content > p { font-size: 15px; line-height: 1.7; color: #555; margin-bottom: 12px; }
+.panel-content > p:first-of-type { font-weight: 700; color: #1c1c28; }
+
+.panel-boxes {
+  background: #fff;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  padding: 30px 24px;
+  position: relative;
+  z-index: 4;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.panel-boxes-contwnt h4 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #1c1c28;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.panel-boxes-contwnt h4 span { display: inline-flex; align-items: center; }
+.panel-boxes p { margin: 0; font-size: 14px; color: #6b7280; line-height: 1.6; }
+.panel-content .cta-area { margin-top: 30px; }
+
+/* Features CTA (same as product CTA) */
+.features-cta { background: #FAFAFA; padding: 60px 0; }
+.features-cta .desc-cta-main { text-align: center; padding: 70px 40px; border-radius: 24px; }
+.features-cta .desc-cta-main.primary-gradient {
+  background: linear-gradient(135deg, #030213 0%, #1a1a2e 60%, #0a2040 100%);
+}
+.features-cta .desc-cta-main h2 { color: #e0fbfc; margin-bottom: 16px; }
+.features-cta .desc-cta-main p { color: #a8c8d8; font-size: 17px; margin-bottom: 30px; }
+.features-cta .cta-area { display: flex; justify-content: center; }
+
+@media (max-width: 991px) { .panel-checkbox-outer { gap: 0; grid-template-columns: 1fr; } }
+@media (max-width: 767px) {
+  .panel-content { margin-top: 30px; }
+  .panel-main .panel-inner {
+    gap: 0;
+    grid-template-areas: "image" "content";
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  .panel-section { padding: 50px 0; }
+}

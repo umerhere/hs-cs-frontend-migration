@@ -1,0 +1,526 @@
+{
+  "_meta": {
+    "file": "homepage.freeze.spec.json",
+    "source": "my-theme/templates/home.html + all included sections, modules, and CSS files",
+    "purpose": "Frozen build blueprint. This file is the single source of truth for the React migration. Every section, DOM structure, content, and style value is specified here. Build exactly this — no redesign, no simplification.",
+    "react_root": "src/pages/HomePage.tsx",
+    "css_strategy": "Recreate all CSS rules as Tailwind utilities or CSS modules. Global classes (primary-gradient, cta-white-primary, etc.) must exist in globals.css."
+  },
+
+  "global_styles": {
+    "box_sizing_reset": "*, *:before, *:after { box-sizing: border-box }",
+    "body": {
+      "line_height": "1.4",
+      "overflow_wrap": "break-word",
+      "margin": "0",
+      "font_family": "[theme.body_font.font — export from HubSpot portal]",
+      "font_size": "[theme.body_font.size — export from HubSpot portal]",
+      "color": "[theme.body_font.color — export from HubSpot portal]"
+    },
+    "h1_override": {
+      "line_height": "60px",
+      "mobile_font_size": "48px",
+      "mobile_breakpoint": "max-width: 767px"
+    },
+    "headings": {
+      "margin": "0 0 1.4rem"
+    },
+    "p": {
+      "font_size": "1rem",
+      "margin": "0 0 1.4rem"
+    },
+    "anchor": {
+      "color": "[theme.anchor_font.color]",
+      "hover_color": "color_variant(anchor_font.color, -40)",
+      "active_color": "color_variant(anchor_font.color, 40)"
+    },
+    "grid": {
+      "column_gap_var": "--column-gap: 2.13%",
+      "column_width_multiplier_var": "--column-width-multiplier: 8.333",
+      "row_fluid_mobile": "display:flex; flex-wrap:wrap; width:100%",
+      "row_fluid_desktop": "flex-wrap:nowrap; justify-content:space-between",
+      "desktop_breakpoint": "min-width: 768px",
+      "span6_width": "calc(8.333 * 1% * 6 - 2.13% * ((12-6) * 8.333 / 100))",
+      "span4_width": "calc(8.333 * 1% * 4 - 2.13% * ((12-4) * 8.333 / 100))",
+      "dnd_column_padding_desktop": "0 1rem",
+      "dnd_column_padding_mobile": "0"
+    },
+    "container": {
+      "class": "page-center",
+      "max_width": "[theme.spacing.maximum_content_width]px",
+      "padding": "0 20px",
+      "margin": "0 auto"
+    },
+    "utility_classes": {
+      "primary_gradient": "background: linear-gradient(90deg, rgba(0,198,178,1) 0%, rgba(0,131,255,1) 100%)",
+      "primary_gradient_cta": "background: linear-gradient(90deg, rgba(0,198,178,1) 0%, rgba(0,131,255,1) 100%); transition: 0.3s ease-in-out",
+      "primary_gradient_cta_hover": "background: linear-gradient(90deg, rgba(0,131,255,1) 0%, rgba(0,198,178,1) 100%)",
+      "cta_white_primary": "background:#fff; padding:12px 32px; border-radius:5px; font-size:14px; line-height:20px; color:#2563eb; border:1px solid #fff; text-decoration:none; transition:0.3s ease-in-out",
+      "cta_white_primary_hover": "background:#f3f4f6",
+      "cta_white_secondary": "background:transparent; padding:12px 32px; border-radius:5px; font-size:14px; line-height:20px; color:#fff; border:1px solid #fff; text-decoration:none; transition:0.3s ease-in-out",
+      "cta_white_secondary_hover": "background:#fff; color:#2563eb"
+    }
+  },
+
+  "sections": [
+
+    {
+      "order": 0,
+      "name": "Header",
+      "component": "Header",
+      "source_file": "my-theme/modules/Header.module/module.html",
+      "dom": {
+        "outer": "header.header",
+        "module_root": "div.header-main",
+        "inner_container": "div.page-center",
+        "flex_row": "div.header-holder"
+      },
+      "styles": {
+        "header_wrapper": {
+          "background": "none !important"
+        },
+        "header_main": {
+          "position": "fixed",
+          "top": "0",
+          "left": "0",
+          "right": "0",
+          "z_index": "99",
+          "background": "hsla(0, 0%, 100%, 0.8)",
+          "backdrop_filter": "blur(3px)",
+          "border_bottom": "1px solid #e5e5e5",
+          "box_shadow": "1px 1px 10px #e5e5e5",
+          "padding": "30px 0"
+        },
+        "header_holder": {
+          "display": "flex",
+          "justify_content": "space-between",
+          "align_items": "center"
+        },
+        "mobile_breakpoint": "max-width: 991px"
+      },
+      "zones": {
+        "logo": {
+          "dom": "div.logo > a > img",
+          "src": "https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/Smuves/logo.png",
+          "alt": "logo",
+          "width": 150,
+          "height": 25,
+          "loading": "eager"
+        },
+        "nav_links": {
+          "dom": "div.menu-area > ul > li > a",
+          "data_source": "HubSpot portal menu 193111680407 (migrate to Contentstack)",
+          "item_margin": "0 15px",
+          "link_color": "#111827",
+          "link_font_size": "16px",
+          "link_font_weight": "400",
+          "link_text_decoration": "none",
+          "hidden_below": "991px"
+        },
+        "cta_button": {
+          "dom": "div.cta-area > a.primary-gradient-cta",
+          "default_text": "Login To Our Website",
+          "default_href": "",
+          "class": "primary-gradient-cta",
+          "styles": {
+            "color": "#fff",
+            "padding": "10px 20px",
+            "border_radius": "50px",
+            "font_size": "16px",
+            "font_weight": "700",
+            "text_decoration": "none",
+            "transition": "0.3s ease-in-out"
+          },
+          "hidden_below": "991px"
+        },
+        "hamburger": {
+          "dom": "div.mobile-toggle#mobileToggle > span × 3",
+          "container_size": "24px × 18px",
+          "bar_height": "3px",
+          "bar_background": "#000",
+          "bar_border_radius": "3px",
+          "hidden_above": "991px"
+        },
+        "mobile_menu": {
+          "dom": "div.mobile-menu#mobileMenu > div.mobile-menu-inner",
+          "default_state": "hidden",
+          "toggle_behavior": "slideToggle (jQuery) → replace with React state",
+          "styles": {
+            "position": "fixed",
+            "top": "90px",
+            "width": "100%",
+            "background": "#fff",
+            "z_index": "999",
+            "padding": "20px",
+            "box_shadow": "0 5px 10px rgba(0,0,0,0.1)"
+          },
+          "inner_layout": "display:flex; flex-direction:column; justify-content:center; align-items:center",
+          "children": ["div.menu-clone (nav clone)", "div.cta-clone (cta clone)"]
+        }
+      },
+      "content": {
+        "logo_url": "https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/Smuves/logo.png",
+        "cta_text": "Login To Our Website",
+        "cta_href": "",
+        "nav_links": "[ Fetch from HubSpot portal menu 193111680407 — not in repo ]"
+      }
+    },
+
+    {
+      "order": 1,
+      "name": "Hero Banner",
+      "component": "HeroBanner",
+      "source_file": "my-theme/sections/hero-banner.html",
+      "dom": {
+        "section": "div.dnd-section",
+        "row": "div.dnd-section > div.row-fluid",
+        "left_col": "div.row-fluid > div.dnd-column.span6:nth-child(1)",
+        "left_image_wrapper": "div.dnd-column.span6:nth-child(1) > div.dnd-row > div.hs_cos_wrapper_type_linked_image",
+        "left_image": "img",
+        "right_col": "div.row-fluid > div.dnd-column.span6:nth-child(2)",
+        "right_row1": "div.dnd-column.span6:nth-child(2) > div.dnd-row:nth-child(1)",
+        "right_richtext": "div.dnd-row:nth-child(1) > div.hs_cos_wrapper_type_rich_text",
+        "right_row2": "div.dnd-column.span6:nth-child(2) > div.dnd-row:nth-child(2)",
+        "right_form": "div.dnd-row:nth-child(2) > div.hs_cos_wrapper_type_form"
+      },
+      "styles": {
+        "section_background": "#f8fafc",
+        "vertical_alignment": "middle",
+        "columns": "2 × span6 (6/12 each)",
+        "column_gutter": "padding: 0 1rem (desktop), 0 (mobile ≤767px)",
+        "responsive_stack": "max-width: 767px → columns stack to 100% width"
+      },
+      "content": {
+        "image": {
+          "src": "my-theme/images/grayscale-mountain.png",
+          "alt": "Stock placeholder image with grayscale geometrical mountain landscape",
+          "max_width": 605,
+          "max_height": 451,
+          "loading": "eager"
+        },
+        "rich_text": {
+          "default_html": "<h1>This is your main headline.</h1><p>Use this space to tell everyone about what you have to offer.</p>",
+          "h1_line_height": "60px",
+          "h1_mobile_font_size": "48px",
+          "p_margin_bottom": "1.4rem"
+        },
+        "form": {
+          "type": "hubspot_form",
+          "input_height": "45px",
+          "input_padding": "0 0.7rem",
+          "note": "Embed HubSpot form or replace with equivalent React form + API integration"
+        }
+      }
+    },
+
+    {
+      "order": 2,
+      "name": "Multi-Row Content",
+      "component": "MultiRowContent",
+      "source_file": "my-theme/sections/multi-row-content.html",
+      "dom": {
+        "section": "div.dnd-section",
+        "row": "div.dnd-section > div.row-fluid",
+        "left_col": "div.row-fluid > div.dnd-column.span6:nth-child(1)",
+        "left_richtext": "div.dnd-column.span6:nth-child(1) > div.dnd-row > div.hs_cos_wrapper_type_rich_text",
+        "right_col": "div.row-fluid > div.dnd-column.span6:nth-child(2)",
+        "right_image": "div.dnd-column.span6:nth-child(2) > div.dnd-row > div.hs_cos_wrapper_type_linked_image > img"
+      },
+      "styles": {
+        "section_background": "none (white — no background-color attribute set)",
+        "vertical_alignment": "middle",
+        "columns": "2 × span6",
+        "responsive_stack": "max-width: 767px → columns stack to 100%"
+      },
+      "content": {
+        "rich_text": {
+          "default_html": "<h2>Provide more details here.</h2><p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>"
+        },
+        "image": {
+          "src": "my-theme/images/grayscale-mountain.png",
+          "alt": "Stock placeholder image with grayscale geometrical mountain landscape",
+          "max_width": 605,
+          "max_height": 451,
+          "loading": "eager"
+        }
+      }
+    },
+
+    {
+      "order": 3,
+      "name": "Two-Column Image Left",
+      "component": "TwoColumnImageLeft",
+      "source_file": "my-theme/templates/home.html (inline, lines 28–53)",
+      "dom": {
+        "section": "div.dnd-section",
+        "row": "div.dnd-section > div.row-fluid",
+        "left_col": "div.row-fluid > div.dnd-column.span6:nth-child(1)",
+        "left_image": "div.dnd-column.span6:nth-child(1) > div.dnd-row > div.hs_cos_wrapper_type_linked_image > img",
+        "right_col": "div.row-fluid > div.dnd-column.span6:nth-child(2)",
+        "right_richtext": "div.dnd-column.span6:nth-child(2) > div.dnd-row > div.hs_cos_wrapper_type_rich_text"
+      },
+      "styles": {
+        "section_background": "#f8fafc",
+        "vertical_alignment": "middle",
+        "columns": "2 × span6",
+        "responsive_stack": "max-width: 767px → columns stack to 100%"
+      },
+      "content": {
+        "image": {
+          "src": "my-theme/images/grayscale-mountain.png",
+          "alt": "Stock placeholder image with grayscale geometrical mountain landscape",
+          "max_width": 605,
+          "max_height": 451,
+          "loading": "lazy",
+          "note": "src is HARDCODED via get_asset_url — not an editable field in the original template"
+        },
+        "rich_text": {
+          "default_html": "<h2>Provide more details here.</h2><p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>"
+        }
+      }
+    },
+
+    {
+      "order": 4,
+      "name": "Call to Action",
+      "component": "CallToAction",
+      "source_file": "my-theme/sections/call-to-action.html",
+      "dom": {
+        "section": "div.dnd-section",
+        "row": "div.dnd-section > div.row-fluid",
+        "single_col": "div.row-fluid > div.dnd-column.span12",
+        "text_row": "div.dnd-column.span12 > div.dnd-row:nth-child(1)",
+        "text_wrapper": "div.dnd-row:nth-child(1) > div.hs_cos_wrapper_type_rich_text > div[style*='text-align:center']",
+        "button_row": "div.dnd-column.span12 > div.dnd-row:nth-child(2)",
+        "button_wrapper": "div.dnd-row:nth-child(2) > div.hs_cos_wrapper_type_module > div.button-wrapper",
+        "button": "div.button-wrapper > a.button"
+      },
+      "styles": {
+        "section_background_image": "my-theme/images/large-placeholder-image.png",
+        "background_position": "center center",
+        "background_size": "cover",
+        "padding_desktop": "140px 20px 160px 20px",
+        "padding_mobile": "80px 20px 80px 20px",
+        "mobile_breakpoint": "max-width: 767px",
+        "row_max_width": "700px",
+        "text_row_padding_bottom_desktop": "40px",
+        "text_row_padding_bottom_mobile": "0",
+        "text_alignment": "center",
+        "button_wrapper_text_align": "center",
+        "button_styles": {
+          "background": "[theme.button_bg_color (rgba)]",
+          "border": "[theme.button_border]",
+          "border_radius": "[theme.button_corner_radius]",
+          "padding": "[theme.button_spacing]",
+          "font": "[theme.button_font]",
+          "hover_bg": "color_variant(button_bg_color, -80)",
+          "active_bg": "color_variant(button_bg_color, 80)",
+          "transition": "all 0.15s linear",
+          "cursor": "pointer",
+          "display": "inline-block",
+          "text_align": "center"
+        }
+      },
+      "content": {
+        "background_image": "my-theme/images/large-placeholder-image.png",
+        "max_width": "700px",
+        "rich_text": {
+          "default_html": "<div style=\"text-align:center\"><h2>Provide an excerpt here</h2><p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p></div>"
+        },
+        "button": {
+          "default_text": "Get started",
+          "default_href": "#",
+          "alignment": "CENTER"
+        }
+      }
+    },
+
+    {
+      "order": 5,
+      "name": "Multi-Column Content",
+      "component": "MultiColumnContent",
+      "source_file": "my-theme/sections/multi-column-content.html",
+      "dom": {
+        "section": "div.dnd-section",
+        "row": "div.dnd-section > div.row-fluid",
+        "col1": "div.row-fluid > div.dnd-column.span4:nth-child(1)",
+        "col1_image": "div.dnd-column.span4:nth-child(1) > div.dnd-row:nth-child(1) > div.hs_cos_wrapper_type_linked_image > img",
+        "col1_text": "div.dnd-column.span4:nth-child(1) > div.dnd-row:nth-child(2) > div.hs_cos_wrapper_type_rich_text",
+        "col2": "div.row-fluid > div.dnd-column.span4:nth-child(2)",
+        "col2_image": "div.dnd-column.span4:nth-child(2) > div.dnd-row:nth-child(1) > div.hs_cos_wrapper_type_linked_image > img",
+        "col2_text": "div.dnd-column.span4:nth-child(2) > div.dnd-row:nth-child(2) > div.hs_cos_wrapper_type_rich_text",
+        "col3": "div.row-fluid > div.dnd-column.span4:nth-child(3)",
+        "col3_image": "div.dnd-column.span4:nth-child(3) > div.dnd-row:nth-child(1) > div.hs_cos_wrapper_type_linked_image > img",
+        "col3_text": "div.dnd-column.span4:nth-child(3) > div.dnd-row:nth-child(2) > div.hs_cos_wrapper_type_rich_text"
+      },
+      "styles": {
+        "section_background": "#f8fafc",
+        "vertical_alignment": "middle",
+        "columns": "3 × span4 (4/12 each)",
+        "responsive_stack": "max-width: 767px → all columns stack to 100%",
+        "image_constraint": "max-width:605px; max-height:451px; width:100%; height:auto"
+      },
+      "content": {
+        "column_1": {
+          "image": {
+            "src": "my-theme/images/grayscale-mountain.png",
+            "alt": "",
+            "max_width": 605,
+            "max_height": 451,
+            "loading": "lazy"
+          },
+          "rich_text": {
+            "default_html": "<h3>Feature one</h3><p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>"
+          }
+        },
+        "column_2": {
+          "image": {
+            "src": "my-theme/images/grayscale-mountain.png",
+            "alt": "",
+            "max_width": 605,
+            "max_height": 451,
+            "loading": "lazy"
+          },
+          "rich_text": {
+            "default_html": "<h3>Feature two</h3><p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>"
+          }
+        },
+        "column_3": {
+          "image": {
+            "src": "my-theme/images/grayscale-mountain.png",
+            "alt": "",
+            "max_width": 605,
+            "max_height": 451,
+            "loading": "lazy"
+          },
+          "rich_text": {
+            "default_html": "<h3>Feature three</h3><p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>"
+          }
+        }
+      }
+    },
+
+    {
+      "order": 6,
+      "name": "Footer",
+      "component": "Footer",
+      "source_file": "my-theme/modules/Footer.module/module.html",
+      "dom": {
+        "outer": "footer.footer",
+        "module_root": "div.footer-main",
+        "inner_container": "div.page-center",
+        "top_row": "div.footer-top",
+        "info_col": "div.footer-top > div.footer-col.info-area",
+        "link_col_1": "div.footer-top > div.footer-col:nth-child(2)",
+        "link_col_2": "div.footer-top > div.footer-col:nth-child(3)",
+        "link_col_3": "div.footer-top > div.footer-col:nth-child(4)",
+        "bottom": "div.footer-bottom"
+      },
+      "styles": {
+        "footer_main": {
+          "background": "#f9fafb",
+          "border_top": "1px solid #e5e5e5",
+          "padding": "1.6rem 0"
+        },
+        "footer_top": {
+          "display": "flex",
+          "gap": "1.6rem"
+        },
+        "footer_col": {
+          "max_width": "25%",
+          "width": "100%"
+        },
+        "info_area_img": {
+          "max_width": "40%",
+          "width": "100% !important",
+          "margin_bottom": "10px"
+        },
+        "info_area_p": {
+          "font_size": "14px",
+          "margin": "0"
+        },
+        "col_heading_h4": {
+          "font_size": "16px",
+          "font_weight": "600",
+          "margin_bottom": "8px"
+        },
+        "col_link_li": {
+          "display": "block",
+          "width": "100%",
+          "margin_bottom": "4px (not last-child)"
+        },
+        "col_link_a": {
+          "color": "#111827",
+          "font_size": "14px",
+          "text_decoration": "none",
+          "transition": "0.3s ease-in-out",
+          "hover_color": "#000"
+        },
+        "footer_bottom": {
+          "margin_top": "1.6rem",
+          "padding_top": "1.6rem",
+          "border_top": "1px solid #e5e5e5",
+          "text_align": "center"
+        },
+        "copyright_p": {
+          "color": "#111827",
+          "font_size": "14px",
+          "margin": "0"
+        },
+        "responsive": {
+          "991px_and_below": "info_area img max-width → 60%",
+          "767px_and_below": "footer-top flex-wrap:wrap; each col max-width:47%; info img max-width:40%",
+          "575px_and_below": "each col max-width:100%; text-align:center; info img max-width:140px"
+        }
+      },
+      "content": {
+        "logo": {
+          "url": "https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/Smuves/logo.png",
+          "alt": "logo",
+          "width": 150,
+          "height": 25
+        },
+        "description": "The safest way to backup and manage your HubSpot content.",
+        "link_columns": [
+          {
+            "heading": "Product",
+            "menu_id": "193127183697",
+            "links": "[ Fetch from HubSpot portal menu 193127183697 — not in repo ]"
+          },
+          {
+            "heading": "Product",
+            "menu_id": "193127183697",
+            "links": "[ Same menu — all three columns share this menu ID by default ]"
+          },
+          {
+            "heading": "Product",
+            "menu_id": "193127183697",
+            "links": "[ Same menu ]"
+          }
+        ],
+        "copyright": "© 2026 Smuves. All rights reserved.",
+        "copyright_note": "{{ year }} is a HubSpot platform variable — use JS new Date().getFullYear() in React"
+      }
+    }
+
+  ],
+
+  "fidelity_requirements": {
+    "F1_fixed_translucent_header": "position:fixed; background:hsla(0,0%,100%,.8); backdrop-filter:blur(3px); border-bottom:#e5e5e5 1px; box-shadow:1px 1px 10px #e5e5e5; padding:30px 0",
+    "F2_header_three_zone_flex": "display:flex; justify-content:space-between; align-items:center → [Logo] [Nav] [CTA]",
+    "F3_cta_pill_button": "border-radius:50px; gradient → reversed on hover; color:#fff; font-size:16px; font-weight:700; padding:10px 20px",
+    "F4_mobile_breakpoint_991px": "≤991px: nav + CTA hidden; hamburger shown; mobile menu fixed panel at top:90px",
+    "F5_section_bg_alternation": "#f8fafc / white / #f8fafc / cover-image / #f8fafc",
+    "F6_grid_css_variables": "--column-gap:2.13%; --column-width-multiplier:8.333; column widths are computed not fixed",
+    "F7_hero_two_col": "image left (6/12) + rich-text+form right (6/12); image loading:eager (LCP); vertical align middle",
+    "F8_multi_row_mirror": "text left (6/12) + image right (6/12); white bg; vertical align middle",
+    "F9_cta_bg_image": "cover bg; max-width:700px inner; padding:140px/160px desktop; 80px/80px mobile; text-row pb:40px desktop 0 mobile",
+    "F10_three_col_feature": "3 × span4; image + h3 + p; bg:#f8fafc; stacks on mobile",
+    "F11_footer_4col": "flex row gap:1.6rem; each col max-width:25%; info col: logo(40%)+14px desc; link cols: 600 h4 + 14px links",
+    "F12_footer_bottom_divider": "border-top:#e5e5e5 1px; margin-top:1.6rem; padding-top:1.6rem; copyright centered 14px #111827",
+    "F13_footer_responsive_3bp": "≤991px logo→60% / ≤767px 2-per-row / ≤575px 1-per-row",
+    "F14_brand_gradient_classes_global": "primary-gradient, primary-gradient-cta (hover reverse), cta-white-primary, cta-white-secondary — must be in globals.css",
+    "F15_h1_override": "line-height:60px global; mobile(≤767px) font-size:48px",
+    "F20_box_sizing_reset": "*, *:before, *:after { box-sizing: border-box }"
+  }
+}

@@ -1,0 +1,156 @@
+/* Contact page styles — Contact Form, Support, FAQ */
+
+/* ── Contact Form ───────────────────────────────────────────── */
+.contact-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: #ffffff;
+}
+.contact-header { margin: 0 auto 60px; text-align: center; }
+.contact, .contact-header { max-width: 800px; position: relative; z-index: 10; }
+.contact {
+  background: #fff;
+  border-radius: 18px;
+  margin: 0 auto;
+  padding: 60px 45px 50px;
+  text-align: left;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+}
+.contact h3 {
+  background: linear-gradient(90deg, #00c6b2, #0083ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 24px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; margin-bottom: 6px; font-size: 13px; font-weight: 600; color: #1c1c28; }
+.hs-input {
+  background: #f3f3f5;
+  border: 1px solid #e5e7eb;
+  border-radius: 7px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  padding: 10px 14px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  color: #1c1c28;
+}
+.hs-input:focus { outline: none; border-color: #00c6b2; }
+textarea.hs-input { resize: vertical; }
+.contact-section .green-cta { margin-top: 10px; }
+.contact-inner p.below-text { color: #1c1c28; font-size: 12px; text-align: center; margin-top: 20px; }
+.success-msg { color: #00c6b2; font-size: 18px; font-weight: 600; text-align: center; padding: 40px 0; }
+
+@media (max-width: 640px) {
+  .form-row { grid-template-columns: 1fr; }
+  .contact { padding: 40px 20px 30px; }
+}
+
+/* ── Support ────────────────────────────────────────────────── */
+.support-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: #F5F7FA;
+}
+.support-header { margin: 0 auto 60px; text-align: center; }
+.support, .support-header { max-width: 800px; position: relative; z-index: 10; }
+.support {
+  align-items: flex-end;
+  background: #fff;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px;
+  text-align: left;
+}
+.support-inner { display: flex; gap: 30px; }
+.support-inner2 { display: flex; align-items: flex-start; gap: 12px; }
+.support-icon .hs_cos_wrapper_type_icon {
+  background: rgba(3, 2, 19, 0.1);
+  border-radius: 0.625rem;
+  display: block;
+  line-height: 1;
+  padding: 13px;
+}
+.support-icon .hs_cos_wrapper_type_icon svg { fill: #1c1c28; }
+.support-text h5 { margin: 0; }
+.support-text { margin-left: 0; }
+.support-email a {
+  background: #00c6b2;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 18px 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 4px;
+}
+.mobile { display: none; }
+
+@media (max-width: 640px) {
+  .support-email { margin-top: 20px; }
+  .desktop { display: none; }
+  .mobile, .support { display: block; }
+  .support-inner { flex-direction: column; }
+}
+
+/* ── FAQ ────────────────────────────────────────────────────── */
+.FAQ-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: #F5F7FA;
+}
+.FAQ-header { margin: 0 auto 60px; max-width: 800px; position: relative; text-align: center; z-index: 10; }
+.FAQ-header h2 { margin-bottom: 10px; }
+.FAQ {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  z-index: 10;
+}
+.FAQ-inner {
+  background: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 30px;
+  transition: background 0.3s;
+}
+.FAQ-inner:hover { background: #00c6b2; }
+.FAQ-inner:hover h4, .FAQ-inner:hover p { color: #fff; }
+.FAQ-inner.active { background: #fff; }
+.FAQ-inner h4 {
+  margin-bottom: 10px;
+  padding-right: 25px;
+  position: relative;
+  font-size: 16px;
+  color: #1c1c28;
+}
+.faq-toggle {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  user-select: none;
+}
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.25s ease;
+}
+.faq-answer p { font-size: 15px; color: #555; margin: 0; padding-top: 10px; }
+
+@media (max-width: 768px) {
+  .FAQ { grid-template-columns: 1fr; }
+  .FAQ-section, .support-section { padding-top: 50px; padding-bottom: 50px; }
+}

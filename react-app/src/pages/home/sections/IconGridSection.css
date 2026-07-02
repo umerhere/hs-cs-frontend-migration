@@ -1,0 +1,128 @@
+/* ============================================================
+   Icon Grid with Tags Section
+   Source: module_Icon_Grid_with_Tags.min.css + inline scoped styles
+   ============================================================ */
+
+.icnon-grid-section {
+  padding-top: 240px;
+  padding-right: 0;
+  padding-bottom: 70px;
+  padding-left: 0;
+  background: #F5F7FA;
+}
+
+.icnon-grid-main {
+  text-align: center;
+}
+
+.icnon-grid-header {
+  margin: 0 auto 70px;
+  max-width: 800px;
+  position: relative;
+  z-index: 10;
+}
+
+.icnon-grid-header h2 {
+  margin-bottom: 20px;
+}
+
+.icnon-grid-header p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1c1c28;
+  margin-bottom: 12px;
+}
+
+.icnon-grid-main .cta-area {
+  margin-top: 20px;
+}
+.icnon-grid-main .cta-area a {
+  margin: 0 10px;
+}
+
+/* 3-column grid */
+.icon-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+  z-index: 10;
+}
+
+/* Tag row at top of each card */
+.icon-tag {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.icon-svg {
+  display: flex;
+  align-items: center;
+}
+
+.icon-tag svg {
+  height: 21px;
+  width: 21px;
+  fill: #1c1c28;
+}
+
+/* Availability badges */
+span.available {
+  background: #030213;
+  color: #fff;
+}
+span.available, span.soon {
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1;
+  padding: 4px 8px;
+}
+span.soon {
+  background: #f0f1f5;
+}
+
+/* Card */
+.icon-grid-inner {
+  background: #fff;
+  border-radius: 10px;
+  padding: 80px 30px 50px;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+.icon-grid-inner:hover {
+  background: #00c6b2;
+}
+.icon-grid-inner:hover h3,
+.icon-grid-inner:hover p,
+.icon-grid-inner:hover strong {
+  color: #fff;
+}
+.icon-grid-inner:hover .icon-tag svg {
+  fill: #fff;
+}
+
+.icon-grid-inner p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #1c1c28;
+}
+
+.icon-grid-inner h3,
+.icon-grid-inner h4,
+.icon-grid-inner h5 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .icon-grid {
+    grid-template-columns: 1fr;
+  }
+  .icnon-grid-section {
+    padding-top: 250px;
+    padding-bottom: 50px;
+  }
+}

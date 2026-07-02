@@ -1,0 +1,137 @@
+/* ============================================================
+   Footer — ported from modules/Footer.module/module.css
+   ============================================================ */
+
+.footer-main {
+  background: #f9fafb;
+  border-top: #e5e5e5 solid 1px;
+  padding: 1.6rem 0;
+}
+
+.footer-top {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.footer-top .footer-col {
+  max-width: 25%;
+  width: 100%;
+}
+
+.footer-top .info-area img {
+  max-width: 40%;
+  width: 100% !important;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.footer-top .info-area p {
+  font-size: 14px;
+  margin: 0 0 12px;
+  color: #1c1c28;
+}
+
+/* Social links */
+.social-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.social-links li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #00c6b2;
+  color: #fff;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.social-links li a:hover {
+  background: #009e8a;
+}
+
+.footer-top .footer-col h6 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1c1c28;
+}
+
+.footer-top .footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-top .footer-col ul li {
+  display: block;
+  width: 100%;
+}
+
+.footer-top .footer-col ul li:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.footer-top .footer-col ul li a {
+  color: #111827;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-top .footer-col ul li a:hover {
+  color: #00c6b2;
+}
+
+.footer-bottom {
+  margin-top: 1.6rem;
+  padding-top: 1.6rem;
+  text-align: center;
+  border-top: #e5e5e5 solid 1px;
+}
+
+.footer-bottom p {
+  color: #111827;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .footer-top .info-area img {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-top {
+    flex-wrap: wrap;
+  }
+  .footer-top .info-area img {
+    max-width: 40%;
+  }
+  .footer-top .footer-col {
+    max-width: 47%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-top .footer-col {
+    max-width: 100%;
+    text-align: center;
+  }
+  .footer-top .info-area img {
+    max-width: 140px;
+    margin: 0 auto 10px;
+  }
+  .social-links {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,482 @@
+<!--
+  homepage.dom.html
+  ==================
+  Source: my-theme/templates/home.html + all included sections + partials
+  Purpose: Exact DOM skeleton as the browser renders it — every wrapper, every
+           class name, sections in render order. Use this as the React layout
+           blueprint. DO NOT redesign or simplify.
+
+  Notes:
+  - All HubSpot DND wrappers (dnd-section / dnd-row / dnd-column) are included.
+  - Module placeholder comments show where each @hubspot/* or custom module
+    inserts its output into the DOM.
+  - Class names come from: DND defaults, theme CSS classes, and module CSS.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- CSS load order (cascade priority, lowest → highest) -->
+  <link rel="stylesheet" href="css/generic/_reset.css">
+  <link rel="stylesheet" href="css/generic/_normalize.css">
+  <link rel="stylesheet" href="css/objects/_layout.css">
+  <link rel="stylesheet" href="css/objects/_containers-dnd.css">
+  <link rel="stylesheet" href="css/elements/_typography.css">
+  <link rel="stylesheet" href="css/elements/_buttons.css">
+  <link rel="stylesheet" href="css/elements/_forms.css">
+  <link rel="stylesheet" href="css/elements/_tables.css">
+  <link rel="stylesheet" href="css/components/_header.css">
+  <link rel="stylesheet" href="css/components/_default-modules.css">
+  <link rel="stylesheet" href="css/utilities/_helper.css">
+  <link rel="stylesheet" href="css/theme-overrides.css">
+  <link rel="stylesheet" href="css/custom-styles.css">
+  <link rel="stylesheet" href="modules/Header.module/module.css">
+  <link rel="stylesheet" href="modules/Footer.module/module.css">
+  <!-- HubSpot standard_header_includes (platform CSS + meta injected here) -->
+</head>
+
+<body class="[hs-builtin-body-classes]">
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       BODY WRAPPER — base.html
+       Class applied by HubSpot: body-wrapper + builtin_body_classes
+  ═══════════════════════════════════════════════════════════════ -->
+  <div class="body-wrapper [builtin_body_classes]">
+
+    <!-- ─────────────────────────────────────────────────────────────
+         HEADER — templates/partials/header.html
+         Wraps modules/Header.module/module.html output
+    ───────────────────────────────────────────────────────────────── -->
+    <header class="header">
+
+      <!-- Accessibility skip link (header.html) -->
+      <a href="#main-content" class="header__skip">Skip to main content</a>
+
+      <!-- Header.module root (modules/Header.module/module.html) -->
+      <div class="header-main">
+        <!-- position:fixed; top:0; left:0; right:0; z-index:99;
+             background:hsla(0,0%,100%,.8); backdrop-filter:blur(3px);
+             border-bottom:#e5e5e5 solid 1px; padding:30px 0 -->
+        <div class="page-center">
+          <!-- max-width:[theme container]px; padding:0 20px; margin:0 auto -->
+          <div class="header-holder">
+            <!-- display:flex; justify-content:space-between; align-items:center -->
+
+            <!-- ZONE 1: Logo -->
+            <div class="logo">
+              <a href="/">
+                <img
+                  src="https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/Smuves/logo.png"
+                  alt="logo"
+                  width="150"
+                  height="25"
+                  loading="eager"
+                >
+              </a>
+            </div>
+
+            <!-- ZONE 2: Desktop navigation (hidden ≤991px) -->
+            <div class="menu-area">
+              <!-- HubSpot {% menu id="193111680407" %} renders as: -->
+              <ul>
+                <li style="margin:0 15px"><a href="#" style="color:#111827;font-size:16px;font-weight:400;text-decoration:none">Nav Link</a></li>
+                <!-- …repeated for each portal menu item… -->
+              </ul>
+            </div>
+
+            <!-- ZONE 3: CTA button (hidden ≤991px; only renders if cta_text set) -->
+            <div class="cta-area">
+              <a href="" class="primary-gradient-cta">Login To Our Website</a>
+              <!-- background:linear-gradient(90deg,rgba(0,198,178,1) 0%,rgba(0,131,255,1) 100%)
+                   border-radius:50px; color:#fff; font-size:16px; font-weight:700;
+                   padding:10px 20px; transition:0.3s ease-in-out
+                   hover: reversed gradient -->
+            </div>
+
+            <!-- ZONE 4: Hamburger (display:none desktop; flex ≤991px) -->
+            <div class="mobile-toggle" id="mobileToggle">
+              <!-- 24×18px container -->
+              <span></span><!-- height:3px; background:#000; border-radius:3px -->
+              <span></span>
+              <span></span>
+            </div>
+
+            <!-- ZONE 5: Mobile menu (display:none; slides in on hamburger click) -->
+            <div class="mobile-menu" id="mobileMenu">
+              <!-- position:fixed; top:90px; width:100%; background:#fff;
+                   z-index:999; padding:20px; box-shadow:0 5px 10px rgba(0,0,0,0.1) -->
+              <div class="mobile-menu-inner">
+                <!-- display:flex; flex-direction:column; justify-content:center; align-items:center -->
+                <div class="menu-clone">
+                  <!-- Duplicate of .menu-area menu for mobile -->
+                  <ul>
+                    <li style="margin-bottom:20px"><a href="#" style="font-size:16px;color:#111827">Nav Link</a></li>
+                  </ul>
+                </div>
+                <div class="cta-clone">
+                  <!-- Duplicate of CTA button for mobile -->
+                  <a href="" class="primary-gradient-cta" style="padding:12px 30px;border-radius:50px">Login To Our Website</a>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /.header-holder -->
+        </div><!-- /.page-center -->
+      </div><!-- /.header-main -->
+
+    </header><!-- /header.header -->
+
+    <!-- ─────────────────────────────────────────────────────────────
+         MAIN CONTENT AREA — base.html
+    ───────────────────────────────────────────────────────────────── -->
+    <main id="main-content" class="body-container-wrapper">
+
+      <!-- DND area root — home.html
+           class="body-container body-container--home" -->
+      <div class="body-container body-container--home">
+
+        <!-- ═══════════════════════════════════════════════════════════
+             SECTION 1 — Hero Banner
+             Source: my-theme/sections/hero-banner.html
+             Background: #f8fafc | Vertical align: MIDDLE
+        ══════════════════════════════════════════════════════════════ -->
+        <div class="dnd-section" style="background-color:#f8fafc;vertical-align:middle">
+          <div class="row-fluid">
+            <!-- display:flex; flex-wrap:nowrap (≥768px); max-width:[theme]px; margin:0 auto -->
+
+            <!-- LEFT COLUMN — image (span6) -->
+            <div class="dnd-column span6" style="vertical-align:middle">
+              <!-- padding:0 1rem (desktop); 0 (mobile ≤767px) -->
+              <div class="dnd-row">
+                <!-- @hubspot/linked_image output -->
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image">
+                  <img
+                    src="../images/grayscale-mountain.png"
+                    alt="Stock placeholder image with grayscale geometrical mountain landscape"
+                    style="max-width:605px;max-height:451px;width:100%;height:auto"
+                    loading="eager"
+                  >
+                </div>
+              </div>
+            </div><!-- /.span6 left -->
+
+            <!-- RIGHT COLUMN — rich text + form (span6) -->
+            <div class="dnd-column span6" style="vertical-align:middle">
+              <!-- padding:0 1rem (desktop); 0 (mobile ≤767px) -->
+
+              <!-- ROW 1: Rich text -->
+              <div class="dnd-row">
+                <!-- @hubspot/rich_text output -->
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text">
+                  <h1>This is your main headline.</h1>
+                  <!-- line-height:60px; mobile font-size:48px -->
+                  <p>Use this space to tell everyone about what you have to offer.</p>
+                </div>
+              </div>
+
+              <!-- ROW 2: HubSpot Form -->
+              <div class="dnd-row">
+                <!-- @hubspot/form output (HubSpot form embed) -->
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form">
+                  <div class="hs-form-frame">
+                    <!-- Form inputs rendered by HubSpot platform
+                         input height:45px; input padding:0 0.7rem
+                         submit: .hs-button (theme-driven gradient) -->
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /.span6 right -->
+          </div><!-- /.row-fluid -->
+        </div><!-- /.dnd-section (hero) -->
+
+
+        <!-- ═══════════════════════════════════════════════════════════
+             SECTION 2 — Multi-Row Content (text left, image right)
+             Source: my-theme/sections/multi-row-content.html
+             Background: none (white inherited) | Vertical align: MIDDLE
+        ══════════════════════════════════════════════════════════════ -->
+        <div class="dnd-section" style="vertical-align:middle">
+          <div class="row-fluid">
+
+            <!-- LEFT COLUMN — rich text (span6) -->
+            <div class="dnd-column span6" style="vertical-align:middle">
+              <div class="dnd-row">
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text">
+                  <h2>Provide more details here.</h2>
+                  <p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>
+                </div>
+              </div>
+            </div><!-- /.span6 left -->
+
+            <!-- RIGHT COLUMN — image (span6) -->
+            <div class="dnd-column span6" style="vertical-align:middle">
+              <div class="dnd-row">
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image">
+                  <img
+                    src="../images/grayscale-mountain.png"
+                    alt="Stock placeholder image with grayscale geometrical mountain landscape"
+                    style="max-width:605px;max-height:451px;width:100%;height:auto"
+                    loading="eager"
+                  >
+                </div>
+              </div>
+            </div><!-- /.span6 right -->
+
+          </div><!-- /.row-fluid -->
+        </div><!-- /.dnd-section (multi-row) -->
+
+
+        <!-- ═══════════════════════════════════════════════════════════
+             SECTION 3 — Two-Column Image Left (inline in home.html)
+             Source: Defined inline at home.html lines 28–53
+             Background: #f8fafc | Vertical align: MIDDLE
+        ══════════════════════════════════════════════════════════════ -->
+        <div class="dnd-section" style="background-color:#f8fafc;vertical-align:middle">
+          <div class="row-fluid">
+
+            <!-- LEFT COLUMN — image (span6) -->
+            <div class="dnd-column span6" style="vertical-align:middle">
+              <div class="dnd-row">
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image">
+                  <img
+                    src="../images/grayscale-mountain.png"
+                    alt="Stock placeholder image with grayscale geometrical mountain landscape"
+                    style="max-width:605px;max-height:451px;width:100%;height:auto"
+                    loading="lazy"
+                  >
+                </div>
+              </div>
+            </div><!-- /.span6 left -->
+
+            <!-- RIGHT COLUMN — rich text (span6) -->
+            <div class="dnd-column span6" style="vertical-align:middle">
+              <div class="dnd-row">
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text">
+                  <h2>Provide more details here.</h2>
+                  <p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>
+                </div>
+              </div>
+            </div><!-- /.span6 right -->
+
+          </div><!-- /.row-fluid -->
+        </div><!-- /.dnd-section (two-col image left) -->
+
+
+        <!-- ═══════════════════════════════════════════════════════════
+             SECTION 4 — Call to Action
+             Source: my-theme/sections/call-to-action.html
+             Background: full-bleed cover image | Vertical align: MIDDLE
+             Desktop padding: 140px top / 160px bottom
+             Mobile padding:  80px top / 80px bottom
+        ══════════════════════════════════════════════════════════════ -->
+        <div
+          class="dnd-section"
+          style="
+            background-image:url('../images/large-placeholder-image.png');
+            background-position:center center;
+            background-size:cover;
+            padding-top:140px;
+            padding-right:20px;
+            padding-bottom:160px;
+            padding-left:20px;
+            vertical-align:middle
+          "
+        >
+          <div class="row-fluid" style="max-width:700px">
+            <!-- Single centered column -->
+            <div class="dnd-column span12" style="vertical-align:middle">
+
+              <!-- ROW 1: Rich text (centered, bottom-padding 40px desktop / 0 mobile) -->
+              <div class="dnd-row" style="padding-bottom:40px">
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text">
+                  <div style="text-align:center">
+                    <h2>Provide an excerpt here</h2>
+                    <p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ROW 2: button.module -->
+              <div class="dnd-row">
+                <!-- button.module (my-theme/modules/button.module/) output -->
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module">
+                  <div class="button-wrapper" style="text-align:center">
+                    <!-- text-align driven by module.styles.alignment.alignment.horizontal_align = CENTER -->
+                    <a class="button" href="#">Get started</a>
+                    <!-- background: theme button_bg_color (rgba)
+                         border: theme button_border
+                         border-radius: theme button_corner_radius
+                         padding: theme button_spacing
+                         font: theme button_font
+                         hover: color_variant(-80%)
+                         active: color_variant(+80%)
+                         transition: all 0.15s linear -->
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /.span12 -->
+          </div><!-- /.row-fluid -->
+        </div><!-- /.dnd-section (cta) -->
+
+
+        <!-- ═══════════════════════════════════════════════════════════
+             SECTION 5 — Multi-Column Content (three columns)
+             Source: my-theme/sections/multi-column-content.html
+             Background: #f8fafc | Vertical align: MIDDLE
+        ══════════════════════════════════════════════════════════════ -->
+        <div class="dnd-section" style="background-color:#f8fafc;vertical-align:middle">
+          <div class="row-fluid">
+
+            <!-- COLUMN 1 (span4) -->
+            <div class="dnd-column span4" style="vertical-align:middle">
+              <div class="dnd-row">
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image">
+                  <img
+                    src="../images/grayscale-mountain.png"
+                    alt=""
+                    style="max-width:605px;max-height:451px;width:100%;height:auto"
+                    loading="lazy"
+                  >
+                </div>
+              </div>
+              <div class="dnd-row">
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text">
+                  <h3>Feature one</h3>
+                  <p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>
+                </div>
+              </div>
+            </div><!-- /.span4 col1 -->
+
+            <!-- COLUMN 2 (span4) -->
+            <div class="dnd-column span4" style="vertical-align:middle">
+              <div class="dnd-row">
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image">
+                  <img
+                    src="../images/grayscale-mountain.png"
+                    alt=""
+                    style="max-width:605px;max-height:451px;width:100%;height:auto"
+                    loading="lazy"
+                  >
+                </div>
+              </div>
+              <div class="dnd-row">
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text">
+                  <h3>Feature two</h3>
+                  <p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>
+                </div>
+              </div>
+            </div><!-- /.span4 col2 -->
+
+            <!-- COLUMN 3 (span4) -->
+            <div class="dnd-column span4" style="vertical-align:middle">
+              <div class="dnd-row">
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image">
+                  <img
+                    src="../images/grayscale-mountain.png"
+                    alt=""
+                    style="max-width:605px;max-height:451px;width:100%;height:auto"
+                    loading="lazy"
+                  >
+                </div>
+              </div>
+              <div class="dnd-row">
+                <div class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text">
+                  <h3>Feature three</h3>
+                  <p>Use text and images to tell your company's story. Explain what makes your product or service extraordinary.</p>
+                </div>
+              </div>
+            </div><!-- /.span4 col3 -->
+
+          </div><!-- /.row-fluid -->
+        </div><!-- /.dnd-section (multi-col) -->
+
+      </div><!-- /.body-container.body-container--home -->
+    </main><!-- /#main-content -->
+
+
+    <!-- ─────────────────────────────────────────────────────────────
+         FOOTER — templates/partials/footer.html
+         Wraps modules/Footer.module/module.html output
+    ───────────────────────────────────────────────────────────────── -->
+    <footer class="footer">
+      <!-- theme-overrides.css: .footer { background: theme footer bg } -->
+
+      <!-- Footer.module root -->
+      <div class="footer-main">
+        <!-- background:#f9fafb; border-top:#e5e5e5 solid 1px; padding:1.6rem 0 -->
+        <div class="page-center">
+          <!-- max-width:[theme]px; padding:0 20px; margin:0 auto -->
+
+          <!-- FOOTER TOP: 4-column flex row -->
+          <div class="footer-top">
+            <!-- display:flex; gap:1.6rem -->
+
+            <!-- Column 1: info area (logo + description) -->
+            <div class="footer-col info-area">
+              <!-- max-width:25%; width:100% -->
+              <img
+                src="https://2661279.fs1.hubspotusercontent-na1.net/hubfs/2661279/Smuves/logo.png"
+                alt="logo"
+                width="150"
+                height="25"
+                style="max-width:40%;width:100%!important;margin-bottom:10px"
+              >
+              <p style="font-size:14px;margin:0">The safest way to backup and manage your HubSpot content.</p>
+            </div>
+
+            <!-- Column 2: link column (heading + menu) -->
+            <div class="footer-col">
+              <!-- max-width:25%; width:100% -->
+              <h4 style="font-size:16px;font-weight:600;margin-bottom:8px">Product</h4>
+              <!-- HubSpot {% menu id="193127183697" %} renders as: -->
+              <ul>
+                <li style="display:block;width:100%;margin-bottom:4px">
+                  <a href="#" style="color:#111827;font-size:14px;text-decoration:none">Footer Link</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 3: link column -->
+            <div class="footer-col">
+              <h4 style="font-size:16px;font-weight:600;margin-bottom:8px">Product</h4>
+              <ul>
+                <li style="display:block;width:100%;margin-bottom:4px">
+                  <a href="#" style="color:#111827;font-size:14px;text-decoration:none">Footer Link</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 4: link column -->
+            <div class="footer-col">
+              <h4 style="font-size:16px;font-weight:600;margin-bottom:8px">Product</h4>
+              <ul>
+                <li style="display:block;width:100%;margin-bottom:4px">
+                  <a href="#" style="color:#111827;font-size:14px;text-decoration:none">Footer Link</a>
+                </li>
+              </ul>
+            </div>
+
+          </div><!-- /.footer-top -->
+
+          <!-- FOOTER BOTTOM: copyright -->
+          <div class="footer-bottom">
+            <!-- margin-top:1.6rem; padding-top:1.6rem;
+                 border-top:#e5e5e5 solid 1px; text-align:center -->
+            <p style="color:#111827;font-size:14px;margin:0">© 2026 Smuves. All rights reserved.</p>
+          </div>
+
+        </div><!-- /.page-center -->
+      </div><!-- /.footer-main -->
+
+    </footer><!-- /footer.footer -->
+
+  </div><!-- /.body-wrapper -->
+
+  <!-- Scripts — base.html (before </body>) -->
+  <script src="js/main.js"></script>
+  <!-- HubSpot standard_footer_includes (platform JS: forms, analytics, jQuery) -->
+
+</body>
+</html>
