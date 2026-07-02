@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 const FOOTER_DATA = {
@@ -23,21 +24,25 @@ const FOOTER_DATA = {
     {
       heading: 'Company',
       links: [
-        { label: 'About', href: 'https://www.smuves.com/about' },
-        { label: 'Contact', href: 'https://www.smuves.com/about/contact' },
+        { label: 'About', href: '/about' },
+        { label: 'Contact', href: '/about/contact' },
       ],
     },
     {
       heading: 'HubSpot CMS Bulk Editor',
       links: [
-        { label: 'Overview', href: 'https://www.smuves.com/product' },
-        { label: 'Features', href: 'https://www.smuves.com/product/features' },
+        { label: 'Overview', href: '/product' },
+        { label: 'Features', href: '/product/features' },
+        { label: 'HubSpot to Google Sheets Integration', href: '/product/integrations' },
+        { label: 'Updates', href: '/product/updates' },
+        { label: 'Documentation', href: '/product/documentation' },
+        { label: 'Setup Guide', href: '/setup-guide' },
       ],
     },
     {
-      heading: 'Services',
+      heading: 'Resources',
       links: [
-        { label: 'Website Content Migrations', href: 'https://www.smuves.com/services/website-migration' },
+        { label: 'Engineering', href: '/engineering' },
       ],
     },
   ],
@@ -53,14 +58,14 @@ export default function Footer() {
 
             {/* Column 1: Logo + description + socials */}
             <div className="footer-col info-area">
-              <a href="/">
+              <Link to="/">
                 <img
                   src={FOOTER_DATA.logo.src}
                   alt={FOOTER_DATA.logo.alt}
                   width={FOOTER_DATA.logo.width}
                   height={FOOTER_DATA.logo.height}
                 />
-              </a>
+              </Link>
               <p>{FOOTER_DATA.description}</p>
 
               <ul className="social-links">
@@ -81,7 +86,7 @@ export default function Footer() {
                 <ul>
                   {col.links.map((link) => (
                     <li key={link.label}>
-                      <a href={link.href}>{link.label}</a>
+                      <Link to={link.href}>{link.label}</Link>
                     </li>
                   ))}
                 </ul>

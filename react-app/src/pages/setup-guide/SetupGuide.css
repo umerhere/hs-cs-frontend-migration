@@ -1,0 +1,18 @@
+.setup-content {
+  background: #ffffff;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.setup-content .page-center { max-width: 820px; }
+.setup-content h1 { font-size: 2rem; margin-bottom: 12px; color: #1c1c28; }
+.setup-content h4 { font-size: 1.1rem; margin: 32px 0 10px; color: #1c1c28; }
+.setup-content h4:first-of-type { margin-top: 0; }
+.setup-content p { font-size: 16px; line-height: 1.7; color: #555; margin-bottom: 12px; }
+.setup-content ul { padding-left: 24px; margin-bottom: 16px; }
+.setup-content li { font-size: 15px; line-height: 1.7; color: #555; margin-bottom: 8px; }
+.setup-content hr { border: none; border-top: 1px solid rgba(28,28,40,0.1); margin: 32px 0; }
+.setup-content a { color: #00c6b2; }
+
+@media (max-width: 767px) {
+  .setup-content { padding-top: 50px; padding-bottom: 50px; }
+}

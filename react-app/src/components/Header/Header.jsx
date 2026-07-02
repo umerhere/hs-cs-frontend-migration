@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 const NAV_ITEMS = [
@@ -6,24 +7,24 @@ const NAV_ITEMS = [
     label: 'Services',
     href: null,
     children: [
-      { label: 'Website Content Migrations', href: 'https://www.smuves.com/services/website-migration' },
+      { label: 'Website Content Migrations', href: '/services/website-migration' },
     ],
   },
   {
     label: 'Partnerships',
     href: null,
     children: [
-      { label: 'HubSpot', href: 'https://www.smuves.com/platforms/hubspot' },
-      { label: 'Contentstack', href: 'https://www.smuves.com/platforms/contentstack' },
+      { label: 'HubSpot', href: '/platforms/hubspot' },
+      { label: 'Contentstack', href: '/platforms/contentstack' },
     ],
   },
   {
     label: 'HubSpot CMS Bulk Editor App',
     href: null,
     children: [
-      { label: 'Overview', href: 'https://www.smuves.com/product' },
-      { label: 'Features', href: 'https://www.smuves.com/product/features' },
-      { label: 'HubSpot CMS to Google Sheets Integration', href: 'https://www.smuves.com/product/integrations' },
+      { label: 'Overview', href: '/product' },
+      { label: 'Features', href: '/product/features' },
+      { label: 'HubSpot CMS to Google Sheets Integration', href: '/product/integrations' },
     ],
   },
 ]
@@ -66,7 +67,7 @@ export default function Header() {
 
             {/* Logo */}
             <div className="logo">
-              <a href="/">
+              <Link to="/">
                 <img
                   src="https://www.smuves.com/hubfs/Website/logo.svg"
                   alt="Smuves logo"
@@ -74,7 +75,7 @@ export default function Header() {
                   height="27"
                   loading="eager"
                 />
-              </a>
+              </Link>
             </div>
 
             {/* Desktop nav */}
@@ -101,7 +102,7 @@ export default function Header() {
                           <ul role="menu" className="hs-menu-children-wrapper">
                             {item.children.map(child => (
                               <li key={child.label} className="hs-menu-item hs-menu-depth-2" role="none">
-                                <a href={child.href} role="menuitem">{child.label}</a>
+                                <Link to={child.href} role="menuitem" onClick={() => setOpenDropdown(null)}>{child.label}</Link>
                               </li>
                             ))}
                           </ul>
@@ -118,7 +119,7 @@ export default function Header() {
             {/* Desktop CTAs */}
             <div className="cta-area">
               <a href="#" className="light-green-cta openPopup">Join App Beta</a>
-              <a href="https://www.smuves.com/about/contact" className="light-green-cta">Let's Chat!</a>
+              <Link to="/about/contact" className="light-green-cta">Let's Chat!</Link>
             </div>
 
             {/* Mobile hamburger */}
@@ -161,9 +162,9 @@ export default function Header() {
                         <ul className="mobile-submenu" role="menu">
                           {item.children.map(child => (
                             <li key={child.label} role="none">
-                              <a href={child.href} role="menuitem" onClick={() => setMobileOpen(false)}>
+                              <Link to={child.href} role="menuitem" onClick={() => setMobileOpen(false)}>
                                 {child.label}
-                              </a>
+                              </Link>
                             </li>
                           ))}
                         </ul>
@@ -178,9 +179,9 @@ export default function Header() {
           </nav>
           <div className="cta-clone">
             <a href="#" className="light-green-cta openPopup">Join App Beta</a>
-            <a href="https://www.smuves.com/about/contact" className="light-green-cta" onClick={() => setMobileOpen(false)}>
+            <Link to="/about/contact" className="light-green-cta" onClick={() => setMobileOpen(false)}>
               Let's Chat!
-            </a>
+            </Link>
           </div>
         </div>
       </div>

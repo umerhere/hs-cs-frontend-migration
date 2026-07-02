@@ -1,0 +1,218 @@
+/* ============================================================
+   About page — section-specific styles
+   Module CSS sources: Right_Text_Left_Image, Rich_Text,
+   Left_content_right_grid, Timeline, Team_Grid
+   ============================================================ */
+
+/* ── Our Story (left-right / checklist layout) ─────────────── */
+.about-our-story {
+  background: #ffffff;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.left-right .heading-area {
+  position: relative;
+  text-align: center;
+  z-index: 10;
+}
+.left-right .heading-area p {
+  line-height: 32px;
+  margin: 0 auto 32px;
+  max-width: 768px;
+  width: 100%;
+}
+.left-right .checklist-area {
+  align-items: center;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 60px;
+  position: relative;
+  z-index: 10;
+}
+.checklist-text h2 { margin-bottom: 20px; }
+.checklist-text p { font-size: 16px; line-height: 1.7; margin-bottom: 12px; }
+
+@media (max-width: 767px) {
+  .left-right .checklist-area { grid-template-columns: 1fr; }
+  .about-our-story { padding-top: 40px; padding-bottom: 20px; }
+}
+
+/* ── Rich Text section ──────────────────────────────────────── */
+.about-what-we-do {
+  background: #fafafa;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.richtext-section .page-center {
+  position: relative;
+  z-index: 9;
+  max-width: 820px;
+}
+.richtext-section h2 { margin-bottom: 12px; margin-top: 40px; }
+.richtext-section h2:first-child { margin-top: 0; }
+.richtext-section p { font-size: 16px; line-height: 1.7; margin-bottom: 12px; }
+
+@media (max-width: 767px) {
+  .about-what-we-do { padding-top: 50px; padding-bottom: 50px; }
+}
+
+/* ── Our Values (icon-grid-section) ────────────────────────── */
+.about-values {
+  background: #F5F7FA;
+  padding-top: 160px;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.icon-grid-main-outer::after {
+  background: url(https://www.smuves.com/hubfs/Website/background%20home.png) no-repeat;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  content: "";
+  height: 100%;
+  left: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 530px;
+}
+.icon-grid-main-outer { padding: 50px 0; position: relative; }
+.icon-grid-main {
+  display: flex;
+  gap: 50px;
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+}
+.icon-grid-header { margin-bottom: 24px; }
+.icon-grid-header h2 { margin-bottom: 10px; }
+.icon-grid-header p { font-size: 15px; color: #555; }
+.icon-grid.four_column {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.icon-grid-inner.normal {
+  background: #fff;
+  border-radius: 18px;
+  padding: 40px 22px 30px;
+}
+.icon-grid-inner.normal p { margin: 0; font-size: 15px; line-height: 1.6; }
+.icon-grid-inner.normal h4 { margin-bottom: 10px; }
+.icon-tag { align-items: center; display: flex; margin-bottom: 20px; }
+.hs_cos_wrapper_type_icon {
+  border-radius: 0.625rem;
+  line-height: 1;
+  padding: 13px;
+  background: #e0fbfc;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.hs_cos_wrapper_type_icon svg { fill: #00c6b2; }
+
+@media (max-width: 768px) {
+  .icon-grid-main { display: block; }
+  .icon-grid.four_column { grid-template-columns: 1fr; }
+  .about-values { padding-top: 50px; padding-bottom: 50px; }
+  .icon-grid-main-outer::after { display: none; }
+}
+
+/* ── Timeline ───────────────────────────────────────────────── */
+.about-timeline {
+  background: #F5F7FA;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.timeline-header { margin: 0 auto 60px; max-width: 800px; text-align: center; }
+.timeline-header h2 { margin-bottom: 10px; }
+.timeline { padding: 2rem 0; position: relative; }
+.timeline-item {
+  align-items: flex-start;
+  display: flex;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.timeline-item:last-child::before { display: none; }
+.timeline-item::before {
+  background: rgba(3, 2, 19, 0.1);
+  bottom: -2.5rem;
+  content: "";
+  left: 24px;
+  position: absolute;
+  top: 65px;
+  width: 1.5px;
+}
+.timeline-marker {
+  align-items: center;
+  background: #00c6b2;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  height: 50px;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  z-index: 1;
+}
+.timeline-content { flex: 1; margin-left: 1.5rem; }
+.timeline-content .year {
+  background: rgba(3, 2, 19, 0.1);
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  padding: 2px 8px;
+}
+.timeline-content h3 {
+  color: #1c1c28;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0.25rem 0;
+}
+.timeline-content p { margin: 0; font-size: 15px; color: #555; }
+
+@media (max-width: 767px) {
+  .about-timeline { padding-top: 50px; padding-bottom: 50px; }
+}
+
+/* ── Team Grid ──────────────────────────────────────────────── */
+.about-team {
+  background: #F5F7FA;
+  padding-top: 80px;
+  padding-bottom: 180px;
+}
+.image-grid-main { position: relative; text-align: center; z-index: 10; }
+.image-grid-header { margin: 0 auto 60px; max-width: 800px; }
+.image-grid-header h2 { margin-bottom: 16px; }
+.image-grid-header p { font-size: 16px; line-height: 1.7; margin-bottom: 8px; }
+.image-grid {
+  display: grid;
+  gap: 44px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.image-grid-inner {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+  overflow: hidden;
+}
+.image-tag img {
+  margin-bottom: 10px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+}
+.image-grid-inner h5 { font-size: 18px; font-weight: 600; margin: 16px 16px 8px; }
+.image-grid-inner h6 { color: #00c6b2; margin: 0 16px 8px; font-size: 14px; }
+.image-grid-inner p { margin: 0 16px; font-size: 13px; color: #6b7280; }
+
+@media (max-width: 768px) {
+  .image-grid { grid-template-columns: 1fr; }
+  .about-team { padding-top: 50px; padding-bottom: 50px; }
+}

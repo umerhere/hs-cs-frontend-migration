@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './DescriptionCtaSection.css'
 
 const descCtaData = {
@@ -9,7 +10,7 @@ const descCtaData = {
   ctas: [
     {
       text: "Let's Fix it Now!",
-      href: 'https://www.smuves.com/about/contact',
+      href: '/about/contact',
       style: 'green-cta',
     },
   ],
@@ -26,9 +27,9 @@ export default function DescriptionCtaSection() {
           ))}
           <div className="cta-area">
             {descCtaData.ctas.map((cta) => (
-              <a key={cta.text} href={cta.href} className={cta.style}>
+              <Link key={cta.text} to={cta.href} className={cta.style}>
                 {cta.text}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
