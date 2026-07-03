@@ -2,7 +2,18 @@ import { Link } from 'react-router-dom'
 import Header from '../../components/Header/Header.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import HeroV1 from '../../components/modules/HeroV1/HeroV1.jsx'
+import { usePageData } from '../../hooks/usePageData.js'
+import { mapHeroFromCS } from '../../lib/mappers/heroMapper.js'
 import './Pricing.css'
+
+const HERO_FALLBACK = {
+  heading: 'HubSpot CMS Bulk Editor',
+  headingSpan: ' Pricing',
+  paragraphs: ['From solo marketers to enterprise teams, we have a plan that scales with your needs.'],
+  imagePosition: 'none',
+  textAlign: 'left',
+  style: { paddingTop: 190, paddingBottom: 140, mobilePaddingTop: 190, mobilePaddingBottom: 90 },
+}
 
 const CHECK_ICON = (
   <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" width="21" height="21">
@@ -102,23 +113,33 @@ function PricingCard({ tier }) {
 }
 
 export default function Pricing() {
+  const { data } = usePageData('product/pricing')
+  const heroProps = mapHeroFromCS(data?.gf_hero_v1_module) ?? HERO_FALLBACK
+
+  // CS: gf_pricing_card[] — each item matches the TIERS shape
+  const tiers = Array.isArray(data?.gf_pricing_card) && data.gf_pricing_card.length
+    ? data.gf_pricing_card.map((t) => ({
+        name:     t.tier     ?? '',
+        price:    t.price    ?? '',
+        period:   t.timeframe ?? 'Per month',
+        tagline:  t.description ?? '',
+        popular:  t.popular ?? false,
+        features: Array.isArray(t.features) ? t.features : [],
+        cta:      t.button_text ?? 'Get Started',
+        ctaHref:  t.button_link?.url?.href ?? '#',
+      }))
+    : TIERS
+
   return (
     <div className="body-wrapper">
       <Header />
       <main id="main-content" className="body-container-wrapper">
         <div className="body-container">
-          <HeroV1
-            heading="HubSpot CMS Bulk Editor"
-            headingSpan=" Pricing"
-            paragraphs={['From solo marketers to enterprise teams, we have a plan that scales with your needs.']}
-            imagePosition="none"
-            textAlign="left"
-            style={{ paddingTop: 190, paddingBottom: 140, mobilePaddingTop: 190, mobilePaddingBottom: 90 }}
-          />
+          <HeroV1 {...heroProps} />
           <section className="pricing-section">
             <div className="page-center">
               <div className="pricing-section-wrapper">
-                {TIERS.map((tier) => <PricingCard key={tier.name} tier={tier} />)}
+                {tiers.map((tier) => <PricingCard key={tier.name} tier={tier} />)}
               </div>
             </div>
           </section>

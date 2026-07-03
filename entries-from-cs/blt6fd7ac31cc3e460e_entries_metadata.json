@@ -1,0 +1,16 @@
+{
+  "api_key": "blt6fd7ac31cc3e460e",
+  "org_uid": "blta187ece3cd2a97b6",
+  "branch": "main",
+  "module": "entries",
+  "total_count": 20,
+  "limit": 10000,
+  "files": [
+    {
+      "filename": "entries_000000_to_000019.json",
+      "offset": 0,
+      "count": 20,
+      "limit": 10000
+    }
+  ]
+}

@@ -1,7 +1,18 @@
 import Header from '../../components/Header/Header.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import HeroV1 from '../../components/modules/HeroV1/HeroV1.jsx'
+import { usePageData } from '../../hooks/usePageData.js'
+import { mapHeroFromCS } from '../../lib/mappers/heroMapper.js'
 import './Policy.css'
+
+const HERO_FALLBACK = {
+  heading: 'Terms',
+  headingSpan: ' of Use',
+  paragraphs: ['Please read these terms carefully before using Smuves.'],
+  imagePosition: 'none',
+  textAlign: 'left',
+  style: { paddingTop: 190, paddingBottom: 140, mobilePaddingTop: 190, mobilePaddingBottom: 90 },
+}
 
 const CONTENT = `
 <h6>Last updated: May 2026</h6>
@@ -48,21 +59,19 @@ const CONTENT = `
 `
 
 export default function TermsOfUse() {
+  const { data } = usePageData('policies/terms-of-use')
+  const heroProps = mapHeroFromCS(data?.gf_hero_v1_module) ?? HERO_FALLBACK
+  // CS: gf_policy_content_module.add.content — rich text body of the terms
+  const bodyHtml  = data?.gf_policy_content_module?.add?.content || CONTENT
+
   return (
     <div className="body-wrapper">
       <Header />
       <main id="main-content" className="body-container-wrapper">
         <div className="body-container">
-          <HeroV1
-            heading="Terms"
-            headingSpan=" of Use"
-            paragraphs={['Service guidelines, acceptable use, and your rights as a Smuves user.']}
-            imagePosition="none"
-            textAlign="left"
-            style={{ paddingTop: 190, paddingBottom: 140, mobilePaddingTop: 190, mobilePaddingBottom: 90 }}
-          />
+          <HeroV1 {...heroProps} />
           <section className="richtext-section policy-content">
-            <div className="page-center" dangerouslySetInnerHTML={{ __html: CONTENT }} />
+            <div className="page-center" dangerouslySetInnerHTML={{ __html: bodyHtml }} />
           </section>
         </div>
       </main>

@@ -14,9 +14,7 @@ export default function HeroSection() {
       ctas={[{ text: "Let's Chat!", href: '/about/contact', style: 'black_arrow' }]}
       hasListing={true}
       listing={[
-        'Liquidate Years of Technical Debt',
-        'Standardize Fragmented Website Data',
-        'Unlock Total System Portability',
+        
       ]}
       style={{ paddingTop: 190, paddingBottom: 120, mobilePaddingTop: 140, mobilePaddingBottom: 90 }}
     />

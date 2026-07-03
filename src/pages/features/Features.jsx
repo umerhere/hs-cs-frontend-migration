@@ -1,7 +1,18 @@
 import Header from '../../components/Header/Header.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import HeroV1 from '../../components/modules/HeroV1/HeroV1.jsx'
+import { usePageData } from '../../hooks/usePageData.js'
+import { mapHeroFromCS } from '../../lib/mappers/heroMapper.js'
 import './Features.css'
+
+const HERO_FALLBACK = {
+  heading: 'Smuves',
+  headingSpan: ' Features',
+  paragraphs: ['Discover how Smuves transforms complex HubSpot operations into simple, safe, and scalable processes. Every feature is designed to save you time while protecting your data.'],
+  imagePosition: 'none',
+  textAlign: 'left',
+  style: { paddingTop: 190, paddingBottom: 140, mobilePaddingTop: 190, mobilePaddingBottom: 90 },
+}
 
 const PANELS = [
   {
@@ -148,20 +159,16 @@ function FeaturesDescCta() {
 }
 
 export default function Features() {
+  const { data } = usePageData('product/features')
+  const heroProps = mapHeroFromCS(data?.gf_hero_v1_module) ?? HERO_FALLBACK
   const bgs = ['#ffffff', '#F5F7FA', '#ffffff', '#F5F7FA']
+
   return (
     <div className="body-wrapper">
       <Header />
       <main id="main-content" className="body-container-wrapper">
         <div className="body-container">
-          <HeroV1
-            heading="Smuves"
-            headingSpan=" Features"
-            paragraphs={['Discover how Smuves transforms complex HubSpot operations into simple, safe, and scalable processes. Every feature is designed to save you time while protecting your data.']}
-            imagePosition="none"
-            textAlign="left"
-            style={{ paddingTop: 190, paddingBottom: 140, mobilePaddingTop: 190, mobilePaddingBottom: 90 }}
-          />
+          <HeroV1 {...heroProps} />
           {PANELS.map((panel, i) => (
             <PanelSection key={panel.title} panel={panel} bg={bgs[i]} />
           ))}

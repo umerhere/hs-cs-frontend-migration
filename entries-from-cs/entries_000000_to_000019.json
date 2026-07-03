@@ -1,0 +1,1373 @@
+{
+  "entries": [
+    {
+      "_content_type_uid": "site_pages",
+      "_version": 1,
+      "uid": "bltd5e58a528ddf36f1",
+      "locale": "en-us",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T13:24:09.715Z",
+        "errors": []
+      },
+      "campaign": "asssaaa",
+      "created_at": "2026-07-02T13:24:09.703Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/product",
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "Smuves logo - HubSpot CMS bulk editor",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "cta_item_group": {
+          "cta_style": "black_arrow",
+          "cta_text": "Join Beta",
+          "cta_popup": true
+        },
+        "description": "<p>Smuves is the headless website data editor for HubSpot websites.</p>",
+        "heading": "Bulk edit HubSpot CMS",
+        "heading_second_line": "in seconds, not hours.",
+        "listing": {
+          "text_field": "See real time content counts"
+        },
+        "style": {
+          "section_bg": "light",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":120},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":190}}}",
+          "mobile_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":90},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":140}}}"
+        },
+        "tag_label": "Now in Beta"
+      },
+      "gf_icon_grid_with_tags_module": {
+        "description": "<div>\n<p>Powerful tools designed to make bulk cms management simple, safe, and efficient.</p>\n</div>",
+        "heading": "Built for content teams, not just developers.",
+        "icon_grid": {
+          "icon_field": "{\"name\":\"table\",\"type\":\"SOLID\",\"unicode\":\"f0ce\"}",
+          "text": "<h3>Bulk CMS Editing</h3>\n<p>Update pages, blogs, posts, authors, tags, and redirects.</p>",
+          "tag_choice": "available"
+        },
+        "style": {
+          "section_bg": "light",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":70},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":240}}}",
+          "mobile_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":50},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":250}}}"
+        }
+      },
+      "gf_seo_fields": {
+        "name": "Product",
+        "slug": "product",
+        "meta_description": "Scale content, not chaos. Join the teams using Smuves to Bulk edit HubSpot CMS\nin seconds, not hours."
+      },
+      "htmltitle": "HubSpot CMS Bulk Editing",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Product",
+      "updated_at": "2026-07-02T13:24:09.703Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.052Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "_content_type_uid": "site_pages",
+      "locale": "en-us",
+      "uid": "bltb4fce549bfb4d789",
+      "_version": 1,
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T13:24:06.588Z",
+        "errors": []
+      },
+      "campaign": "test compagin",
+      "created_at": "2026-07-02T13:24:06.579Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/policies/privacy-policy",
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "description": "",
+        "heading": "Privacy",
+        "heading_second_line": "Policy",
+        "style": {
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":140},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":190}}}"
+        },
+        "tag_label": ""
+      },
+      "gf_policy_content_module": {
+        "add": {
+          "heading": "Overview",
+          "content": "<p><span>This Privacy Policy explains how <strong>Studio Glos LLC</strong>, dba <strong>Smuves</strong> (\"we\", \"us\", or \"our\") collects, uses, and protects information when you use Smuves (the \"Service\"). It covers two different kinds of data: information about you as a user of the Service, and the data inside the accounts you connect to the Service, such as your HubSpot portal. These are treated differently, as explained below.</span></p>"
+        },
+        "style": {
+          "section_bg": "light"
+        },
+        "subtitle": "Last updated: May 2026"
+      },
+      "gf_seo_fields": {
+        "name": "Policies: Privacy Policy",
+        "slug": "policies/privacy-policy",
+        "meta_description": "Privacy Policy details how we collect, use, and protect your personal information while ensuring compliance with legal obligations respecting your rights."
+      },
+      "htmltitle": "Privacy Policy | Data Collection, Usage, and Rights",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Policies: Privacy Policy",
+      "updated_at": "2026-07-02T13:24:06.579Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.077Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "_content_type_uid": "site_pages",
+      "_version": 1,
+      "locale": "en-us",
+      "uid": "blt7633c24bdbe27df6",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.411Z",
+        "errors": []
+      },
+      "campaign": "test compagin",
+      "created_at": "2026-07-02T13:24:03.932Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/policies/terms-of-use",
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "description": "",
+        "heading": "Terms",
+        "heading_second_line": "of Use",
+        "tag_label": "",
+        "style": {}
+      },
+      "gf_policy_content_module": {
+        "add": {
+          "heading": "Introduction",
+          "content": "<p><span>Welcome to <strong>Smuves</strong>, operated by <strong>Studio Glos</strong> LLC (\"Smuves\", \"we\", \"us\", or \"our\"). By accessing or using our web application, website, and related services (the \"Service\"), you agree to be bound by these Terms of Use and our Privacy Policy. If you are using the Service on behalf of a company or other entity, you confirm that you have the authority to bind that entity, and \"you\" refers to that entity. If you do not agree to these terms, please do not use the Service.</span></p>"
+        },
+        "style": {
+          "section_bg": "light"
+        },
+        "subtitle": "Last updated: May 2026"
+      },
+      "gf_seo_fields": {
+        "name": "Policies: Terms of Use",
+        "slug": "policies/terms-of-use",
+        "meta_description": "Access and use Smuves responsibly. Review our Terms of Use for guidelines on service usage, account security, refunds, and liability."
+      },
+      "htmltitle": "Terms of Use | Service Guidelines | Refund Policy",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Policies: Terms of Use",
+      "updated_at": "2026-07-02T13:24:03.932Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.094Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "_content_type_uid": "site_pages",
+      "_version": 1,
+      "uid": "bltf255d849f4d2a4d7",
+      "locale": "en-us",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.420Z",
+        "errors": []
+      },
+      "campaign": "asssaaa",
+      "created_at": "2026-07-02T13:24:01.304Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/about",
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "About us",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "description": "<p><strong>Website Content Engineering. Built for teams that need their data to actually move.</strong></p>\n<p>We help companies take control of their website content dataset.</p>\n<p>Not just edit it. Not just redesign it.</p>\n<p>Structure it, clean it, and move it between systems without breaking everything along the way.</p>",
+        "heading": "About",
+        "heading_second_line": "Smuves",
+        "style": {
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":140},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":190}}}"
+        },
+        "tag_label": ""
+      },
+      "gf_left_content_right_grid_module": {
+        "description": "<p>&nbsp;We keep this simple and practical.</p>",
+        "heading": "Our Values",
+        "icon_grid": {
+          "color_choice": "normal",
+          "icon_field": "{\"name\":\"Book Reader\",\"type\":\"SOLID\",\"unicode\":\"f5da\"}",
+          "text": "<h4>Curiosity</h4>\n<p>We question how things are done and look for better ways to solve them.&nbsp;</p>"
+        },
+        "style": {
+          "section_bg": "light",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":80},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":160}}}"
+        }
+      },
+      "gf_rich_text_module": {
+        "content": "<h2><span><strong>What We Do Now</strong></span></h2>\n<p>Today, Smuves sits at the intersection of <strong>tooling and services</strong>.</p>\n<p>Our platform exposes your website content dataset so it can be searched, edited, and updated in bulk.</p>\n<p>Our services go deeper… designing content architecture, building custom ETLs, and programmatically migrating content between systems like HubSpot and Contentstack.</p>\n<p>We don’t focus on how your site looks.</p>\n<p>We focus on how your content is structured, managed, and moved behind the scenes.</p>\n<p>Because that’s the part that usually breaks.</p>\n<h2>&nbsp;</h2>\n<h2><span><strong>What We Believe</strong></span></h2>\n<p>Most websites aren’t limited by design.</p>\n<p>They’re limited by how their content is structured.</p>\n<p>When content is locked into pages, tied to templates, or scattered across systems… everything becomes harder. Updates take longer. Migrations get expensive. Teams work around the system instead of with it.</p>\n<p>We believe your content should behave like a real asset.</p>\n<p>Structured. Searchable. Portable.</p>\n<p>Something you can actually operate on… not something you’re stuck maintaining.</p>"
+      },
+      "gf_right_text_left_image_module": {
+        "checklist_area": {
+          "content": "<h2>Our Story</h2>\n<div>\n<p>Smuves didn’t start as an agency.</p>\n<p>It started as a problem.</p>\n<p>During a large-scale migration project… tens of thousands of pages, thousands of blog posts, and dozens of languages… it became clear how fragile most website content actually is. Hard-coded into templates. Scattered across modules. Difficult to find, even harder to change.</p>\n<p>What should have been a structured dataset… was a collection of disconnected “blobs.”</p>\n<p>So we built a way to fix it.</p>\n<p>The first version was simple. Pull content out of HubSpot, organize it in a way that made sense, and make bulk updates possible. What used to take weeks could now be done in hours.</p>\n<p>But once you can see and edit your content like data… you start to realize something else.</p>\n<p>You can move it.</p>\n</div>"
+        },
+        "description": "",
+        "heading": "",
+        "style": {
+          "background_color": "{\"color\":\"#FFFFFF\",\"opacity\":100}",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":90},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":90}}}"
+        }
+      },
+      "gf_seo_fields": {
+        "name": "About",
+        "slug": "about",
+        "meta_description": "Smuves is on a mission to help HubSpot Webmasters prioritize good website hygiene. "
+      },
+      "gf_team_grid_module": {
+        "description": "<p>The engineers behind the scenes.</p>\n<p>The ones building the systems, testing the edge cases, and making sure your content doesn’t fall apart when it moves.</p>\n<p>So your team doesn’t have to.</p>",
+        "heading": "Meet the Team",
+        "icon_grid": {
+          "name_": "Nicole Pereira",
+          "postition": "Founder",
+          "text": "Coffee, Chocolate, & Video Games!"
+        },
+        "style": {
+          "section_bg": "light",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":180},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":80}}}"
+        }
+      },
+      "gf_timeline_module": {
+        "description": "<p>Key milestones in building Smuves</p>",
+        "heading": "Our Journey",
+        "style": {
+          "section_bg": "light"
+        },
+        "timeline": {
+          "circle_number": "25",
+          "year": "2025",
+          "heading": "Beta Launch",
+          "text": "Launched our beta program with 100+ early adopters"
+        }
+      },
+      "htmltitle": "About the Smuves Crew",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "About",
+      "updated_at": "2026-07-02T13:24:01.304Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.110Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "_content_type_uid": "site_pages",
+      "_version": 1,
+      "uid": "blt937f2976e0273bb8",
+      "locale": "en-us",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.416Z",
+        "errors": []
+      },
+      "campaign": "asssaaa",
+      "created_at": "2026-07-02T13:23:57.507Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/about/contact",
+      "gf_contact_form_module": {
+        "description": "",
+        "form": {
+          "form_field": "{\"form_id\":\"49953076-25c1-4d6f-be7a-175aafa7d6dd\",\"form_type\":\"HUBSPOT\",\"message\":\"Thanks for sending us a message. We will get back to you as fast as our digital legs will carry us!\",\"response_type\":\"inline\"}"
+        },
+        "heading": "",
+        "style": {
+          "section_bg": "light",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":70},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":70}}}"
+        }
+      },
+      "gf_faq_module": {
+        "description": "<p>Quick answers to common questions.</p>",
+        "faq": {
+          "question": "How does Smuves integrate with HubSpot?",
+          "text": "<p>Smuves uses HubSpot's CMS APIs to securely connect to your CMS data. W</p>"
+        },
+        "heading": "Frequently Asked Questions",
+        "style": {
+          "section_bg": "light"
+        }
+      },
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "description": "<p>Need help or have questions? We're here to support you every step of the way.</p>",
+        "heading": "Contact &",
+        "heading_second_line": "Support",
+        "tag_label": "",
+        "style": {}
+      },
+      "gf_seo_fields": {
+        "name": "About: Contact",
+        "slug": "about/contact",
+        "meta_description": "Get quick support and answers to your questions about Smuves, including integration with HubSpot and details on our beta program."
+      },
+      "gf_support_module": {
+        "description": "",
+        "heading": "Other Ways to Reach Us",
+        "style": {
+          "section_bg": "light"
+        },
+        "support": {
+          "text": "<h4 style=\"margin: 0;\">Email Support</h4>\n<p>Get help via email&nbsp;<span></span></p>"
+        }
+      },
+      "htmltitle": "Contact & Support | Get Help & FAQs",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "About: Contact",
+      "updated_at": "2026-07-02T13:23:57.507Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.126Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "locale": "en-us",
+      "_content_type_uid": "site_pages",
+      "uid": "bltf17ae955c0ed076f",
+      "_version": 1,
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.409Z",
+        "errors": []
+      },
+      "campaign": "asssaaa",
+      "created_at": "2026-07-02T13:23:54.257Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/product/updates",
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "Product Updates",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "description": "<div>\n<p>Stay updated with the latest features and improvements to Smuves.</p>\n</div>",
+        "heading": "Product",
+        "heading_second_line": "Updates",
+        "style": {
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":140},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":190}}}"
+        },
+        "tag_label": ""
+      },
+      "gf_product_update_module": {
+        "products": {
+          "icon_choice": "1",
+          "heading": "Bot Protection and Platform Stability",
+          "description": "<p>We have added Cloudflare Turnstile captcha verification and request throttling to reduce automated bot activity. Production infrastructure has been synced with all required database tables, edge functions, RLS policies, and RPCs. Multiple bug fixes across payment upgrades/cancellations, find and replace, export logging, fetch job reconciliation, and filter behavior have been resolved.</p>",
+          "date": "May 19, 2026"
+        },
+        "style": {
+          "section_bg": "light",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":70},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":70}}}"
+        }
+      },
+      "gf_seo_fields": {
+        "name": "Product: Updates",
+        "slug": "product/updates",
+        "meta_description": "Stay updated with the latest features and improvements to Smuves. We ship new updates regularly based on user feedback."
+      },
+      "gf_timeline_module": {
+        "description": "<p>Key milestones in building Smuves</p>",
+        "heading": "Our Journey",
+        "style": {
+          "section_bg": "light"
+        },
+        "timeline": {
+          "circle_number": "25",
+          "year": "2025",
+          "heading": "Beta Launch",
+          "text": "Launched our beta program with 100+ early adopters"
+        }
+      },
+      "htmltitle": "Product Updates | New Features and Improvements",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Product: Updates",
+      "updated_at": "2026-07-02T13:23:54.257Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.143Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "_content_type_uid": "site_pages",
+      "_version": 1,
+      "uid": "blt9e06d2ebdba89490",
+      "locale": "en-us",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.410Z",
+        "errors": []
+      },
+      "campaign": "asssaaa",
+      "created_at": "2026-07-02T13:23:51.352Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/-temporary-slug-product-updates-666a6ec0-98a2-44b9-b394-222f5c9743eb",
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "",
+        "use_featured_image": true
+      },
+      "gf_panel_module": {
+        "content": {
+          "image_choice": "right",
+          "content": "<h3>Heading</h3>\n<p><strong>Lorem Ipsum</strong><span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.</span></p>\n<ul>\n<li><span>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </span></li>\n<li><span>It was popularised in the 1960s with the release of Letraset sheets containing.</span></li>\n<li><span>Lorem Ipsum passages, and more recently with desktop.</span><br><span></span></li>\n</ul>\n<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.&nbsp;</p>"
+        },
+        "cta_item_group": {
+          "cta_style": "primary-gradient-cta",
+          "cta_text": "Start Free Trial",
+          "cta_popup": true
+        },
+        "description": "<p><strong>Lorem Ipsum</strong><span> is simply dummy text of the printing and typesetting industry.&nbsp;</span></p>",
+        "heading": "Sample Heading",
+        "style": {
+          "section_bg": "light",
+          "desktop_spacings": "{\"margin\":{\"bottom\":{},\"top\":{}},\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":80},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":80}}}",
+          "mobile_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":50},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":50}}}"
+        }
+      },
+      "gf_seo_fields": {
+        "name": "Module Testing",
+        "slug": "-temporary-slug-product-updates-666a6ec0-98a2-44b9-b394-222f5c9743eb",
+        "meta_description": "Smuves empowers HubSpot webmasters with innovative tools for efficient website management, ensuring optimal website hygiene and streamlined bulk editing solutions."
+      },
+      "htmltitle": "Product Updates",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Module Testing",
+      "updated_at": "2026-07-02T13:23:51.352Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.159Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "uid": "blt35c6f11de64cfd2a",
+      "_version": 1,
+      "_content_type_uid": "site_pages",
+      "locale": "en-us",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.438Z",
+        "errors": []
+      },
+      "campaign": "asssaaa",
+      "created_at": "2026-07-02T13:23:48.751Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/product/integrations",
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "description": "<p><span>Effortlessly sync between Google Sheets and HubSpot CMS</span></p>",
+        "heading": "HubSpot & Google ",
+        "heading_second_line": "Sheets Integration",
+        "style": {
+          "section_bg": "white",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":140},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":190}}}"
+        },
+        "tag_label": ""
+      },
+      "gf_icon_grid_module": {
+        "column_choice": "three_column",
+        "description": "<p><span>Built for reliability, designed for scale, and optimized for your content editing workflow</span></p>",
+        "heading": "Why Choose Smuves Integrations?",
+        "icon_grid": {
+          "color_choice": "blue",
+          "icon_field": "{\"name\":\"Hand Pointing Up\",\"type\":\"REGULAR\",\"unicode\":\"f0a6\"}",
+          "text": "<h4>One-Click Integration</h4>\n<div data-slot=\"card\">\n<p>Simple connection setup that gets you up and running with HubSpot and Google Sheets in minutes</p>\n</div>"
+        },
+        "style": {
+          "section_bg": "light",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":70},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":70}}}"
+        }
+      },
+      "gf_seo_fields": {
+        "name": "Product: Integrations",
+        "slug": "product/integrations",
+        "meta_description": "Integrate & bulk edit HubSpot CMS content using Google Sheets. Enjoy quick imports, exports, and detailed activity logs."
+      },
+      "htmltitle": "HubSpot & Google Sheets Integration | Effortless Sync & Bulk Editing",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Product: Integrations",
+      "updated_at": "2026-07-02T13:23:48.751Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.176Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "_content_type_uid": "site_pages",
+      "_version": 1,
+      "locale": "en-us",
+      "uid": "blt701f54c45f203ebb",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.411Z",
+        "errors": []
+      },
+      "campaign": "asssaaa",
+      "created_at": "2026-07-02T13:23:45.522Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/product/features",
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "Smuves Features",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "description": "<p><span>Discover how Smuves transforms complex HubSpot operations into simple, safe, and scalable processes. Every feature is designed to save you time while protecting your data.</span></p>",
+        "heading": "Smuves",
+        "heading_second_line": "Features",
+        "style": {
+          "section_bg": "white",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":140},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":190}}}"
+        },
+        "tag_label": ""
+      },
+      "gf_seo_fields": {
+        "name": "Product: Features",
+        "slug": "product/features",
+        "meta_description": "Discover how Smuves transforms complex HubSpot operations into simple, safe, and scalable processes. Every feature is designed to save you time while protecting your data."
+      },
+      "htmltitle": "HubSpot Bulk Editing & CMS Operations Simplified ",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Product: Features",
+      "updated_at": "2026-07-02T13:23:45.522Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.193Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "locale": "en-us",
+      "_version": 1,
+      "_content_type_uid": "site_pages",
+      "uid": "blt187329217a35d2ff",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.412Z",
+        "errors": []
+      },
+      "campaign": "test compagin",
+      "created_at": "2026-07-02T13:23:42.570Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/product/documentation",
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "Smuves Logo",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "description": "",
+        "heading": "Smuves",
+        "heading_second_line": "Documentation",
+        "style": {
+          "desktop_spacings": "{\"margin\":{\"bottom\":{},\"top\":{\"units\":\"px\",\"value\":0}},\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":150},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":190}}}"
+        },
+        "tag_label": ""
+      },
+      "gf_rich_text_module": {
+        "content": "<h2 style=\"line-height: 1.5;\"><strong><span>What Smuves Does</span></strong></h2>\n<p style=\"line-height: 1.5;\"><span>Smuves is a content engineering platform that connects to your HubSpot CMS and lets you manage website content in bulk. Instead of editing pages one by one inside HubSpot, Smuves pulls your entire content dataset into a searchable, filterable data table where you can make changes across hundreds or thousands of records at once.</span></p>\n<p style=\"line-height: 1.5;\"><span>With the Smuves and HubSpot integration, you can:</span></p>\n<ul style=\"line-height: 1.5;\">\n<li><span>Fetch and browse all your CMS content types (pages, blog posts, landing pages, authors, tags, redirects, HubDB tables) in one place</span></li>\n<li><span>Search, sort, and filter across all records instantly</span></li>\n<li><span>Bulk edit multiple fields across multiple records at once</span></li>\n<li><span>Find and replace text across your entire content library</span></li>\n<li><span>Export content data to CSV or Google Sheets for review</span></li>\n<li><span>Import changes back to HubSpot with a single action</span></li>\n<li><span>View detailed activity logs of every change made</span></li>\n</ul>\n<p style=\"line-height: 1.5;\"><span>Smuves only works with CMS content. It does not modify CRM objects like contacts, companies, or deals.</span></p>\n<h2 style=\"line-height: 1.5;\"><strong><span>Prerequisites</span></strong></h2>\n<p style=\"line-height: 1.5;\"><span>Before you install Smuves, make sure you have the following:</span></p>\n<ul style=\"line-height: 1.5;\">\n<li><span>A HubSpot account with CMS Hub (Starter, Professional, or Enterprise). Smuves works with all CMS Hub tiers.</span></li>\n<li><span>Super Admin permissions in your HubSpot account, or at minimum, permissions to install apps and access CMS content.</span></li>\n<li><span>A modern web browser (Chrome, Firefox, Edge, or Safari). Smuves runs entirely in the browser.</span></li>\n</ul>\n<p style=\"line-height: 1.5;\"><span>You do not need any coding knowledge, API credentials, or developer tools to use Smuves.</span></p>\n<h2 style=\"line-height: 1.5;\"><strong><span>Step 1: Create Your Smuves Account</span></strong></h2>\n<ol style=\"line-height: 1.5;\">\n<li><span>Go to</span><a href=\"https://app.smuves.com\"><span style=\"white-space-collapse: preserve;\"> </span><u><span style=\"color: #1155cc;\">app.smuves.com</span></u></a><span> to open the signup screen.</span></li>\n<li><span>You will see three tabs at the top: </span><strong><span>Magic link</span></strong><span>, <strong>s</strong></span><strong><span><strong>i</strong>gn Up</span></strong><span>, and <strong>s</strong></span><strong><span>ign In</span></strong><span>.</span></li>\n<li><span>You can use any of the following methods to create your account:</span></li>\n<ul style=\"list-style-type: circle;\">\n<li><strong><span>Magic Link:</span></strong><span> Enter your email address and click </span><strong><span>Send Magic Link</span></strong><span>. Smuves will send you a secure login link via email. No password needed. You can optionally enter your full name as well.</span></li>\n<li><strong><span>Sign Up:</span></strong><span> Switch to the Sign Up tab and create an account with your email and a password.</span></li>\n<li style=\"line-height: 1.15;\"><strong><span>Continue with Google:</span></strong><span> Click the Google button at the bottom to sign up using your Google account.</span></li>\n</ul>\n<li><span>Once signed in, you will be taken to the Smuves dashboard. At this point, no HubSpot portal is connected yet.</span></li>\n</ol>\n<p style=\"line-height: 1.5;\"><em><span><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-3.png\" width=\"343\" height=\"350\" style=\"width: 343px; height: auto; max-width: 100%; margin-left: auto; margin-right: auto; display: block;\"></span></em><span></span></p>\n<h2 style=\"line-height: 1.5;\"><strong><span>Step 2: Connect Your HubSpot Account</span></strong></h2>\n<ol style=\"line-height: 1.5;\">\n<li><span>After signing in, the Smuves dashboard shows a </span><strong><span>Content Overview</span></strong><span> section with a \"HubSpot Not Connected\" message and a </span><strong><span>Connect HubSpot</span></strong><span> button. Click that button.</span></li>\n<li><span>A </span><strong><span>Connect Your HubSpot Account</span></strong><span> modal will appear. You have two options to connect:</span></li>\n<ul style=\"list-style-type: circle;\">\n<li><strong><span>HubSpot Private App Token:</span></strong><span> Paste your HubSpot Private App Token into the input field on the left side of the modal. You can generate a Private App Token from your HubSpot account under Settings &gt; Integrations &gt; Private Apps.</span></li>\n<li><strong><span>Sign in with HubSpot (OAuth):</span></strong><span> Click the </span><strong><span>Continue with HubSpot</span></strong><span> button on the right side of the modal. This will redirect you to HubSpot's authorization screen where you can review the permissions Smuves is requesting and select which HubSpot account to connect.</span></li>\n</ul>\n<li><span>Click </span><strong><span>Test &amp; Save CMS Connection</span></strong><span> to verify and save the connection.</span></li>\n<li><span>Once the connection is successful, you will be taken back to the dashboard where your content overview will start populating.</span></li>\n</ol>\n<p style=\"line-height: 1.5;\"><em><span><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-4.png\" width=\"948\" height=\"350\" style=\"width: 948px; height: auto; max-width: 100%; margin-left: auto; margin-right: auto; display: block;\"></span></em></p>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-15-26-8571-AM.png\" width=\"916\" height=\"350\" style=\"margin-left: auto; margin-right: auto; display: block; width: 916px; height: auto; max-width: 100%;\"></p>\n<p style=\"line-height: 1.5;\"><strong><span>Important:</span></strong><span> Smuves uses OAuth to connect to HubSpot. This means your HubSpot credentials are never stored by Smuves. HubSpot handles the authentication, and Smuves receives a secure access token that it uses to communicate with HubSpot's APIs on your behalf.</span></p>\n<hr>\n<h2 style=\"line-height: 1.5;\"><strong><span>Step 3: View Your Content Overview and Fetch Data</span></strong></h2>\n<p style=\"line-height: 1.5;\"><span>Once your HubSpot portal is connected, the dashboard shows a </span><strong><span>Content Counts</span></strong><span> table with an overview of your non-archived content assets. This table lists each content type (Authors, Blog Posts, Blogs, Landing Pages, Tags, URL Redirects, Website Pages) along with their Published, Draft, and Total counts. Click </span><strong><span>Refresh Data</span></strong><span> on the dashboard at any time to update these counts.</span></p>\n<p style=\"line-height: 1.5;\"><span>The dashboard gives you a high-level summary, but to actually work with your content records, you need to fetch the data.</span></p>\n<ol style=\"line-height: 1.5;\">\n<li><span>Click </span><strong><span>Exports</span></strong><span> in the left sidebar to go to the </span><strong><span>Content Manager</span></strong><span>.</span></li>\n<li><span>Use the content type dropdown in the top right (e.g., Blog Posts, Website Pages, Landing Pages) to select which content type you want to work with.</span></li>\n<li><span>Click </span><strong><span>Fetch</span></strong><span> to pull the records for that content type from your HubSpot portal.</span></li>\n<li><span>Depending on the number of records, this may take a few seconds to several minutes.</span></li>\n<li><span>Once the fetch is complete, your content records will appear in the data table below, ready for you to search, filter, and edit.</span></li>\n</ol>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-17-23-7286-AM.png\" width=\"2856\" height=\"1252\"></p>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-18-22-5791-AM.png\" width=\"2862\" height=\"1058\"></p>\n<p style=\"line-height: 1.5;\"><strong><span>Note:</span></strong><span> Smuves fetches a snapshot of your content at the time of the fetch. If content changes in HubSpot after that, you can fetch again to pull the latest data.</span></p>\n<hr>\n<h2 style=\"line-height: 1.5;\"><strong><span>Step 4: Filter and Configure Your View</span></strong></h2>\n<p style=\"line-height: 1.5;\"><span>Once your content is fetched, the Content Manager provides several ways to narrow down and organize your data.</span></p>\n<ol style=\"line-height: 1.5;\">\n<li><span>Expand the </span><strong><span>Filters</span></strong><span> panel to filter records by various fields relevant to the content type you are viewing. The available filters change depending on the content type selected. Select your filter values and click </span><strong><span>Apply Filters</span></strong><span> to update the view. Click </span><strong><span>Clear All Filters</span></strong><span> to reset.</span></li>\n<li><span>Use the content type dropdown in the top right to switch between different content types (Website Pages, Blog Posts, Landing Pages, etc.).</span></li>\n<li><span>Use </span><strong><span>Sort</span></strong><span> to order your records by any visible column.</span></li>\n</ol>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-18-51-4025-AM.png\" width=\"2880\" height=\"1108\"></p>\n<hr>\n<h2 style=\"line-height: 1.5;\"><strong><span>Step 5: Edit Content in Bulk</span></strong></h2>\n<p style=\"line-height: 1.5;\"><span>Smuves offers several ways to edit content. All editing actions start by selecting records and using the </span><strong><span>Actions</span></strong><span> dropdown in the top right corner of the data table. The Actions menu gives you four options: Export, In App Edit, Find &amp; Replace, and Manage Publish State.</span></p>\n<h3 style=\"line-height: 1.5;\"><strong><span>In App Edit (Bulk Editing)</span></strong></h3>\n<ol style=\"line-height: 1.5;\">\n<li><span>Select the records you want to edit by checking the checkboxes next to each row. You can also click </span><strong><span>Select All</span></strong><span> to select every record in the current view.</span></li>\n<li><span>Click the </span><strong><span>Actions</span></strong><span> dropdown and select </span><strong><span>In App Edit</span></strong><span>.</span></li>\n<li><span>This opens an editing view where you can modify fields across all the selected records at once.</span></li>\n<li><span>Make your changes and save them. The updates will be pushed to HubSpot as drafts.</span><br><br><span></span></li>\n</ol>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-20-12-1319-AM.png\" width=\"2878\" height=\"954\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-19-26-1669-AM.png\" width=\"1300\" height=\"1088\"></p>\n<h3 style=\"line-height: 1.5;\"><strong><span>Find and Replace</span></strong></h3>\n<ol style=\"line-height: 1.5;\">\n<li><span>Select the records you want to search across.</span></li>\n<li><span>Click the </span><strong><span>Actions</span></strong><span> dropdown and select </span><strong><span>Find &amp; Replace</span></strong><span>.</span></li>\n<li><span>A modal will open with two tabs: </span><strong><span>Find</span></strong><span> and </span><strong><span>Find &amp; Replace</span></strong><span>.</span></li>\n<li><span>The </span><strong><span>Find</span></strong><span> tab lets you search for text within your selected content. Enter the text you are looking for in the Find field, select which column to search in using the </span><strong><span>In</span></strong><span> dropdown, and optionally toggle </span><strong><span>Match Case</span></strong><span> or </span><strong><span>Search Empty Cells</span></strong><span>. Click </span><strong><span>Find</span></strong><span> to see the results.</span></li>\n<li><span>Switch to the </span><strong><span>Find &amp; Replace</span></strong><span> tab to replace text. Enter the text you want to find in the </span><strong><span>Find</span></strong><span> field and the replacement text in the </span><strong><span>Replace With</span></strong><span> field. Select the column to search in using the </span><strong><span>In</span></strong><span> dropdown.</span></li>\n<li><span>Click </span><strong><span>Preview Changes</span></strong><span> to see exactly which records will be affected and what the changes will look like before applying them.</span></li>\n</ol>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-20-44-2236-AM.png\" width=\"1376\" height=\"824\"></p>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-20-56-9603-AM.png\" width=\"1394\" height=\"844\"></p>\n<h3 style=\"line-height: 1.5;\"><strong><span>Export</span></strong></h3>\n<ol style=\"line-height: 1.5;\">\n<li><span>Select the records you want to export.</span></li>\n<li><span>Click the </span><strong><span>Actions</span></strong><span> dropdown and select </span><strong><span>Export</span></strong><span>.</span></li>\n<li><span>An </span><strong><span>Export Content</span></strong><span> modal will open. Choose your export method from the three tabs at the top:</span></li>\n<ul style=\"list-style-type: circle;\">\n<li><strong><span>Export to Google Sheets:</span></strong><span> Sends the selected records directly to a Google Sheet.</span></li>\n<li><strong><span>Export to File:</span></strong><span> Downloads the data as a file (CSV).</span></li>\n<li><strong><span>Export to JSON:</span></strong><span> Downloads the data in JSON format.</span></li>\n</ul>\n<li><span>Below the export method tabs, you can choose which fields to include in the export. Fields are organized into three groups: </span><strong><span>Required Fields</span></strong><span> (always included, some are read-only), </span><strong><span>Recommended Fields</span></strong><span> (commonly used fields like Author Name, Meta Description, Html Title), and </span><strong><span>Additional Fields</span></strong><span> (all other available properties). Use the </span><strong><span>Deselect All</span></strong><span> button on each group to quickly toggle fields on or off.</span></li>\n<li><span>Click the export button to complete the export.</span></li>\n</ol>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-21-29-2127-AM.png\" width=\"1618\" height=\"1308\"></p>\n<p style=\"line-height: 1.5;\"><span>You can then edit the exported data externally and import it back into Smuves. Click </span><strong><span>Imports</span></strong><span> in the left sidebar, upload the modified file, and Smuves will show you a diff of what changed before pushing updates to HubSpot.</span></p>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-21-58-1244-AM.png\" width=\"2880\" height=\"1076\"></p>\n<h3 style=\"line-height: 1.5;\"><strong><span>Manage Publish State</span></strong></h3>\n<ol style=\"line-height: 1.5;\">\n<li><span>Select the records whose publish state you want to change.</span></li>\n<li><span>Click the </span><strong><span>Actions</span></strong><span> dropdown and select </span><strong><span>Manage Publish State</span></strong><span>.</span></li>\n<li><span>This lets you change the publish status of the selected records in bulk.</span></li>\n</ol>\n<hr>\n<h2 style=\"line-height: 1.5;\"><strong><span>Step 6: Review Activity Logs</span></strong></h2>\n<p style=\"line-height: 1.5;\"><span>Every action you take in Smuves is logged for transparency and accountability.</span></p>\n<ol style=\"line-height: 1.5;\">\n<li><span>Click </span><strong><span>Logs</span></strong><span> in the left sidebar.</span></li>\n<li><span>You will see a chronological record of all operations: fetches, edits, imports, and exports.</span></li>\n<li><span>Each log entry shows who performed the action, what changed, when it happened, and which records were affected.</span></li>\n</ol>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-24-11-6214-AM.png\" width=\"2868\" height=\"794\"></p>\n<hr>\n<h2 style=\"line-height: 1.5;\"><strong><span>Connecting Multiple HubSpot Portals</span></strong></h2>\n<p style=\"line-height: 1.5;\"><span>If you manage content across more than one HubSpot account (common for agencies), Smuves supports connecting multiple portals.</span></p>\n<ol style=\"line-height: 1.5;\">\n<li><span>In the left sidebar, click the </span><strong><span>Portal ID</span></strong><span> dropdown to expand it. This shows your </span><strong><span>Connected Portals</span></strong><span> list with each portal's ID and status (Active).</span></li>\n<li><span>Click </span><strong><span>+ Add Portal</span></strong><span> at the bottom of the list.</span></li>\n<li><span>The </span><strong><span>Connect Your HubSpot Account</span></strong><span> modal will open (the same one from Step 2). Enter a Private App Token or click </span><strong><span>Continue with HubSpot</span></strong><span> to connect via OAuth, then click </span><strong><span>Test &amp; Save CMS Connection</span></strong><span>.</span></li>\n<li><span>Once connected, the new portal will appear in your Connected Portals list. Click on any portal in the list to switch to it.</span></li>\n<li><span>Each portal's content is kept separate. Fetching and editing are scoped to the currently selected portal.</span></li>\n</ol>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-24-54-8632-AM.png\" width=\"472\" height=\"452\" style=\"margin-left: auto; margin-right: auto; display: block;\"></p>\n<p style=\"line-height: 1.5;\"><img src=\"https://243118690.fs1.hubspotusercontent-na2.net/hubfs/243118690/image-png-May-13-2026-06-25-21-5876-AM.png\" width=\"1752\" height=\"672\"></p>\n<hr>\n<h2 style=\"line-height: 1.5;\"><strong><span>Disconnect Your HubSpot Account from Smuves</span></strong></h2>\n<p style=\"line-height: 1.5;\"><span>If you no longer want Smuves connected to your HubSpot account:</span></p>\n<ol style=\"line-height: 1.5;\">\n<li><span>In the left sidebar, click the </span><strong><span>Portal ID</span></strong><span> dropdown to expand the </span><strong><span>Connected Portals</span></strong><span> list.</span></li>\n<li><span>Click the arrow (</span><strong><span>&gt;</span></strong><span>) next to the portal you want to disconnect.</span></li>\n<li><span>From the portal details, disconnect the portal.</span></li>\n<li><span>Confirm the disconnection when prompted.</span></li>\n</ol>\n<h3 style=\"line-height: 1.5;\"><strong><span>What happens when you disconnect:</span></strong></h3>\n<ul style=\"line-height: 1.5;\">\n<li><span>Smuves will no longer be able to read or write content in your HubSpot account.</span></li>\n<li><span>Any content that was already edited and pushed to HubSpot will remain in HubSpot as-is. Disconnecting does not revert changes.</span></li>\n<li><span>No data is deleted from your HubSpot account when you disconnect Smuves.</span></li>\n</ul>\n<hr>\n<h2 style=\"line-height: 1.5;\"><strong><span>Uninstall Smuves from HubSpot</span></strong></h2>\n<p style=\"line-height: 1.5;\"><span>To fully remove Smuves from your HubSpot account (not just disconnect):</span></p>\n<ol style=\"line-height: 1.5;\">\n<li><span>In your HubSpot account, click the </span><strong><span>Settings</span></strong><span> icon (gear icon) in the main navigation bar.</span></li>\n<li><span>In the left sidebar, navigate to </span><strong><span>Integrations</span></strong><span> then </span><strong><span>Connected Apps</span></strong><span>.</span></li>\n<li><span>Find </span><strong><span>Smuves</span></strong><span> in your list of connected apps.</span></li>\n<li><span>Click </span><strong><span>Uninstall</span></strong><span>.</span></li>\n<li><span>Confirm the uninstallation.</span></li>\n</ol>\n<p style=\"line-height: 1.5;\"><span>This revokes all OAuth tokens and removes Smuves's access to your HubSpot account entirely. Super admins in your account will receive an email notification confirming the uninstall, with a link to reinstall if needed.</span></p>\n<p style=\"line-height: 1.5;\"><span>For more details on uninstalling apps, refer to</span><a href=\"https://knowledge.hubspot.com/integrations/connect-apps-to-hubspot#uninstall-an-app\"><span style=\"white-space-collapse: preserve;\"> </span><u><span style=\"color: #1155cc;\">HubSpot's Knowledge Base article on uninstalling connected apps</span></u></a><span>.</span></p>\n<p style=\"line-height: 1.5;\"><strong><span>What happens when you uninstall:</span></strong></p>\n<ul style=\"line-height: 1.5;\">\n<li><span>All OAuth access tokens are revoked immediately.</span></li>\n<li><span>Smuves can no longer communicate with your HubSpot account in any way.</span></li>\n<li><span>Content already edited in HubSpot remains unchanged. Uninstalling does not revert any changes.</span></li>\n<li><span>Activity logs stored in Smuves remain accessible if you log into Smuves directly, but interacting with your HubSpot content would require reconnecting and re-authorizing the app.</span></li>\n</ul>\n<hr>\n<h2 style=\"line-height: 1.5;\"><strong><span>Pricing Plans and the HubSpot Integration</span></strong></h2>\n<p style=\"line-height: 1.5;\"><span>Smuves offers three tiers. All tiers include the HubSpot integration.</span></p>\n<p style=\"line-height: 1.5;\"><strong><span>Free ($0 per month)</span></strong><span> Bulk Fetch 100 records. Bulk Edit 50 records. Perfect for small teams and simple edits.</span></p>\n<ul style=\"line-height: 1.5;\">\n<li><span>Single platform connection</span></li>\n<li><span>Content type counts</span></li>\n<li><span>HubSpot Integration</span></li>\n<li><span>Google Sheets Integration</span></li>\n<li><span>Fetch content types one at a time</span></li>\n<li><span>Filter, search, sort records</span></li>\n<li><span>Find and replace (non-module fields)</span></li>\n<li><span>Execution Logs</span></li>\n</ul>\n<p style=\"line-height: 1.5;\"><strong><span>Pro ($99 per month)</span></strong><span> Bulk Fetch 1,000 records. Bulk Edit 500 records. Perfect for larger websites or frequent edits.</span></p>\n<ul style=\"line-height: 1.5;\">\n<li><span>Everything in Free</span></li>\n</ul>\n<p style=\"line-height: 1.5;\"><strong><span>Enterprise ($249 per month)</span></strong><span> Bulk Fetch 50,000 records. Bulk Edit 10,000 records. Perfect for agencies or mega websites.</span></p>\n<ul style=\"line-height: 1.5;\">\n<li><span>Everything in Pro</span></li>\n<li><span>Multi-platform connection</span></li>\n<li><span>Fetch all content types at once</span></li>\n</ul>\n<p style=\"line-height: 1.5;\"><span>For full pricing details, visit</span><a href=\"https://www.smuves.com/pricing\"><span style=\"white-space-collapse: preserve;\"> </span><u><span style=\"color: #1155cc;\">smuves.com/pricing</span></u></a><span>.</span></p>\n<hr>\n<h2 style=\"line-height: 1.5;\"><strong><span>Need Help?</span></strong></h2>\n<p style=\"line-height: 1.5;\"><span>If you run into issues or have questions about setting up Smuves with HubSpot:</span></p>\n<ul style=\"line-height: 1.5;\">\n<li><strong><span>Email:</span></strong><span> support@smuves.com</span></li>\n<li><strong><span>Setup documentation:</span></strong><a href=\"/product/documentation\" rel=\"noopener\" target=\"_blank\"><span style=\"white-space-collapse: preserve;\"> </span><u><span style=\"color: #1155cc;\">smuves.com/product/documentation</span></u></a></li>\n<li><strong><span>HubSpot Community:</span></strong><a href=\"https://community.hubspot.com\"><span style=\"white-space-collapse: preserve;\"> </span><u><span style=\"color: #1155cc;\">Search for Smuves in the HubSpot Community</span></u></a></li>\n</ul>",
+        "style": {
+          "section_bg": "light"
+        }
+      },
+      "gf_seo_fields": {
+        "name": "Product: Documentation",
+        "slug": "product/documentation",
+        "meta_description": "Smuves streamlines bulk editing for HubSpot CMS users by integrating with Google Sheets, allowing easy updates and audits without coding."
+      },
+      "htmltitle": "Smuves Documentation",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Product: Documentation",
+      "updated_at": "2026-07-02T13:23:42.570Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.210Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "uid": "blt4793cff8f046854a",
+      "_version": 1,
+      "_content_type_uid": "site_pages",
+      "locale": "en-us",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.412Z",
+        "errors": []
+      },
+      "campaign": "asssaaa",
+      "created_at": "2026-07-02T13:23:38.737Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/product/pricing",
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "description": "<div>\n<p>From solo marketers to enterprise teams, we have a plan that scales with your needs.</p>\n</div>",
+        "heading": "HubSpot CMS Bulk Editor",
+        "heading_second_line": "Pricing",
+        "tag_label": "",
+        "style": {}
+      },
+      "gf_seo_fields": {
+        "name": "Product: Pricing",
+        "slug": "product/pricing",
+        "meta_description": "Explore HubSpot Bulk Editor plans tailored for content operations. Unlock powerful content management features, including bulk editing, audits, and migration services to optimize your workflow."
+      },
+      "htmltitle": "HubSpot Bulk Editor Pricing",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Product: Pricing",
+      "updated_at": "2026-07-02T13:23:38.737Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.226Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "uid": "blt066e0b4991bfa8c2",
+      "_version": 1,
+      "_content_type_uid": "site_pages",
+      "locale": "en-us",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.415Z",
+        "errors": []
+      },
+      "campaign": "asssaaa",
+      "created_at": "2026-07-02T13:23:35.253Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com",
+      "gf_description_with_ctas_module": {
+        "cta_item_group": {
+          "cta_style": "green-cta",
+          "cta_text": "Let's Fix it Now!",
+          "cta_popup": false
+        },
+        "description": "<p>Let’s be real: your current build is a monolithic mess of broken links and \"we’ll fix it later\" promises. \"Later\" is now.</p>\n<p>We build the custom ETL engines that turn your content chaos into a structured asset. No black-box scripts, no broken metadata, and zero \"Oops, we lost the JP blog\" moments.&nbsp;</p>",
+        "heading": "Your content is great...<br>but your architecture is a disaster. "
+      },
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "Programmatic Content Engineering for Serious Website Teams",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "cta_item_group": {
+          "cta_style": "black_arrow",
+          "cta_text": "Let's Chat!",
+          "cta_popup": false
+        },
+        "description": "<p>Most teams build website pages by hand-gluing content into \"blobs\" that can’t be moved, searched, or scaled. We engineer the automated schemas and ETL pipes to turn your manual mess into <strong>structured, movable content data.</strong>&nbsp;</p>",
+        "heading": "Stop treating your CMS",
+        "heading_second_line": "like a scrapbook.",
+        "listing": {
+          "text_field": "Liquidate Years of Technical Debt"
+        },
+        "style": {
+          "section_bg": "light",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":120},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":190}}}",
+          "mobile_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":90},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":140}}}"
+        },
+        "tag_label": "Website Content Engineering"
+      },
+      "gf_icon_grid_with_tags_module": {
+        "description": "<p>Other agencies want to redesign your brand. We just want to move your website data... perfectly.</p>\n<p>We’re the technical \"force multiplier\" for in-house dev teams and design-heavy agencies who have the vision handled but need the raw horsepower to execute a high-stakes migration.</p>",
+        "heading": "We don’t do \"Creative.\"<br>We do Engineering.",
+        "icon_grid": {
+          "icon_field": "{\"name\":\"Search\",\"type\":\"SOLID\",\"unicode\":\"f002\"}",
+          "text": "<h3>Content Audit</h3>\n<p><strong>Most website migrations fail because nobody checked the crawlspace.</strong> We find where the legacy bodies are buried and build a roadmap that actually holds up.&nbsp;</p>",
+          "tag_choice": ""
+        },
+        "style": {
+          "section_bg": "light",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":70},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":240}}}",
+          "mobile_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":50},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":250}}}"
+        }
+      },
+      "gf_seo_fields": {
+        "name": "*Home",
+        "slug": "",
+        "meta_description": "Smuves builds custom ETLs to handle the heavy lifting of website migrations and bulk content governance. You handle the pixels; we’ll handle the pipes."
+      },
+      "htmltitle": "Programmatic Content Engineering for Serious Website Teams",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "*Home",
+      "updated_at": "2026-07-02T13:23:35.253Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.242Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "locale": "en-us",
+      "uid": "blt41a10b5ba804a32d",
+      "_content_type_uid": "site_pages",
+      "_version": 1,
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.437Z",
+        "errors": []
+      },
+      "campaign": "asssaaa",
+      "created_at": "2026-07-02T13:23:32.283Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/services/website-migration",
+      "gf_description_with_ctas_module": {
+        "cta_item_group": {
+          "cta_style": "green-cta",
+          "cta_text": "Let’s get your content moving… the right way",
+          "cta_popup": false
+        },
+        "description": "<p>A new CMS won’t fix a broken structure.&nbsp; It will just give you a faster way to scale it.</p>\n<p>We start with an audit, identify what’s worth keeping, restructure what isn’t, and build the pipelines to move everything cleanly.</p>\n<p>No manual copy-paste. No late-night surprises. No starting over in six months.</p>",
+        "heading": "Don’t migrate your mess into a new system.",
+        "style": {
+          "section_bg": "light"
+        }
+      },
+      "gf_featured_image": {
+        "featured_image": "blt4787d08cb3c0ca46",
+        "featured_image_alt_text": "Legacy CMS & Website Migration Engineering",
+        "use_featured_image": true
+      },
+      "gf_hero_v1_module": {
+        "cta_item_group": {
+          "cta_style": "black_arrow",
+          "cta_text": "Let's Chat!",
+          "cta_popup": false
+        },
+        "description": "<p><strong>Stop migrating your technical debt.</strong> We engineer the automated transition from bloated legacy monoliths to modern, headless architectures with 100% data integrity and zero \"wait, where did that page go?\" moments.&nbsp;</p>",
+        "heading": "Make the Escape<br>",
+        "heading_second_line": "from Legacy CMS.",
+        "style": {
+          "section_bg": "white",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":140},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":190}}}"
+        },
+        "tag_label": "Programmatic Website Migrations"
+      },
+      "gf_policy_content_module": {
+        "add": {
+          "heading": "Structural Discovery (The \"Exorcism\")",
+          "content": "<p>Before we move a single line of code, we have to see what we're dealing with. We don't just \"import\" your old database; we re-engineer the destination.</p>\n<ul>\n<li><strong>Legacy Architecture Audit:</strong> We poke around your current database dependencies to find the \"data debt\" and monolithic bottlenecks that have been slowing you down for years.<br><br></li>\n<li><strong>Relational Mapping:</strong> We take those rigid, page-based legacy blobs and break them down into clean, modular, relational schemas. It's built for high-scale performance, not just \"staying alive.\"</li>\n</ul>"
+        },
+        "style": {
+          "section_bg": "light"
+        },
+        "subtitle": "How We Do It"
+      },
+      "gf_rich_text_module": {
+        "content": "<blockquote>\n<p>\"Most agencies treat migration like a manual data entry internship. That’s how metadata vanishes, relational links break, and your ‘Content Freeze’ lasts for a literal season. We treat content as a data engineering problem. We don’t just move your mess; we reform it into a masterpiece. \"</p>\n</blockquote>\n<p style=\"text-align: right;\">- Nicole Pereira, CEO</p>",
+        "style": {
+          "section_bg": "white",
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":70},\"left\":{\"units\":\"px\",\"value\":70},\"right\":{\"units\":\"px\",\"value\":70},\"top\":{\"units\":\"px\",\"value\":70}}}"
+        }
+      },
+      "gf_right_text_left_image_module": {
+        "checklist_area": {
+          "content": "<h2>Your vision, without the friction</h2>\n<div>\n<p><strong>Because we handle the data layer, your team can focus on what actually matters… </strong>design, messaging, and performance.</p>\n<p>No rebuilding content by hand.<br>No guessing what broke.<br>No hidden gaps.</p>\n<p>Just a clean, structured foundation your frontend team can build on.</p>\n</div>"
+        },
+        "description": "",
+        "heading": ""
+      },
+      "gf_seo_fields": {
+        "name": "Services: Migration",
+        "slug": "services/website-migration",
+        "meta_description": "Customized ETL migrations for serious website teams. We handle the technical heavy lifting of moving content from legacy systems to modern headless architectures"
+      },
+      "htmltitle": "Legacy CMS & Website Migration Engineering",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Services: Migration",
+      "updated_at": "2026-07-02T13:23:32.283Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.257Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "locale": "en-us",
+      "_content_type_uid": "site_pages",
+      "uid": "blt774e5eba1d59a647",
+      "_version": 1,
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.395Z",
+        "errors": []
+      },
+      "created_at": "2026-07-02T13:23:28.487Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/case-studies/remote",
+      "gf_featured_image": {
+        "featured_image_alt_text": "",
+        "use_featured_image": false
+      },
+      "gf_hero_v1_module": {
+        "description": "<p>From HubSpot to Contentstack</p>",
+        "heading": "Remote.com",
+        "heading_second_line": "Website Migration",
+        "tag_label": "CASE STUDY"
+      },
+      "gf_rich_text_module": {
+        "content": "<h2>The Client</h2>\n<p>Remote.com is an all-in-one HR and payroll platform that helps companies hire, manage, and pay teams across the globe.</p>\n<p>Their website operates in 25+&nbsp;languages, with content spanning marketing pages, a high-volume blog, product documentation, pricing, and resource hubs. The entire digital presence was built on HubSpot CMS.</p>\n<h2>&nbsp;</h2>\n<h2>The Challenge</h2>\n<p>Remote decided to move their website from HubSpot to Contentstack, a headless CMS better suited for their multi-language, composable content strategy.</p>\n<p>The problem was that nobody could tell them what the journey would actually involve. The site had accumulated 65,000+ entries across 75 content types, over 166 modules, 45 database tables, and 25+ languages.</p>\n<p>Components had been duplicated across teams. Similar modules existed in multiple slightly different versions. Over 20 internal stakeholders each owned different parts of one website.</p>\n<p>What they needed was a plan, and validation that the move could be programmatic.</p>\n<h2>&nbsp;</h2>\n<h2>The Approach</h2>\n<h3>Audit</h3>\n<p>Using a proprietary audit tooling, Smuves scanned the entire portal and produced a structured inventory of every content type, module, template, language, asset, and entry. The audit mapped relationships between components and pages, surfacing overlaps and redundancies that years of hypergrowth had obscured.</p>\n<h3>Analysis</h3>\n<p>The team reviewed all 166 modules with Remote's stakeholders and classified each one. Some were migrated as-is. Others were retired with documented replacements. The most complex group were modules that needed to be consolidated.</p>\n<p>The analysis process identified overlaps, compared structures, and designed a single consolidated version for each in the new platform.</p>\n<h3>Architecture&nbsp;</h3>\n<p>With a clear picture of what was worth keeping, the team designed how everything would live in Contentstack. This meant defining reusable field groups, setting up relational structures between content types, extracting shared elements like color schemes and call-to-action patterns into standalone components, and building an SEO framework applied consistently across all page rendering content types.</p>\n<p>The localization strategy required particular care, mapping which content types had full, partial, or no language coverage.</p>\n<h3>Transformation&nbsp;</h3>\n<p>Before any migration script could be written, content transformation rules were documented covering how data would change as it moved between platforms.</p>\n<h3>Migration</h3>\n<p>After all was planned the Smuves ETL was customized to programmatically extract HubSpot content, transform it, and load it into Contentstack. Without the need of a developer.</p>\n<p>Pages, blogs, posts, authors, tags, assets, and HubDB tables became content types. Relationships were preserved like authors and tags assigned to to their respective blog posts. And assets linked via Contentstack ID removing any issues with missing visuals and media. Localized entries were created seamlessly in the background and without any extra steps. After all entries were made, we swept through all module and rich text links and connected them to entries.</p>\n<p>&nbsp;</p>\n<h2>The Result</h2>\n<p>With the content movement able to be done programmatically the Remote.com team could then focus on the next steps of building out their front end layer to complete their transition from a monolithic system to headless.</p>\n<p>&nbsp;</p>",
+        "style": {
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":70},\"left\":{\"units\":\"px\",\"value\":15},\"right\":{\"units\":\"px\",\"value\":15},\"top\":{\"units\":\"px\",\"value\":70}}}"
+        }
+      },
+      "gf_seo_fields": {
+        "name": "Case Studies: Remote.com",
+        "slug": "case-studies/remote",
+        "meta_description": "Remote.com programmatically migrated its website content from HubSpot to Contentstack."
+      },
+      "htmltitle": "Website Migration Strategy | HubSpot to Contentstack | Remote.com",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Case Studies: Remote.com",
+      "updated_at": "2026-07-02T13:23:28.487Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.273Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "_content_type_uid": "site_pages",
+      "_version": 1,
+      "uid": "blt44ae0f7cb008b6ab",
+      "locale": "en-us",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.395Z",
+        "errors": []
+      },
+      "created_at": "2026-07-02T13:23:25.608Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/platforms/contentstack",
+      "gf_description_with_ctas_module": {
+        "cta_item_group": {
+          "cta_style": "green-cta",
+          "cta_text": "Let’s get your content moving… the right way.",
+          "cta_popup": false
+        },
+        "description": "<p>Most migrations go wrong before they start.</p>\n<p>We begin with a migration audit… mapping your current content dataset, designing your future architecture, and defining exactly how the move will happen.</p>\n<p>Then we build the pipelines to execute it.</p>",
+        "heading": "Planning a Migration to Contentstack?"
+      },
+      "gf_featured_image": {
+        "featured_image_alt_text": "",
+        "use_featured_image": false
+      },
+      "gf_hero_v1_module": {
+        "cta_item_group": {
+          "cta_style": "black_arrow",
+          "cta_text": "Let's Chat!",
+          "cta_popup": false
+        },
+        "description": "<p>Smuves is a Contentstack partner focused on one thing… moving and restructuring website content datasets at scale.</p>\n<p>We don’t redesign your site. We don’t rebuild content by hand. <strong>We engineer the systems that take what you have… and make it work where you’re going.</strong></p>",
+        "heading": "Contentstack",
+        "heading_second_line": "Migration Partner",
+        "tag_label": "",
+        "style": {}
+      },
+      "gf_icon_grid_module": {
+        "column_choice": "three_column",
+        "description": "",
+        "heading": "",
+        "icon_grid": {
+          "color_choice": "normal",
+          "icon_field": "{\"name\":\"Search\",\"type\":\"SOLID\",\"unicode\":\"f002\"}",
+          "text": "<h3>Content Auditing</h3>\n<p>&nbsp;Before anything moves, we surface what’s really there. We audit your source platform and turn scattered pages, modules, and assets into a clear, structured content dataset. No surprises halfway through.&nbsp;</p>"
+        },
+        "style": {
+          "desktop_spacings": "{\"margin\":{\"bottom\":{},\"top\":{\"units\":\"px\",\"value\":0}},\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":70},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":70}}}",
+          "mobile_spacings": "{\"margin\":{\"bottom\":{\"units\":\"px\",\"value\":0},\"top\":{}},\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":50},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":50}}}"
+        }
+      },
+      "gf_rich_text_module": {
+        "content": "<h2 style=\"text-align: center;\"><strong>Migration Paths We Support</strong></h2>\n<div style=\"text-align: center;\">We currently support programmatic migrations from HubSpot to Contentstack, with custom ETL extensions for other platforms as needed.</div>\n<div style=\"text-align: center;\">&nbsp;</div>\n<div style=\"text-align: center;\">Our focus is on high-volume, multi-language environments with complex content models. Whether you’re doing a true replatform or restructuring your content entirely, the process is built to handle scale.</div>",
+        "style": {
+          "section_bg": "light"
+        }
+      },
+      "gf_seo_fields": {
+        "name": "Platforms: Contentstack",
+        "slug": "platforms/contentstack",
+        "meta_description": "Smuves specializes in large-scale content migrations to Contentstack, offering comprehensive audits, architecture design, and programmatic migrations."
+      },
+      "htmltitle": "Contentstack Preferred Partner - Programmatic Migrations",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Platforms: Contentstack",
+      "updated_at": "2026-07-02T13:23:25.608Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.288Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "_content_type_uid": "site_pages",
+      "locale": "en-us",
+      "uid": "blt8a6c848241be333e",
+      "_version": 1,
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.395Z",
+        "errors": []
+      },
+      "created_at": "2026-07-02T13:23:22.277Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/engineering",
+      "gf_featured_image": {
+        "featured_image_alt_text": "",
+        "use_featured_image": false
+      },
+      "gf_hero_v1_module": {
+        "description": "<p>Deep dives into HubSpot CMS and the engineering behind content tools that actually scale.</p>",
+        "heading": "Smuves",
+        "heading_second_line": "Engineering",
+        "style": {
+          "desktop_spacings": "{\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":109},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":109}}}"
+        },
+        "tag_label": ""
+      },
+      "gf_seo_fields": {
+        "name": "Smuves Engineering",
+        "slug": "engineering",
+        "meta_description": "Engineering writing from the Smuves team on HubSpot CMS, search infrastructure, content migrations, and the architecture behind the tools we build."
+      },
+      "htmltitle": "Enginering",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Smuves Engineering",
+      "updated_at": "2026-07-02T13:23:22.277Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.305Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "_content_type_uid": "site_pages",
+      "locale": "en-us",
+      "uid": "blt1d2142a512ccbceb",
+      "_version": 1,
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.395Z",
+        "errors": []
+      },
+      "created_at": "2026-07-02T13:23:19.615Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/platforms/hubspot",
+      "gf_description_with_ctas_module": {
+        "cta_item_group": {
+          "cta_style": "green-cta",
+          "cta_text": "Let’s get your content moving… the right way.",
+          "cta_popup": false
+        },
+        "description": "<p>Most migrations go wrong before they start.</p>\n<p>We begin with a migration audit… mapping your current content dataset, designing your future structure, and defining exactly how the move will happen.</p>\n<p>Then we build the pipelines to execute it.</p>",
+        "heading": "Planning a Migration to HubSpot?"
+      },
+      "gf_featured_image": {
+        "featured_image_alt_text": "",
+        "use_featured_image": false
+      },
+      "gf_hero_v1_module": {
+        "cta_item_group": {
+          "cta_style": "black_arrow",
+          "cta_text": "Let's Chat!",
+          "cta_popup": false
+        },
+        "description": "<p>Smuves is a HubSpot app partner focused on one thing… managing, restructuring, and moving website content datasets at scale.</p>\n<p>We don’t rebuild pages by hand. We don’t “lift and shift” technical debt. <strong>We engineer the systems that make your content usable, structured, and scalable inside HubSpot.</strong></p>",
+        "heading": "HubSpot",
+        "heading_second_line": "Migration Partner",
+        "tag_label": "",
+        "style": {}
+      },
+      "gf_icon_grid_module": {
+        "column_choice": "three_column",
+        "description": "",
+        "heading": "",
+        "icon_grid": {
+          "color_choice": "normal",
+          "icon_field": "{\"name\":\"Search\",\"type\":\"SOLID\",\"unicode\":\"f002\"}",
+          "text": "<h3>Content Auditing</h3>\n<p>Before anything changes, we surface what’s really there. We audit your portal and turn scattered pages, modules, and assets into a clear, structured content dataset. No surprises halfway through.&nbsp;</p>"
+        },
+        "style": {
+          "desktop_spacings": "{\"margin\":{\"bottom\":{},\"top\":{\"units\":\"px\",\"value\":0}},\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":70},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":70}}}",
+          "mobile_spacings": "{\"margin\":{\"bottom\":{\"units\":\"px\",\"value\":0},\"top\":{}},\"padding\":{\"bottom\":{\"units\":\"px\",\"value\":50},\"left\":{\"units\":\"px\",\"value\":0},\"right\":{\"units\":\"px\",\"value\":0},\"top\":{\"units\":\"px\",\"value\":50}}}"
+        }
+      },
+      "gf_rich_text_module": {
+        "content": "<h2 style=\"text-align: center;\"><strong>Migration Paths We Support</strong></h2>\n<div style=\"text-align: center;\">We currently support programmatic migrations from HubSpot to HubSpot, with custom ETL extensions for other platforms as needed.</div>\n<div style=\"text-align: center;\">&nbsp;</div>\n<div style=\"text-align: center;\">Our focus is on high-volume, multi-language environments with complex content models. Whether you’re consolidating portals or restructuring your content entirely, the process is built to handle scale.</div>",
+        "style": {
+          "section_bg": "light"
+        }
+      },
+      "gf_seo_fields": {
+        "name": "Platforms: HubSpot",
+        "slug": "platforms/hubspot",
+        "meta_description": "Smuves specializes in large-scale content migrations to HubSpot, offering comprehensive audits, architecture design, and programmatic migrations."
+      },
+      "htmltitle": "HubSpot App Partner - Programmatic Migrations",
+      "language": "en",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Platforms: HubSpot",
+      "updated_at": "2026-07-02T13:23:19.615Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.321Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "_content_type_uid": "site_pages",
+      "_version": 1,
+      "locale": "en-us",
+      "uid": "bltfc175b158e4b2599",
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.395Z",
+        "errors": []
+      },
+      "created_at": "2026-07-02T13:23:15.866Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/-temporary-slug-759458a1-a2d5-49e6-ba56-4b7fe02ed405",
+      "gf_featured_image": {
+        "featured_image_alt_text": "",
+        "use_featured_image": false
+      },
+      "gf_seo_fields": {
+        "name": "Untitled",
+        "slug": "-temporary-slug-759458a1-a2d5-49e6-ba56-4b7fe02ed405"
+      },
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Untitled",
+      "updated_at": "2026-07-02T13:23:15.866Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.338Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "locale": "en-us",
+      "uid": "bltb577a7451f652208",
+      "_content_type_uid": "site_pages",
+      "_version": 1,
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.395Z",
+        "errors": []
+      },
+      "created_at": "2026-07-02T13:23:14.603Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/setup-guide",
+      "gf_featured_image": {
+        "featured_image_alt_text": "",
+        "use_featured_image": false
+      },
+      "gf_hero_v1_module": {
+        "description": "<p>Everything you need to install, configure, and start using the Smuves HubSpot integration — from first connection to daily use.</p>",
+        "heading": "Smuves Setup Guide for",
+        "heading_second_line": "HubSpot",
+        "tag_label": ""
+      },
+      "gf_seo_fields": {
+        "name": "Smuves Setup Guide for HubSpot",
+        "slug": "setup-guide"
+      },
+      "htmltitle": "Smuves Setup Guide for HubSpot",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Smuves Setup Guide for HubSpot",
+      "updated_at": "2026-07-02T13:23:14.603Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.355Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    },
+    {
+      "locale": "en-us",
+      "_content_type_uid": "site_pages",
+      "uid": "blt3a0631b70dc09adb",
+      "_version": 1,
+      "ACL": [],
+      "_in_progress": false,
+      "_validations": {
+        "validated_at": "2026-07-02T14:12:00.395Z",
+        "errors": []
+      },
+      "created_at": "2026-07-02T13:23:12.013Z",
+      "created_by": "blt1f82e4924cb26e05",
+      "custom_domain": "",
+      "custom_url": "https://www.smuves.com/contentful-to-contentstack-migration",
+      "gf_contact_form_module": {
+        "description": "<a id=\"form\" data-hs-anchor=\"true\"></a>\n<p>We will review your Contentful setup, estimate the migration scope, and connect you with Contentstack.</p>",
+        "heading": "Request a free migration assessment."
+      },
+      "gf_featured_image": {
+        "featured_image_alt_text": "",
+        "use_featured_image": false
+      },
+      "gf_rich_text_module": {
+        "content": "<h3 style=\"color: #1a8a7d; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;\">THE CONTENTSTACK MIGRATION PLEDGE</h3>\n<h2 style=\"color: #0b1a2b; font-size: 1.8rem; font-weight: bold; line-height: 1.2;\">A structured path off Contentful, with the cost and risk taken off your plate.</h2>\n<p style=\"color: #4a5568;\">Contentstack is running a limited-time offer for Contentful customers who want to move before the October 31 deadline.</p>\n<br>\n<h4 style=\"color: #0b1a2b;\">Price match guarantee</h4>\n<p style=\"color: #4a5568;\">First-year Contentstack contract pricing matched to your current Premium Contentful subscription. No budget shock.</p>\n<br>\n<h4 style=\"color: #0b1a2b;\">90-day payment deferral</h4>\n<p style=\"color: #4a5568;\">Start your transition without an immediate bill. Payment terms are deferred for 90 days so you can migrate with zero financial pressure.</p>\n<br>\n<h4 style=\"color: #0b1a2b;\">Go-live guarantee</h4>\n<p style=\"color: #4a5568;\">A dedicated migration architect, pre-built Contentful migration schemas, and 90 days of post-launch support from Contentstack.</p>"
+      },
+      "gf_seo_fields": {
+        "name": "Contentful to Contentstack Migration",
+        "slug": "contentful-to-contentstack-migration",
+        "meta_description": "Migrate from Contentful to Contentstack before deadline. Smuves provides end-to-end managed migration with content model consulting and post-launch support"
+      },
+      "htmltitle": "Contentful to Contentstack Migration",
+      "subcategory": "site_page",
+      "tags": [],
+      "title": "Contentful to Contentstack Migration",
+      "updated_at": "2026-07-02T13:23:12.013Z",
+      "updated_by": "blt1f82e4924cb26e05",
+      "publish_details": [
+        {
+          "environment": "blt829c5594175bf297",
+          "locale": "en-us",
+          "time": "2026-07-02T14:12:01.372Z",
+          "user": "cs4a9971a7348cff29",
+          "version": 1,
+          "entry_locale": "en-us"
+        }
+      ],
+      "branch": "main"
+    }
+  ],
+  "branch": "main",
+  "offset": 0,
+  "count": 20,
+  "limit": 10000
+}

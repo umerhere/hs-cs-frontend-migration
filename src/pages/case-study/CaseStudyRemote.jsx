@@ -1,7 +1,19 @@
 import Header from '../../components/Header/Header.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import HeroV1 from '../../components/modules/HeroV1/HeroV1.jsx'
+import { usePageData } from '../../hooks/usePageData.js'
+import { mapHeroFromCS } from '../../lib/mappers/heroMapper.js'
 import './CaseStudyRemote.css'
+
+const HERO_FALLBACK = {
+  tagLabel:    'CASE STUDY',
+  heading:     'Remote.com',
+  headingSpan: ' Website Migration',
+  paragraphs:  ['From HubSpot to Contentstack'],
+  imagePosition: 'none',
+  textAlign:   'left',
+  style:       { paddingTop: 190, paddingBottom: 140, mobilePaddingTop: 190, mobilePaddingBottom: 90 },
+}
 
 const CASE_STUDY_HTML = `
   <h2>The Client</h2>
@@ -39,22 +51,20 @@ const CASE_STUDY_HTML = `
 `
 
 export default function CaseStudyRemote() {
+  const { data } = usePageData('case-studies/remote')
+
+  const heroProps  = mapHeroFromCS(data?.gf_hero_v1_module) ?? HERO_FALLBACK
+  // CS: gf_rich_text_module.content — full rich text body of the case study
+  const bodyHtml   = data?.gf_rich_text_module?.content || CASE_STUDY_HTML
+
   return (
     <div className="body-wrapper">
       <Header />
       <main id="main-content" className="body-container-wrapper">
         <div className="body-container">
-          <HeroV1
-            tagLabel="CASE STUDY"
-            heading="Remote.com"
-            headingSpan=" Website Migration"
-            paragraphs={['From HubSpot to Contentstack']}
-            imagePosition="none"
-            textAlign="left"
-            style={{ paddingTop: 190, paddingBottom: 140, mobilePaddingTop: 190, mobilePaddingBottom: 90 }}
-          />
+          <HeroV1 {...heroProps} />
           <section className="richtext-section case-study-content">
-            <div className="page-center" dangerouslySetInnerHTML={{ __html: CASE_STUDY_HTML }} />
+            <div className="page-center" dangerouslySetInnerHTML={{ __html: bodyHtml }} />
           </section>
         </div>
       </main>

@@ -1,8 +1,9 @@
 import Header from '../../components/Header/Header.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import HeroV1 from '../../components/modules/HeroV1/HeroV1.jsx'
-import IconGridSection from '../home/sections/IconGridSection.jsx'
-import DescriptionCtaSection from '../home/sections/DescriptionCtaSection.jsx'
+import { usePageData } from '../../hooks/usePageData.js'
+import { mapHeroFromCS } from '../../lib/mappers/heroMapper.js'
+import { mapDescCtaFromCS } from '../../lib/mappers/descriptionCtaMapper.js'
 import './Product.css'
 
 const PRODUCT_FEATURES = [
@@ -29,29 +30,46 @@ const PRODUCT_FEATURES = [
   },
 ]
 
-function ProductIconGrid() {
+function ProductIconGrid({ data }) {
+  // CS: gf_icon_grid_with_tags_module — heading, description, icon_grid (single obj or array)
+  const heading     = data?.heading     ?? 'Built for content teams, not just developers.'
+  const description = data?.description ?? 'Powerful tools designed to make bulk CMS management simple, safe, and efficient.'
+  // icon_grid may be a single object (CS multiple:false) or array
+  const rawGrid = data?.icon_grid
+  const csCards = rawGrid ? (Array.isArray(rawGrid) ? rawGrid : [rawGrid]) : []
+  const cards   = csCards.length ? csCards : PRODUCT_FEATURES
+
   return (
     <section className="icnon-grid-section product-features-grid">
       <div className="page-center">
         <div className="icnon-grid-main">
           <div className="icnon-grid-header">
-            <h2>Built for content teams, not just developers.</h2>
-            <p>Powerful tools designed to make bulk CMS management simple, safe, and efficient.</p>
+            <h2>{heading}</h2>
+            <p>{description}</p>
           </div>
           <div className="icon-grid">
-            {PRODUCT_FEATURES.map((card) => (
-              <div className="icon-grid-inner" key={card.title}>
+            {cards.map((card, i) => (
+              <div className="icon-grid-inner" key={card.title ?? i}>
                 <div className="icon-tag">
                   <span className="icon-svg">
-                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox={card.viewBox} aria-hidden="true" width="21" height="21" fill="currentColor">
-                      <path d={card.iconPath} />
-                    </svg>
+                    {card.icon_svg ? (
+                      <span dangerouslySetInnerHTML={{ __html: card.icon_svg }} />
+                    ) : card.iconPath ? (
+                      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox={card.viewBox} aria-hidden="true" width="21" height="21" fill="currentColor">
+                        <path d={card.iconPath} />
+                      </svg>
+                    ) : null}
                   </span>
+                  {card.tag_choice === 'available' && <span className="available">Available</span>}
+                  {card.tag_choice === 'soon' && <span className="soon">Coming Soon</span>}
                   {card.badge === 'available' && <span className="available">Available</span>}
                   {card.badge === 'soon' && <span className="soon">Coming Soon</span>}
                 </div>
-                <h3>{card.title}</h3>
-                <p>{card.body}</p>
+                {/* CS sends content as combined HTML in `text`; fallback uses separate title/body */}
+                {card.text
+                  ? <div dangerouslySetInnerHTML={{ __html: card.text }} />
+                  : (<><h3>{card.title}</h3><p dangerouslySetInnerHTML={{ __html: card.body }} /></>)
+                }
               </div>
             ))}
           </div>
@@ -61,15 +79,19 @@ function ProductIconGrid() {
   )
 }
 
-function ProductDescCta() {
+function ProductDescCta({ data }) {
+  const heading     = data?.heading     ?? 'Scale content, not chaos.'
+  const description = data?.description ?? 'Join the teams using Smuves to simplify HubSpot content updates and save hours every week.'
+  const ctas        = data?.ctas?.length ? data.ctas : [{ text: 'Join Beta!', href: '#', style: 'green-cta openPopup' }]
+
   return (
     <section className="desc-cta-section product-desc-cta">
       <div className="page-center">
         <div className="desc-cta-main primary-gradient">
-          <h2>Scale content, not <span style={{ color: '#00c6b2' }}>chaos</span>.</h2>
-          <p>Join the teams using Smuves to simplify HubSpot content updates and save hours every week.</p>
+          <h2 dangerouslySetInnerHTML={{ __html: heading }} />
+          <p>{description}</p>
           <div className="cta-area">
-            <a href="#" className="green-cta openPopup">Join Beta!</a>
+            {ctas.map((cta) => <a key={cta.text} href={cta.href} className={cta.style}>{cta.text}</a>)}
           </div>
         </div>
       </div>
@@ -77,31 +99,39 @@ function ProductDescCta() {
   )
 }
 
+const HERO_FALLBACK = {
+  tagLabel:    'Now in Beta',
+  heading:     'Bulk edit HubSpot CMS',
+  headingSpan: ' in seconds, not hours.',
+  paragraphs:  ['Smuves is the headless website data editor for HubSpot websites.'],
+  imagePosition: 'none',
+  textAlign:   'left',
+  ctas:        [{ text: 'Join Beta', href: '#', style: 'black_arrow openPopup' }],
+  hasListing:  true,
+  listing:     ['See real time content counts', 'Audit all available CMS content', 'Update page settings in bulk', 'Sync Google Sheets to HubSpot'],
+  style:       { paddingTop: 190, paddingBottom: 120, mobilePaddingTop: 140, mobilePaddingBottom: 90 },
+}
+
+const DESC_CTA_FALLBACK = {
+  heading: 'Scale content, not chaos.',
+  description: 'Join the teams using Smuves to simplify HubSpot content updates and save hours every week.',
+  ctas: [{ text: 'Join Beta!', href: '#', style: 'green-cta openPopup' }],
+}
+
 export default function Product() {
+  const { data } = usePageData('product')
+
+  const heroProps = mapHeroFromCS(data?.gf_hero_v1_module) ?? HERO_FALLBACK
+  const descCta   = mapDescCtaFromCS(data?.gf_description_with_ctas_module) ?? DESC_CTA_FALLBACK
+
   return (
     <div className="body-wrapper">
       <Header />
       <main id="main-content" className="body-container-wrapper">
         <div className="body-container">
-          <HeroV1
-            tagLabel="Now in Beta"
-            heading="Bulk edit HubSpot CMS"
-            headingSpan=" in seconds, not hours."
-            paragraphs={['Smuves is the headless website data editor for HubSpot websites.']}
-            imagePosition="none"
-            textAlign="left"
-            ctas={[{ text: 'Join Beta', href: '#', style: 'black_arrow openPopup' }]}
-            hasListing={true}
-            listing={[
-              'See real time content counts',
-              'Audit all available CMS content',
-              'Update page settings in bulk',
-              'Sync Google Sheets to HubSpot',
-            ]}
-            style={{ paddingTop: 190, paddingBottom: 120, mobilePaddingTop: 140, mobilePaddingBottom: 90 }}
-          />
-          <ProductIconGrid />
-          <ProductDescCta />
+          <HeroV1 {...heroProps} />
+          <ProductIconGrid data={data?.gf_icon_grid_with_tags_module} />
+          <ProductDescCta data={descCta} />
         </div>
       </main>
       <Footer />

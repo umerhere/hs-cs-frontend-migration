@@ -44,6 +44,7 @@ export default function HeroV1({
   const sectionClass = `herov1-section${hasListing ? ' listing' : ''}`
   const mainClass = `herov1-main ${textAlign}`
 
+  console.log("umar listing", listing);
   return (
     <section
       className={sectionClass}
