@@ -181,7 +181,7 @@ button:disabled, .button:disabled {
   max-width: 1240px;
 }
 .page-center {
-  margin: 0 auto;
+  margin: 0 20px;
   padding: 0 20px;
   width: 100%;
 }
@@ -376,13 +376,14 @@ body.hide-floating::before {
 
 .cta-white-primary {
   background: #fff;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  color: #2563eb;
-  font-size: 16px;
+  border: 1.5px solid #fff;
+  border-radius: 50px;
+  color: #0083ff;
+  font-size: 15px;
   font-weight: 700;
-  line-height: 20px;
-  padding: 10px 20px;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1;
+  padding: 11px 22px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
   display: inline-block;
@@ -391,17 +392,20 @@ body.hide-floating::before {
 .cta-white-primary:focus,
 .cta-white-primary:active {
   background: #f3f4f6;
+  color: #0083ff;
   text-decoration: none;
 }
 
 .cta-white-secondary {
   background: transparent;
-  border: 1px solid #fff;
-  border-radius: 5px;
+  border: 1.5px solid #fff;
+  border-radius: 50px;
   color: #fff;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 12px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Manrope', sans-serif;
+  line-height: 1;
+  padding: 11px 22px;
   text-decoration: none;
   transition: 0.3s ease-in-out;
   display: inline-block;
@@ -410,7 +414,7 @@ body.hide-floating::before {
 .cta-white-secondary:focus,
 .cta-white-secondary:active {
   background: #fff;
-  color: #2563eb;
+  color: #0083ff;
   text-decoration: none;
 }
 

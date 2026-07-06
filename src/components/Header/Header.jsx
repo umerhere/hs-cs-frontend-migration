@@ -96,7 +96,7 @@ export default function Header() {
                           onClick={() => toggleDropdown(idx)}
                         >
                           {item.label}
-                          <span className="nav-chevron" aria-hidden="true">▾</span>
+                          <span className="nav-chevron" aria-hidden="true">{openDropdown === idx ? '▴' : '▾'}</span>
                         </button>
                         {openDropdown === idx && (
                           <ul role="menu" className="hs-menu-children-wrapper">
@@ -118,8 +118,8 @@ export default function Header() {
 
             {/* Desktop CTAs */}
             <div className="cta-area">
-              <a href="#" className="light-green-cta openPopup">Join App Beta</a>
-              <Link to="/about/contact" className="light-green-cta">Let's Chat!</Link>
+              <a href="#" className="cta-white-secondary openPopup">Join App Beta</a>
+              <Link to="/about/contact" className="cta-white-primary">Let's Chat!</Link>
             </div>
 
             {/* Mobile hamburger */}
@@ -178,8 +178,8 @@ export default function Header() {
             </ul>
           </nav>
           <div className="cta-clone">
-            <a href="#" className="light-green-cta openPopup">Join App Beta</a>
-            <Link to="/about/contact" className="light-green-cta" onClick={() => setMobileOpen(false)}>
+            <a href="#" className="cta-white-secondary openPopup">Join App Beta</a>
+            <Link to="/about/contact" className="cta-white-primary" onClick={() => setMobileOpen(false)}>
               Let's Chat!
             </Link>
           </div>
