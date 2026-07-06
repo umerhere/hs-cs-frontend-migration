@@ -1,21 +1,10 @@
 import Header from '../../components/Header/Header.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import HeroV1 from '../../components/modules/HeroV1/HeroV1.jsx'
+import MissingContent from '../../components/MissingContent/MissingContent.jsx'
 import { usePageData } from '../../hooks/usePageData.js'
 import { mapHeroFromCS } from '../../lib/mappers/heroMapper.js'
 import './About.css'
-
-const OUR_STORY_FALLBACK = `
-<h2>Our Story</h2>
-<p>Smuves didn&rsquo;t start as an agency. It started as a problem.</p>
-<p>During a large-scale migration project &mdash; tens of thousands of pages, thousands of blog posts, and dozens of languages &mdash; it became clear how fragile most website content actually is.</p>
-<p>Hard-coded into templates. Scattered across modules. Difficult to find, even harder to change.</p>
-<p>What should have been a structured dataset &mdash; was a collection of disconnected &ldquo;blobs.&rdquo;</p>
-<p>So we built a way to fix it.</p>
-<p>The first version was simple. Pull content out of HubSpot, organize it in a way that made sense, and make bulk updates possible. What used to take weeks could now be done in hours.</p>
-<p>But once you can see and edit your content like data &mdash; you start to realize something else.</p>
-<p>You can <em>move</em> it.</p>
-`
 
 /* ── Our Story (Left Text + Right Image) ─────────────────────── */
 function OurStorySection({ html }) {
@@ -34,34 +23,28 @@ function OurStorySection({ html }) {
               style={{ maxWidth: '100%', height: 'auto', borderRadius: 12 }}
             />
           </div>
-          <div className="checklist-text" dangerouslySetInnerHTML={{ __html: html || OUR_STORY_FALLBACK }} />
+          <div className="checklist-text">
+            {html
+              ? <div dangerouslySetInnerHTML={{ __html: html }} />
+              : <MissingContent field="gf_right_text_left_image_module.checklist_area.content" />
+            }
+          </div>
         </div>
       </div>
     </section>
   )
 }
 
-const WHAT_WE_DO_FALLBACK = `
-<h2><span><strong>What We Do Now</strong></span></h2>
-<p>Today, Smuves sits at the intersection of <strong>tooling and services</strong>.</p>
-<p>Our platform exposes your website content dataset so it can be searched, edited, and updated in bulk.</p>
-<p>Our services go deeper &mdash; designing content architecture, building custom ETLs, and programmatically migrating content between systems like HubSpot and Contentstack.</p>
-<p>We don&rsquo;t focus on how your site looks.</p>
-<p>We focus on how your content is structured, managed, and moved behind the scenes.</p>
-<p>Because that&rsquo;s the part that usually breaks.</p>
-<h2>&nbsp;</h2>
-<h2><span><strong>What We Believe</strong></span></h2>
-<p>Most websites aren&rsquo;t limited by design.</p>
-<p>They&rsquo;re limited by how their content is structured.</p>
-<p>When content is locked into pages, tied to templates, or scattered across systems &mdash; everything becomes harder. Updates take longer. Migrations get expensive. Teams work around the system instead of with it.</p>
-<p>We believe your content should behave like a real asset. Structured. Searchable. Portable.</p>
-`
-
 /* ── Rich Text (What We Do / What We Believe) ────────────────── */
 function WhatWeDoSection({ html }) {
   return (
     <section className="richtext-section about-what-we-do">
-      <div className="page-center" dangerouslySetInnerHTML={{ __html: html || WHAT_WE_DO_FALLBACK }} />
+      <div className="page-center">
+        {html
+          ? <div dangerouslySetInnerHTML={{ __html: html }} />
+          : <MissingContent field="gf_rich_text_module.content" />
+        }
+      </div>
     </section>
   )
 }
@@ -221,38 +204,23 @@ function TeamGridSection() {
   )
 }
 
-/* ── Fallback hero props (used until the CS entry has gf_hero_module data) ── */
-const HERO_FALLBACK = {
-  heading:       'About',
-  headingSpan:   ' Smuves',
-  paragraphs: [
-    '<strong>Website Content Engineering. Built for teams that need their data to actually move.</strong>',
-    'We help companies take control of their website content dataset.',
-    'Not just edit it. Not just redesign it.',
-    'Structure it, clean it, and move it between systems without breaking everything along the way.',
-  ],
-  imagePosition: 'none',
-  textAlign:     'left',
-  style: { paddingTop: 190, paddingBottom: 140, mobilePaddingTop: 190, mobilePaddingBottom: 90 },
-}
-
 /* ── Page assembly ───────────────────────────────────────────── */
 export default function About() {
-  const { data } = usePageData('about')
-  const heroProps = mapHeroFromCS(data?.gf_hero_v1_module) ?? HERO_FALLBACK
+  const { data, loading } = usePageData('about')
+  const heroProps = mapHeroFromCS(data?.gf_hero_v1_module)
 
-  // CS: gf_right_text_left_image_module.checklist_area.content — Our Story HTML
-  const ourStoryHtml  = data?.gf_right_text_left_image_module?.checklist_area?.content ?? null
-  // CS: gf_rich_text_module.content — What We Do / What We Believe HTML
-  const whatWeDoHtml  = data?.gf_rich_text_module?.content ?? null
+  const ourStoryHtml = data?.gf_right_text_left_image_module?.checklist_area?.content ?? null
+  const whatWeDoHtml = data?.gf_rich_text_module?.content ?? null
 
   return (
     <div className="body-wrapper">
       <Header />
       <main id="main-content" className="body-container-wrapper">
         <div className="body-container">
-
-          <HeroV1 {...heroProps} />
+          {!loading && (heroProps
+            ? <HeroV1 {...heroProps} />
+            : <MissingContent field="gf_hero_v1_module" />
+          )}
           <OurStorySection html={ourStoryHtml} />
           <WhatWeDoSection html={whatWeDoHtml} />
           <OurValuesSection />

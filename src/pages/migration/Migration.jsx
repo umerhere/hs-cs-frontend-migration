@@ -2,22 +2,10 @@ import { Link } from 'react-router-dom'
 import Header from '../../components/Header/Header.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import HeroV1 from '../../components/modules/HeroV1/HeroV1.jsx'
+import MissingContent from '../../components/MissingContent/MissingContent.jsx'
 import { usePageData } from '../../hooks/usePageData.js'
 import { mapHeroFromCS } from '../../lib/mappers/heroMapper.js'
 import './Migration.css'
-
-const HERO_FALLBACK = {
-  tagLabel:    'Programmatic Website Migrations',
-  headingHtml: 'Make the Escape<br><span> from Legacy CMS.</span>',
-  paragraphs:  ['<strong>Stop migrating your technical debt.</strong> We engineer the automated transition from bloated legacy monoliths to modern, headless architectures with 100% data integrity and zero \u201cwait, where did that page go?\u201d moments.'],
-  imagePosition: 'none',
-  textAlign:   'left',
-  ctas: [
-    { text: 'Join App Beta', href: '#', style: 'light-green-cta openPopup' },
-    { text: "Let's Chat!", href: '/about/contact', style: 'light-green-cta' },
-  ],
-  style: { paddingTop: 190, paddingBottom: 120, mobilePaddingTop: 140, mobilePaddingBottom: 90 },
-}
 
 function QuoteSection() {
   return (
@@ -84,15 +72,18 @@ function MigrationCTA() {
 }
 
 export default function Migration() {
-  const { data } = usePageData('services/website-migration')
-  const heroProps = mapHeroFromCS(data?.gf_hero_v1_module) ?? HERO_FALLBACK
+  const { data, loading } = usePageData('services/website-migration')
+  const heroProps = mapHeroFromCS(data?.gf_hero_v1_module)
 
   return (
     <div className="body-wrapper">
       <Header />
       <main id="main-content" className="body-container-wrapper">
         <div className="body-container">
-          <HeroV1 {...heroProps} />
+          {!loading && (heroProps
+            ? <HeroV1 {...heroProps} />
+            : <MissingContent field="gf_hero_v1_module" />
+          )}
           <QuoteSection />
           <HowWeDoItSection />
           <MigrationCTA />

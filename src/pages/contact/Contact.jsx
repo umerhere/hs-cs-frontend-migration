@@ -2,29 +2,10 @@ import { useState } from 'react'
 import Header from '../../components/Header/Header.jsx'
 import Footer from '../../components/Footer/Footer.jsx'
 import HeroV1 from '../../components/modules/HeroV1/HeroV1.jsx'
+import MissingContent from '../../components/MissingContent/MissingContent.jsx'
 import { usePageData } from '../../hooks/usePageData.js'
 import { mapHeroFromCS } from '../../lib/mappers/heroMapper.js'
 import './Contact.css'
-
-const HERO_FALLBACK = {
-  heading: 'Contact &',
-  headingSpan: ' Support',
-  paragraphs: ["Need help or have questions? We're here to support you every step of the way."],
-  imagePosition: 'none',
-  textAlign: 'left',
-  style: { paddingTop: 190, paddingBottom: 140, mobilePaddingTop: 190, mobilePaddingBottom: 90 },
-}
-
-const FAQS_FALLBACK = [
-  {
-    q: "How does Smuves integrate with HubSpot?",
-    a: "Smuves uses HubSpot's CMS APIs to securely connect to your CMS data. We handle authentication and data retrieval without requiring any code changes on your end.",
-  },
-  {
-    q: "What's included in the app beta program?",
-    a: "Beta users get free access to all features, priority support, and the ability to influence our product roadmap with feedback.",
-  },
-]
 
 function ContactFormSection() {
   const [form, setForm] = useState({ firstname: '', lastname: '', email: '', message: '' })
@@ -125,9 +106,20 @@ function SupportSection() {
   )
 }
 
-function FAQSection({ faqs }) {
+function FAQSection({ faqs, loading }) {
   const [open, setOpen] = useState(null)
-  const items = faqs?.length ? faqs : FAQS_FALLBACK
+
+  if (loading) return null
+
+  if (!faqs || faqs.length === 0) {
+    return (
+      <section className="FAQ-section">
+        <div className="page-center">
+          <MissingContent field="gf_faq_module.faq" />
+        </div>
+      </section>
+    )
+  }
 
   return (
     <section className="FAQ-section">
@@ -138,7 +130,7 @@ function FAQSection({ faqs }) {
             <p>Quick answers to common questions.</p>
           </div>
           <div className="FAQ">
-            {items.map((item, i) => (
+            {faqs.map((item, i) => (
               <div className={`FAQ-inner${open === i ? ' active' : ''}`} key={i} onClick={() => setOpen(open === i ? null : i)}>
                 <h4 className="faq-question">
                   {item.q}
@@ -157,11 +149,10 @@ function FAQSection({ faqs }) {
 }
 
 export default function Contact() {
-  const { data } = usePageData('about/contact')
+  const { data, loading } = usePageData('about/contact')
 
-  const heroProps = mapHeroFromCS(data?.gf_hero_v1_module) ?? HERO_FALLBACK
+  const heroProps = mapHeroFromCS(data?.gf_hero_v1_module)
 
-  // CS field: gf_faq_module.faq — single object or array of { question, text }
   const rawFaqs = data?.gf_faq_module?.faq
   const faqs = rawFaqs
     ? (Array.isArray(rawFaqs) ? rawFaqs : [rawFaqs])
@@ -174,10 +165,13 @@ export default function Contact() {
       <Header />
       <main id="main-content" className="body-container-wrapper">
         <div className="body-container">
-          <HeroV1 {...heroProps} />
+          {!loading && (heroProps
+            ? <HeroV1 {...heroProps} />
+            : <MissingContent field="gf_hero_v1_module" />
+          )}
           <ContactFormSection />
           <SupportSection />
-          <FAQSection faqs={faqs} />
+          <FAQSection faqs={faqs} loading={loading} />
         </div>
       </main>
       <Footer />
