@@ -18,12 +18,12 @@
 }
 
 .desc-cta-main h2 {
-  color: #fff;
+  color: #000 !important;
   margin-bottom: 16px;
 }
 
 .desc-cta-main p {
-  color: #fff;
+  color: #000 !important;
   line-height: 28px;
   max-width: 672px;
   width: 100%;

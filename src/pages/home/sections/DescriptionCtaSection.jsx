@@ -20,13 +20,13 @@ export default function DescriptionCtaSection({ data, loading }) {
   return (
     <section className="desc-cta-section">
       <div className="page-center">
-        <div className="desc-cta-main primary-gradient">
+        <div className="desc-cta-main">
           {heading
             ? <h2 dangerouslySetInnerHTML={{ __html: heading }} />
             : <MissingContent field="gf_description_with_ctas_module.heading" />
           }
           {description
-            ? <p>{description}</p>
+            ? <div dangerouslySetInnerHTML={{ __html: description }} />
             : <MissingContent field="gf_description_with_ctas_module.description" />
           }
           <div className="cta-area">
